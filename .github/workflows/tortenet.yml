@@ -1,0 +1,40 @@
+name: BET arfolyam-tortenet
+
+# Ez a nehez letoltes: minden reszveny teljes tortenete.
+# Szandekosan NEM fut naponta - eleg havonta, vagy amikor kezzel elinditod.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 4 1 * *"   # minden honap 1-jen
+
+permissions:
+  contents: write
+
+jobs:
+  tortenet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kod letoltese
+        uses: actions/checkout@v4
+
+      - name: Python beallitasa
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Friss reszvenylista
+        run: |
+          mkdir -p data
+          python fetch_bet.py
+
+      - name: Teljes arfolyam-tortenet letoltese
+        run: python fetch_arfolyam.py
+
+      - name: Eredmeny visszamentese a repoba
+        run: |
+          git config user.name "BET robot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Arfolyam-tortenet: $(date -u '+%Y-%m-%d') UTC"
+          git push
