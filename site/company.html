@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Céglap — Bread Board Capital</title>
+<meta name="description" content="Részletes céglap a Budapesti Értéktőzsde részvényeihez.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@500;600&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="company.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__logo-link">
+        <img src="assets/logo-szines.png" alt="Bread Board Capital" class="site-header__logo">
+      </a>
+      <div class="site-header__text">
+        <h1 class="site-header__title">Bread Board Capital</h1>
+        <p class="site-header__tagline">„Friss hírek, ropogósra pirítva.”</p>
+      </div>
+      <a href="index.html" class="vissza-gomb">← Vissza a térképhez</a>
+    </div>
+  </header>
+
+  <main class="page ceglap" id="ceglapTartalom">
+
+    <!-- Betoltes kozben ez latszik -->
+    <div id="betoltesUzenet" class="betoltes-uzenet">Adatok betöltése…</div>
+
+    <!-- Hiba eseten ez latszik -->
+    <div id="hibaUzenet" class="hiba-uzenet" hidden></div>
+
+    <div id="ceglapFo" hidden>
+
+      <!-- FEJLEC -->
+      <section class="cf-header">
+        <div class="cf-header__nev">
+          <h2 id="cfTicker" class="cf-header__ticker">—</h2>
+          <p id="cfNev" class="cf-header__cegnev">—</p>
+          <span id="cfSzektor" class="cf-header__szektor">—</span>
+        </div>
+        <div class="cf-header__ar">
+          <div id="cfAr" class="cf-header__ar-szam">—</div>
+          <div id="cfValtozas" class="cf-header__valtozas">—</div>
+        </div>
+      </section>
+
+      <!-- GYORS STAT SAV -->
+      <section class="cf-statsav" id="cfStatsav"></section>
+
+      <!-- TABOK -->
+      <nav class="cf-tabok" id="cfTabok">
+        <button class="cf-tab cf-tab--aktiv" data-tab="osszefoglalo">Összefoglaló</button>
+        <button class="cf-tab" data-tab="penzugyek">Pénzügyek</button>
+        <button class="cf-tab" data-tab="mutatok">Mutatók</button>
+        <button class="cf-tab" data-tab="tulajdonosok">Tulajdonosok</button>
+      </nav>
+
+      <!-- ÖSSZEFOGLALÓ TAB -->
+      <section class="cf-tabtartalom cf-tabtartalom--aktiv" data-tabtartalom="osszefoglalo">
+        <div class="cf-grid cf-grid--2osz">
+          <div class="csempe">
+            <h3 class="csempe__cim">Alapadatok</h3>
+            <div id="cfAlapadatok" class="kv-lista"></div>
+          </div>
+          <div class="csempe csempe--nagy">
+            <div class="csempe__fejlec">
+              <h3 class="csempe__cim">Árfolyam</h3>
+              <div class="idosik-valaszto" id="idosikValaszto">
+                <button data-idosik="1H">1H</button>
+                <button data-idosik="1M">1Hó</button>
+                <button data-idosik="6M">6Hó</button>
+                <button data-idosik="1Y" class="aktiv">1É</button>
+                <button data-idosik="5Y">5É</button>
+                <button data-idosik="MAX">Max</button>
+              </div>
+            </div>
+            <canvas id="arfolyamGrafikon" class="grafikon" height="260"></canvas>
+          </div>
+        </div>
+
+        <div class="cf-grid cf-grid--2osz">
+          <div class="csempe">
+            <h3 class="csempe__cim">Kereskedési adatok</h3>
+            <div id="cfKereskedes" class="kv-lista"></div>
+          </div>
+          <div class="csempe">
+            <h3 class="csempe__cim">Kulcsmutatók</h3>
+            <div id="cfKulcsmutatok" class="mutato-csempesor"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PÉNZÜGYEK TAB -->
+      <section class="cf-tabtartalom" data-tabtartalom="penzugyek">
+        <div class="csempe csempe--nagy">
+          <h3 class="csempe__cim">Bevétel, üzemi és nettó eredmény</h3>
+          <canvas id="penzugyGrafikon" class="grafikon" height="260"></canvas>
+        </div>
+
+        <div class="cf-grid cf-grid--2osz">
+          <div class="csempe">
+            <h3 class="csempe__cim">Eredménykimutatás — fontosabb sorok</h3>
+            <div id="cfEredmenykimutatas" class="tablazat-wrap"></div>
+          </div>
+          <div class="csempe">
+            <h3 class="csempe__cim">Mérleg — fontosabb sorok</h3>
+            <div id="cfMerleg" class="tablazat-wrap"></div>
+          </div>
+        </div>
+
+        <div class="csempe csempe--nagy" id="sankeySzekcio" hidden>
+          <h3 class="csempe__cim">Eredménykimutatás → Mérleg összetétel</h3>
+          <p class="csempe__alcim">Csak azoknál a cégeknél elérhető, ahol van részletes iXBRL-jelentés.</p>
+          <div id="sankeyDiagram" class="sankey-wrap"></div>
+        </div>
+      </section>
+
+      <!-- MUTATÓK TAB -->
+      <section class="cf-tabtartalom" data-tabtartalom="mutatok">
+        <div class="cf-grid cf-grid--2osz">
+          <div class="csempe">
+            <h3 class="csempe__cim">DuPont ROE-lebontás</h3>
+            <p class="csempe__alcim">ROE = eszközarányos megtérülés × tőkeáttétel (bővebben, ha van bevétel-adat: margin × forgás × tőkeáttétel)</p>
+            <div id="cfDupont" class="dupont-wrap"></div>
+          </div>
+          <div class="csempe">
+            <h3 class="csempe__cim">Piotroski F-score</h3>
+            <div id="cfPiotroski" class="piotroski-wrap"></div>
+          </div>
+        </div>
+
+        <div class="csempe csempe--nagy">
+          <h3 class="csempe__cim">Mutatók — saját történet és piaci összevetés</h3>
+          <div id="cfMutatoReszletek" class="mutato-reszletek"></div>
+        </div>
+
+        <div class="csempe csempe--nagy">
+          <h3 class="csempe__cim">Hasonló vállalatok (szektortársak)</h3>
+          <div id="cfPeerTablazat" class="tablazat-wrap"></div>
+        </div>
+      </section>
+
+      <!-- TULAJDONOSOK TAB -->
+      <section class="cf-tabtartalom" data-tabtartalom="tulajdonosok">
+        <div class="cf-grid cf-grid--2osz">
+          <div class="csempe">
+            <h3 class="csempe__cim">Tulajdonosok (5% fölött)</h3>
+            <div id="cfTulajdonosok" class="tablazat-wrap"></div>
+            <p id="cfKozkezhanyad" class="csempe__lablec"></p>
+          </div>
+          <div class="csempe">
+            <h3 class="csempe__cim">Cégvezetés</h3>
+            <div id="cfCegvezetes" class="kv-lista kv-lista--tomb"></div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Bread Board Capital — Márkakönyv V1.0 alapján. Adatforrás: Budapesti Értéktőzsde és MNB
+      közzétételi rendszer. Ez az oldal nem minősül befektetési tanácsadásnak.
+    </p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="company.js"></script>
+</body>
+</html>

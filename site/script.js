@@ -1,21 +1,9 @@
 /* ============================================================
    Bread Board Capital - BET reszvenyterkep
    Adatletoltes, treemap-elrendezes es interakcio.
+   A GITHUB_USER / GITHUB_REPO beallitas a config.js fajlban van -
+   azt kell kitoltened, nem ezt a fajlt.
    ============================================================ */
-
-// ------------------------------------------------------------------
-// BEALLITAS - EZT A KET SORT CSERELD LE a sajat GitHub adataidra!
-// Pelda: ha a repod cime github.com/pistike123/bet-elemzo, akkor:
-//   GITHUB_USER = "pistike123"
-//   GITHUB_REPO = "bet-elemzo"
-// ------------------------------------------------------------------
-const GITHUB_USER = "BroadGibbon";
-const GITHUB_REPO = "bet-elemzo";
-const ADAT_URL = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/reszvenyek.json`;
-
-// Ha a raw.githubusercontent.com valamiert nem elerheto/lassu, ez egy
-// jo alternativa (ugyanaz az adat, mas szolgaltatotol):
-const ADAT_URL_TARTALEK = `https://cdn.jsdelivr.net/gh/${GITHUB_USER}/${GITHUB_REPO}/data/reszvenyek.json`;
 
 
 // ------------------------------------------------------------------
@@ -257,8 +245,13 @@ function treemapRajzolasa() {
     });
     div.addEventListener("blur", reszletPanelElrejtese);
     div.addEventListener("click", () => {
-      document.querySelectorAll(".tile--selected").forEach(t => t.classList.remove("tile--selected"));
-      div.classList.add("tile--selected");
+      window.location.href = `company.html?ticker=${encodeURIComponent(r.seccode)}`;
+    });
+    div.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        window.location.href = `company.html?ticker=${encodeURIComponent(r.seccode)}`;
+      }
     });
 
     container.appendChild(div);
@@ -271,6 +264,70 @@ window.addEventListener("resize", () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(treemapRajzolasa, 150);
 });
+
+
+// ------------------------------------------------------------------
+// Kereso mezo: szabad szoveges szures + legordulo javaslatlista
+// ------------------------------------------------------------------
+function keresoBekotese(reszvenyek) {
+  const mezo = document.getElementById("keresoMezo");
+  const lista = document.getElementById("keresoLista");
+
+  function navigalas(kod) {
+    window.location.href = `company.html?ticker=${encodeURIComponent(kod)}`;
+  }
+
+  function listaFrissitese(szures) {
+    const szures_kisbetu = szures.trim().toLowerCase();
+    if (!szures_kisbetu) {
+      lista.hidden = true;
+      lista.innerHTML = "";
+      return;
+    }
+    const talalatok = reszvenyek
+      .filter(r => r.seccode.toLowerCase().includes(szures_kisbetu))
+      .slice(0, 12);
+
+    if (!talalatok.length) {
+      lista.innerHTML = `<div class="kereso__nincs">Nincs találat</div>`;
+      lista.hidden = false;
+      return;
+    }
+
+    lista.innerHTML = talalatok.map(r => `
+      <div class="kereso__elem" data-kod="${r.seccode}" tabindex="0" role="option">
+        <span class="kereso__kod">${r.seccode}</span>
+        <span class="kereso__ar">${(r.lasttradedprice ?? 0).toLocaleString("hu-HU")} ${r.currencyid || ""}</span>
+      </div>
+    `).join("");
+    lista.hidden = false;
+
+    lista.querySelectorAll(".kereso__elem").forEach(el => {
+      el.addEventListener("click", () => navigalas(el.dataset.kod));
+      el.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") navigalas(el.dataset.kod);
+      });
+    });
+  }
+
+  mezo.addEventListener("input", () => listaFrissitese(mezo.value));
+  mezo.addEventListener("focus", () => { if (mezo.value) listaFrissitese(mezo.value); });
+
+  // Kattintas a kereson kivul: lista elrejtese
+  document.addEventListener("click", (e) => {
+    if (!document.getElementById("keresoDoboz").contains(e.target)) {
+      lista.hidden = true;
+    }
+  });
+
+  // Enter a mezoben: ha pontosan egy talalat van, navigaljunk oda
+  mezo.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      const elso = lista.querySelector(".kereso__elem");
+      if (elso) navigalas(elso.dataset.kod);
+    }
+  });
+}
 
 
 // ------------------------------------------------------------------
@@ -289,16 +346,7 @@ function hianyzoAdatokMutatasa(hianyzok) {
 // Inditas: adat letoltese, majd minden feleptese
 // ------------------------------------------------------------------
 async function adatLetoltese() {
-  try {
-    const valasz = await fetch(ADAT_URL, { cache: "no-store" });
-    if (!valasz.ok) throw new Error(`HTTP ${valasz.status}`);
-    return await valasz.json();
-  } catch (elsoHiba) {
-    console.warn("Elsodleges adatforras nem elerheto, tartalek probalasa:", elsoHiba);
-    const valasz = await fetch(ADAT_URL_TARTALEK, { cache: "no-store" });
-    if (!valasz.ok) throw new Error(`HTTP ${valasz.status}`);
-    return await valasz.json();
-  }
+  return adatFajlLetoltese("data/reszvenyek.json");
 }
 
 async function inditas() {
@@ -320,6 +368,7 @@ async function inditas() {
     tickerSzalagFeltoltese(reszvenyek);
     treemapRajzolasa();
     hianyzoAdatokMutatasa(hianyzo);
+    keresoBekotese(reszvenyek);
 
   } catch (hiba) {
     console.error(hiba);

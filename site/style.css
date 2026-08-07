@@ -133,6 +133,72 @@ body {
   padding-left: 0.6rem;
 }
 
+/* ---------- Kereso ---------- */
+
+.kereso {
+  position: relative;
+  margin-top: 1.25rem;
+  max-width: 480px;
+}
+
+.kereso__input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  font-family: var(--font-torzs);
+  font-size: 1rem;
+  border: 2px solid var(--espresso);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--espresso);
+}
+
+.kereso__input:focus {
+  outline: none;
+  border-color: var(--karamell);
+}
+
+.kereso__lista {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--vajkrem);
+  border: 2px solid var(--espresso);
+  border-radius: 8px;
+  max-height: 320px;
+  overflow-y: auto;
+  z-index: 30;
+  box-shadow: 0 8px 20px rgba(60, 42, 27, 0.25);
+}
+
+.kereso__elem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(190, 179, 160, 0.4);
+}
+
+.kereso__elem:last-child { border-bottom: none; }
+.kereso__elem:hover, .kereso__elem:focus-visible { background: var(--kereg); outline: none; }
+
+.kereso__kod {
+  font-family: var(--font-adat);
+  font-weight: 600;
+}
+
+.kereso__ar {
+  font-family: var(--font-adat);
+  color: var(--fustolt-bezs);
+  font-size: 0.85rem;
+}
+
+.kereso__nincs {
+  padding: 0.6rem 0.9rem;
+  color: var(--fustolt-bezs);
+  font-size: 0.9rem;
+}
+
 /* ---------- Treemap ---------- */
 
 .treemap-wrap {

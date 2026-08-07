@@ -39,9 +39,17 @@
       <p class="intro__text">
         Minden budapesti tőzsdei részvény egy térképen. A téglalap <strong>mérete</strong> a piaci
         kapitalizációt mutatja, a <strong>színe</strong> a mai árfolyamváltozást — minél telítettebb
-        a zöld vagy a piros, annál nagyobb a mai mozgás. Kattints egy téglalapra a részletekért.
+        a zöld vagy a piros, annál nagyobb a mai mozgás. Kattints egy téglalapra, vagy keress rá
+        a lista alatt egy céglapért.
       </p>
       <p class="intro__meta" id="freshnessNote">Adatok betöltése…</p>
+
+      <div class="kereso" id="keresoDoboz">
+        <input type="text" id="keresoMezo" class="kereso__input"
+               placeholder="Keress egy részvényre (pl. OTP, Richter, MOL...)"
+               autocomplete="off">
+        <div id="keresoLista" class="kereso__lista" hidden></div>
+      </div>
     </section>
 
     <section class="treemap-wrap">
@@ -78,6 +86,7 @@
     </p>
   </footer>
 
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
