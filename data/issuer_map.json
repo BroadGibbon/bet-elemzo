@@ -1,0 +1,206 @@
+{
+  "4IG": {
+    "securityid": 3564,
+    "issuerid": "2937"
+  },
+  "AKKO": {
+    "securityid": 6685,
+    "issuerid": "3368"
+  },
+  "ALTEO": {
+    "securityid": 6494,
+    "issuerid": "3353"
+  },
+  "AMIXA": {
+    "securityid": 641,
+    "issuerid": "1650"
+  },
+  "ANY": {
+    "securityid": 4042,
+    "issuerid": "3071"
+  },
+  "APPENINN": {
+    "securityid": 6329,
+    "issuerid": "3341"
+  },
+  "AUTOWALLIS": {
+    "securityid": 8208,
+    "issuerid": "3399"
+  },
+  "BET": {
+    "securityid": 16243,
+    "issuerid": "3796"
+  },
+  "BGREIT": {
+    "securityid": 16611,
+    "issuerid": "3799"
+  },
+  "BIF": {
+    "securityid": 424,
+    "issuerid": "1564"
+  },
+  "CIGPANNONIA": {
+    "securityid": 6515,
+    "issuerid": "3356"
+  },
+  "CIVITA": {
+    "securityid": 16217,
+    "issuerid": "3793"
+  },
+  "DELTA": {
+    "securityid": 748,
+    "issuerid": "1885"
+  },
+  "DMKER": {
+    "securityid": 13032,
+    "issuerid": "3522"
+  },
+  "DUNAHOUSE": {
+    "securityid": 9864,
+    "issuerid": "3433"
+  },
+  "ENEFI": {
+    "securityid": 4664,
+    "issuerid": "3191"
+  },
+  "ENEFI ELS": {
+    "securityid": 14754,
+    "issuerid": "3191"
+  },
+  "EPROLIUSIA": {
+    "securityid": 14842,
+    "issuerid": "3686"
+  },
+  "ESENSE": {
+    "securityid": 15378,
+    "issuerid": "3752"
+  },
+  "FINEXT": {
+    "securityid": 5951,
+    "issuerid": "3319"
+  },
+  "FINEXT B": {
+    "securityid": 12096,
+    "issuerid": "3319"
+  },
+  "FORRAS/OE": {
+    "securityid": 3168,
+    "issuerid": "2807"
+  },
+  "FORRAS/T": {
+    "securityid": 3167,
+    "issuerid": "2807"
+  },
+  "FUTURAQUA": {
+    "securityid": 7216,
+    "issuerid": "3381"
+  },
+  "GLOSTER": {
+    "securityid": 13317,
+    "issuerid": "3547"
+  },
+  "GOODWILLPHRM": {
+    "securityid": 15781,
+    "issuerid": "3772"
+  },
+  "GRANIT": {
+    "securityid": 17546,
+    "issuerid": "3820"
+  },
+  "GSPARK": {
+    "securityid": 4338,
+    "issuerid": "3125"
+  },
+  "MASTERPLAST": {
+    "securityid": 7217,
+    "issuerid": "3386"
+  },
+  "MBHBANK": {
+    "securityid": 12625,
+    "issuerid": "2649"
+  },
+  "MBHJB": {
+    "securityid": 3263,
+    "issuerid": "2436"
+  },
+  "MEGAKRAN": {
+    "securityid": 12110,
+    "issuerid": "3492"
+  },
+  "MOL": {
+    "securityid": 518,
+    "issuerid": "1599"
+  },
+  "MTELEKOM": {
+    "securityid": 511,
+    "issuerid": "1633"
+  },
+  "NORDGENERAL": {
+    "securityid": 6005,
+    "issuerid": "3327"
+  },
+  "NUTEX": {
+    "securityid": 477,
+    "issuerid": "1587"
+  },
+  "OPUS": {
+    "securityid": 540,
+    "issuerid": "1612"
+  },
+  "ORMESTER": {
+    "securityid": 6581,
+    "issuerid": "3358"
+  },
+  "OTP": {
+    "securityid": 528,
+    "issuerid": "1604"
+  },
+  "PANNERGY": {
+    "securityid": 546,
+    "issuerid": "1609"
+  },
+  "PENSUM": {
+    "securityid": 13117,
+    "issuerid": "3527"
+  },
+  "RABA": {
+    "securityid": 604,
+    "issuerid": "1616"
+  },
+  "RICHTER": {
+    "securityid": 608,
+    "issuerid": "1617"
+  },
+  "SPLUS": {
+    "securityid": 16620,
+    "issuerid": "3798"
+  },
+  "STRT": {
+    "securityid": 16648,
+    "issuerid": "3794"
+  },
+  "SUNDELL": {
+    "securityid": 13470,
+    "issuerid": "3563"
+  },
+  "UBM": {
+    "securityid": 10745,
+    "issuerid": "3459"
+  },
+  "UPLAZA": {
+    "securityid": 18668,
+    "issuerid": "3837"
+  },
+  "VIG": {
+    "securityid": 8066,
+    "issuerid": "3770"
+  },
+  "WABERERS": {
+    "securityid": 11141,
+    "issuerid": "3432"
+  },
+  "ZWACK": {
+    "securityid": 639,
+    "issuerid": "1629"
+  }
+}
