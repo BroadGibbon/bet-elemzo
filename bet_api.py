@@ -8,6 +8,7 @@ import re
 import time
 import urllib.request
 import urllib.error
+import urllib.parse
 import http.cookiejar
 
 BASE = "https://www.bet.hu"
@@ -63,7 +64,10 @@ class BetKapcsolat:
         raise RuntimeError(f"Sikertelen lekerdezes {probak} proba utan: {utolso}")
 
     def oldal(self, utvonal, probak=4):
-        """Letolt egy sima HTML oldalt a BET-rol."""
+        """Letolt egy sima HTML oldalt a BET-rol. Az utvonalat a hivo felnek mar
+        helyesen kell kodolnia (lasd fetch_penzugy.py: bet_utvonalnev fuggveny) -
+        itt nem kodolunk ujra, mert az mar kodolt reszeket (pl. '%20') dupla
+        kodolna ('%2520'-ra)."""
         utolso = None
         for proba in range(1, probak + 1):
             try:
