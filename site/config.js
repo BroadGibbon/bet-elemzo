@@ -5,8 +5,8 @@
    ============================================================ */
 
 // CSERELD LE a sajat GitHub felhasznalonevedre es repod nevere!
-const GITHUB_USER = "IDE_A_GITHUB_FELHASZNALONEVED";
-const GITHUB_REPO = "IDE_A_REPO_NEVE";
+const GITHUB_USER = "BroadGibon";
+const GITHUB_REPO = "bet-elemzo";
 
 const ADAT_BAZIS_URL = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main`;
 const ADAT_BAZIS_URL_TARTALEK = `https://cdn.jsdelivr.net/gh/${GITHUB_USER}/${GITHUB_REPO}`;
