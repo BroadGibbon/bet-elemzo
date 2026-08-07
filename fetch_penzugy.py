@@ -63,11 +63,28 @@ def issuer_azonositok_frissitese(bet, reszvenyek):
     return eredmeny
 
 
+def egyseg_es_penznem(cimke_szoveg):
+    """
+    A BET Excel-exportban minden ev oszlop alatt ott all a mertekegyseg ES a
+    penznem egyutt, pl. '(ezer HUF)' vagy '(ezer EUR)' - kulfoldi bevezetesu
+    cegek (pl. VIG) nem HUF-ban, hanem sajat devizajukban jelentenek!
+    Visszaadja: (szorzo, penznem) - pl. (1000, 'EUR').
+    """
+    if not cimke_szoveg:
+        return 1, None
+    szoveg = str(cimke_szoveg).lower()
+    m = re.search(r'\(\s*(ezer|millió|milliárd)?\s*([a-z]{3})\s*\)', szoveg)
+    if not m:
+        return 1, None
+    nagysagrend, penznem = m.groups()
+    szorzo = {"milliárd": 1_000_000_000, "millió": 1_000_000, "ezer": 1_000}.get(nagysagrend, 1)
+    return szorzo, penznem.upper()
+
+
 def excel_letoltes_es_feldolgozas(bet, url):
-    """Letolt egy Excel fajlt a BET-rol, es 'cimke -> {ev: ertek}' szotarra alakitja."""
-    # Az url-t a hivo fel mar helyesen kodolta (a tickernevet kulon,
-    # a "/" es "$" strukturajeleket meghagyva), itt nem kodolunk ujra -
-    # az ujrakodolas a mar meglevo "%2F"-bol "%252F"-et csinalna.
+    """Letolt egy Excel fajlt a BET-rol, es 'cimke -> {ev: ertek}' szotarra alakitja.
+    Minden erteket tenyleges (nem ezerre/millora skalazott) HUF-ra normalizal,
+    az Excelben evenkent kulon feltuntetett mertekegyseg alapjan."""
     nyers = None
     for proba in range(3):
         try:
@@ -106,22 +123,46 @@ def excel_letoltes_es_feldolgozas(bet, url):
 
     cim = ws.cell(row=1, column=1).value
 
+    # A mertekegyseg+penznem sor kozvetlenul az ev-sor alatt van, pl. "(ezer HUF)".
+    # Oszloponkent kulon allapitjuk meg - igy akkor is jo, ha a ceg kozben
+    # valtott mertekegyseget VAGY devizanemet.
+    adat_kezdo_sor = ev_sor_index + 1
+    szorzok = [1] * (len(evek) + 1)  # +1, mert 1-tol indexelunk oszlopban
+    penznemek = {}  # ev -> penznem (pl. "HUF", "EUR")
+    egyseg_sor_letezik = False
+    for oszlop in range(2, 2 + len(evek)):
+        cellaertek = ws.cell(row=ev_sor_index + 1, column=oszlop).value
+        szorzo, penznem = egyseg_es_penznem(cellaertek)
+        if penznem:
+            egyseg_sor_letezik = True
+            szorzok[oszlop - 1] = szorzo
+            penznemek[evek[oszlop - 2]] = penznem
+    if egyseg_sor_letezik:
+        adat_kezdo_sor = ev_sor_index + 2
+
     sorok = {}
-    for sor_i in range(ev_sor_index + 1, ws.max_row + 1):
+    for sor_i in range(adat_kezdo_sor, ws.max_row + 1):
         cimke = ws.cell(row=sor_i, column=1).value
         if not cimke or str(cimke).startswith("(") or "közölt információk" in str(cimke):
             continue
+        cimke_tiszta = str(cimke).strip()
+        # A "reszvenyre jutó" soroknak (EPS, osztalek/reszveny) MINDIG sima HUF-ban
+        # adjak meg az erteket, fuggetlenul az oszlop mertekegyseg-cimkejetol -
+        # ezekre sosem szabad a millio/ezer szorzot alkalmazni.
+        per_reszveny_sor = "részvényre jutó" in cimke_tiszta
         ertekek_evenkent = {}
         oszlop = 2
         for ev in evek:
             ertek = ws.cell(row=sor_i, column=oszlop).value
             if ertek is not None and ertek != "":
+                if isinstance(ertek, (int, float)) and not per_reszveny_sor:
+                    ertek = ertek * szorzok[oszlop - 1]
                 ertekek_evenkent[ev] = ertek
             oszlop += 1
         if ertekek_evenkent:
-            sorok[str(cimke).strip()] = ertekek_evenkent
+            sorok[cimke_tiszta] = ertekek_evenkent
 
-    return {"cim": cim, "evek": evek, "sorok": sorok}
+    return {"cim": cim, "evek": evek, "sorok": sorok, "penznemek": penznemek}
 
 
 def main():
