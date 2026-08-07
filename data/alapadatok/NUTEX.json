@@ -1,0 +1,22 @@
+{
+  "seccode": "NUTEX",
+  "isin": "HU0000207634",
+  "bevezetes_datuma": "1996. júl. 25.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "6 HUF",
+  "bevezetett_mennyiseg": "171 210 766",
+  "kapitalizacio_m_ft": "2 243",
+  "tulajdonosok": [
+    {
+      "nev": "NUTEX Nyrt. MRP Szervezet",
+      "tulajdoni_hanyad": "24.01%",
+      "darabszam": "41100000"
+    }
+  ],
+  "kozkezhanyad": "75.99%",
+  "kozkezhanyad_frissitve": "2026. júl. 07.",
+  "igazgatosag": null,
+  "vallalatvezetes": "CSEREKLEI Gábor vezérigazgató",
+  "felugyelobizottsag": null,
+  "cegvezetes_frissitve": "2023. jan. 05."
+}

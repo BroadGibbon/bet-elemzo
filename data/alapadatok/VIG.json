@@ -1,0 +1,22 @@
+{
+  "seccode": "VIG",
+  "isin": "AT0000908504",
+  "bevezetes_datuma": "2022. nov. 11.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "EUR",
+  "bevezetett_mennyiseg": "128 000 000",
+  "kapitalizacio_m_ft": "3 302 400",
+  "tulajdonosok": [
+    {
+      "nev": "Wiener Städtische Wechselseitiger Versicherungsverein - Vermögensverwaltung - Vienna Insurance Group",
+      "tulajdoni_hanyad": "72.47%",
+      "darabszam": "92761600"
+    }
+  ],
+  "kozkezhanyad": "27.53%",
+  "kozkezhanyad_frissitve": "2022. nov. 11.",
+  "igazgatosag": "Hartwig LÖGER (vezérigazgató, Igazgatóság elnöke), Peter HÖFINGER (első vezérigazgató-helyettes, az igazgatóság első elnökhelyettese), Gerhard LAHNER (második vezérigazgató-helyettes, az igazgatóság második elnökhelyettese (COO), Judit Havasi (Igazgatóság tagja), Liane HIRNER (CFRO),  Gábor LEHEL (CIO), Christoph RATH (Igazgatóság tagja), Sonja RAUS (Igazgatóság tagja)",
+  "vallalatvezetes": "Hartwig LÖGER (vezérigazgató, Igazgatóság elnöke), Peter HÖFINGER (első vezérigazgató-helyettes, az igazgatóság első elnökhelyettese), Gerhard LAHNER (második vezérigazgató-helyettes, az igazgatóság második elnökhelyettese (COO), Judit Havasi (Igazgatóság tagja), Liane HIRNER (CFRO),  Gábor LEHEL (CIO), Christoph RATH (Igazgatóság tagja), Sonja RAUS (Igazgatóság tagja)^~",
+  "felugyelobizottsag": "Peter THIRRING (Elnök), Martin SIMHANDL  (Első elnök-helyettes), Robert LASSHOFER (Másod elnök-helyettes), Martina DOBRINGER, Rudolf ERTL, András KOZMA, Vratislav KUHLÁNEK, Hana MACHACOVÁ, Peter MIHÓK, Katarina SLEZÁKOVÁ, Ágnes SVOÓB, Gertrude TUMPEL-GUGERELL",
+  "cegvezetes_frissitve": "2026. júl. 01."
+}

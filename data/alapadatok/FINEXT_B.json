@@ -1,0 +1,22 @@
+{
+  "seccode": "FINEXT B",
+  "isin": "HU0000182977",
+  "bevezetes_datuma": "2018. szept. 25.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "1,4 EUR",
+  "bevezetett_mennyiseg": "17 000 000",
+  "kapitalizacio_m_ft": "18 445",
+  "tulajdonosok": [
+    {
+      "nev": "Futureal Development Holding Kft.",
+      "tulajdoni_hanyad": "72.47%",
+      "darabszam": "12320000"
+    }
+  ],
+  "kozkezhanyad": "27.53%",
+  "kozkezhanyad_frissitve": "2026. febr. 24.",
+  "igazgatosag": "EZER Rezső (elnök), BALÁZSIK Zsolt, KOLTAI Attila",
+  "vallalatvezetes": null,
+  "felugyelobizottsag": "dr. ERDŐS Ádám, KÁRPÁTINÉ dr. Tordai Judit, UNGER Anita",
+  "cegvezetes_frissitve": "2018. szept. 25."
+}

@@ -1,0 +1,42 @@
+{
+  "seccode": "MOL",
+  "isin": "HU0000153937",
+  "bevezetes_datuma": "1995. nov. 28.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "125 HUF",
+  "bevezetett_mennyiseg": "819 424 824",
+  "kapitalizacio_m_ft": "3 802 131",
+  "tulajdonosok": [
+    {
+      "nev": "MOL-Új Európa Alapítvány",
+      "tulajdoni_hanyad": "10.49%",
+      "darabszam": "85955992"
+    },
+    {
+      "nev": "Maecenas Universitatis Corvini Alapítvány",
+      "tulajdoni_hanyad": "10.00%",
+      "darabszam": "81942946"
+    },
+    {
+      "nev": "Mathias Corvinus Collegium Alapítvány",
+      "tulajdoni_hanyad": "10.00%",
+      "darabszam": "81942946"
+    },
+    {
+      "nev": "MOL Nyrt. KMRP Szervezet 2021-1, MOL Nyrt. KMRP Szervezet 2021-2",
+      "tulajdoni_hanyad": "7.95%",
+      "darabszam": "65139776"
+    },
+    {
+      "nev": "OTP Bank Nyrt.",
+      "tulajdoni_hanyad": "5.43%",
+      "darabszam": "44483773"
+    }
+  ],
+  "kozkezhanyad": "61.56%",
+  "kozkezhanyad_frissitve": "2026. febr. 25.",
+  "igazgatosag": "HERNÁDI Zsolt (elnök), dr. CSÁNYI Sándor (alelnök), MOLNÁR József, dr. BACSA György, JÁRAI Zsigmond, Talal Al AWFI, dr. PARRAGH László, Dr. Anthony RADEV, dr. Martin ROMAN, dr. VILÁGI Oszkár",
+  "vallalatvezetes": "HERNÁDI Zsolt (elnök-vezérigazgató), MOLNÁR József (vezérigazgató), dr. BACSA György (Csoportszintű Stratégiai Operáció és Üzletfejlesztés ügyvezető igazgató),  Dr. SZÉKELY Ákos (Pénzügyi vezérigazgató-helyettes), RATATICS Péter (Ügyvezető Igazgató, Fogyasztói Szolgáltatások, Az INA d.d. Igazgatóságának elnöke), SZABÓ Gabriel (Ügyvezető Igazgató, Termékelőállítás- és Kereskedelem Divízió), dr. VILÁGI Oszkár (Csoportszintű Innovatív Üzletág és Szolgáltatások vezérigazgató-helyettes, Slovnaft a.s. vezérigazgató), LABANCZ Péter (Ipari és Társasági Szolgáltatásokért felelős ügyvezető igazgató), Lana FAUST KRIZAN (Humán Erőforrás Igazgató), Marek SENKOVIC (Slovnaft vezérigazgató és Downstream Ügyvezető Igazgató), MARTON Zsombor (Ügyvezető Igazgató, Kutatás és Termelés Divízió), ORTUTAY Zsuzsanna (INA Igazgatótanácsának elnöke), SIMOLA József (Ügyvezető Igazgató, Körforgásos Gazdasági Szolgáltatások)",
+  "felugyelobizottsag": "ÁLDOTT Zoltán (elnök),  Dr. PANDURICS Anett (elnökhelyettes), BÍRÓ Péter, DORKOTA Lajos, KADERJÁK Péter, Ivan MIKLOS, Dr. LÁNCZI András, KIS Bálint",
+  "cegvezetes_frissitve": "2026. ápr. 02."
+}

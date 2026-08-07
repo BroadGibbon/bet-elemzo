@@ -1,0 +1,22 @@
+{
+  "seccode": "UPLAZA",
+  "isin": "HU0000219456",
+  "bevezetes_datuma": "2026. márc. 20.",
+  "kereskedes_penzneme": "EUR",
+  "nevertek": "1 EUR",
+  "bevezetett_mennyiseg": "10 000 000",
+  "kapitalizacio_m_ft": "36 303",
+  "tulajdonosok": [
+    {
+      "nev": "KOMAL Invest Kft.",
+      "tulajdoni_hanyad": "74.00%",
+      "darabszam": "7400004"
+    }
+  ],
+  "kozkezhanyad": "26%",
+  "kozkezhanyad_frissitve": "2026. jún. 02.",
+  "igazgatosag": "Bárány Kristóf Péter, Marton András, Németh Gábor",
+  "vallalatvezetes": null,
+  "felugyelobizottsag": "Dr. Szűcs Gergely, Dr. Berecz József, Makra Sándor",
+  "cegvezetes_frissitve": "2026. ápr. 08."
+}

@@ -1,0 +1,79 @@
+{
+  "seccode": "UPLAZA",
+  "utolso_ev": "2025",
+  "penznem": "EUR",
+  "arfolyam_mutatok": {
+    "pe": null,
+    "pbv": null
+  },
+  "dupont": {
+    "roa": -0.0015760282068638049,
+    "tokeattetel": 1.4705541524290595,
+    "roe_szamolt": -0.002317634823948893,
+    "nettó_margin": -0.01818711745846692,
+    "eszkoz_forgas": 0.08665629451521978
+  },
+  "bet_sajat_mutatok": {
+    "roe_bet": -0.0023176348239488933,
+    "roa_bet": -0.0015760282068638049,
+    "tokeattetel_bet": 0.4542935670777002
+  },
+  "likviditas": null,
+  "piotroski": {
+    "pontszam": 4,
+    "maximum": 5,
+    "reszletek": {
+      "Pozitív nettó eredmény": "✗",
+      "Pozitív működési cash flow": "nincs adat",
+      "Növekvő eszközarányos megtérülés (ROA)": "✓",
+      "Cash flow meghaladja a nyereséget (minőségi jel)": "nincs adat",
+      "Csökkenő eladósodottság": "✓",
+      "Nincs jelentős részvénykibocsátás (közelítés)": "nincs adat",
+      "Növekvő nettó árrés (közelítés bruttó árrés helyett)": "✓",
+      "Növekvő eszközforgási sebesség": "✓"
+    },
+    "ev": "2025"
+  },
+  "historikus": {
+    "evek": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "roe_bet": {
+      "2023": -0.4766003227541689,
+      "2024": -0.011023751601264559,
+      "2025": -0.0023176348239488933
+    },
+    "roa_bet": {
+      "2023": -0.01397972466569366,
+      "2024": -0.004484840950709781,
+      "2025": -0.0015760282068638049
+    },
+    "tokeattetel_bet": {
+      "2023": 32.887305002689615,
+      "2024": 1.4219934421605613,
+      "2025": 0.4542935670777002
+    },
+    "adozott_eredmeny": {
+      "2023": -1772000.0,
+      "2024": -938000.0,
+      "2025": -312000.0
+    },
+    "arbevetel": {
+      "2023": 16669000.0,
+      "2024": 16931000.0,
+      "2025": 17155000.0
+    },
+    "sajat_toke": {
+      "2023": 3718000.0,
+      "2024": 85089000.0,
+      "2025": 134620000.0
+    },
+    "eszkozok": {
+      "2023": 126755000.0,
+      "2024": 209149000.0,
+      "2025": 197966000.0
+    }
+  }
+}

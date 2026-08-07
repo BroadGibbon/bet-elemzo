@@ -1,0 +1,42 @@
+{
+  "seccode": "GSPARK",
+  "isin": "HU0000083696",
+  "bevezetes_datuma": "2006. aug. 28.",
+  "kereskedes_penzneme": "EUR",
+  "nevertek": "0,02 EUR",
+  "bevezetett_mennyiseg": "10 631 674",
+  "kapitalizacio_m_ft": "58 666",
+  "tulajdonosok": [
+    {
+      "nev": "Bojár Gábor",
+      "tulajdoni_hanyad": "15.85%",
+      "darabszam": "1685125"
+    },
+    {
+      "nev": "B.N.B.A. Holding Zrt.",
+      "tulajdoni_hanyad": "14.11%",
+      "darabszam": "1500000"
+    },
+    {
+      "nev": "Hold Alapkezelő Zrt. (közkézhányad adat)",
+      "tulajdoni_hanyad": "9.88%",
+      "darabszam": "1050226"
+    },
+    {
+      "nev": "MBH Alapkezelő Zrt. (közkézhányad adat)",
+      "tulajdoni_hanyad": "5.21%",
+      "darabszam": "552670"
+    },
+    {
+      "nev": "Saját részvény",
+      "tulajdoni_hanyad": "5.16%",
+      "darabszam": "549076"
+    }
+  ],
+  "kozkezhanyad": "64.88%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": null,
+  "vallalatvezetes": "BOGNÁR Tünde (vezérigazgató); FARKAS Ildikó (gazdasági igazgató)",
+  "felugyelobizottsag": null,
+  "cegvezetes_frissitve": "2025. júl. 01."
+}

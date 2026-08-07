@@ -1,0 +1,27 @@
+{
+  "seccode": "FUTURAQUA",
+  "isin": "HU0000107362",
+  "bevezetes_datuma": "2011. nov. 28.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "5 HUF",
+  "bevezetett_mennyiseg": "37 185 000",
+  "kapitalizacio_m_ft": "353",
+  "tulajdonosok": [
+    {
+      "nev": "RNT Holding Zrt.",
+      "tulajdoni_hanyad": "13.79%",
+      "darabszam": "4150000"
+    },
+    {
+      "nev": "KIS-BENEDEK Róbert Ferenc",
+      "tulajdoni_hanyad": "8.19%",
+      "darabszam": "2463806"
+    }
+  ],
+  "kozkezhanyad": "78.02%",
+  "kozkezhanyad_frissitve": "2026. febr. 20.",
+  "igazgatosag": null,
+  "vallalatvezetes": "HAJNAL Zsolt András, KIS-BENEDEK Róbert Ferenc",
+  "felugyelobizottsag": null,
+  "cegvezetes_frissitve": "2023. aug. 15."
+}

@@ -1,0 +1,32 @@
+{
+  "seccode": "MASTERPLAST",
+  "isin": "HU0000093943",
+  "bevezetes_datuma": "2011. nov. 29.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "100 HUF",
+  "bevezetett_mennyiseg": "19 250 631",
+  "kapitalizacio_m_ft": "55 827",
+  "tulajdonosok": [
+    {
+      "nev": "Tibor Dávid Bizalmi Vagyonkezelő Korlátolt Felelősségű Társaság",
+      "tulajdoni_hanyad": "23.62%",
+      "darabszam": "4548057"
+    },
+    {
+      "nev": "Ács Balázs",
+      "tulajdoni_hanyad": "20.14%",
+      "darabszam": "3877259"
+    },
+    {
+      "nev": "MFB Vállalati Beruházási és Tranzakciós Magántőkealap képv.: Focus Ventures Befektetési Alapkezelő Zártkörűen Működő Részvénytársaság",
+      "tulajdoni_hanyad": "16.27%",
+      "darabszam": "3131707"
+    }
+  ],
+  "kozkezhanyad": "39.97%",
+  "kozkezhanyad_frissitve": "2026. febr. 28.",
+  "igazgatosag": null,
+  "vallalatvezetes": "TIBOR Dávid (vezérigazgató), NÁDASI Róbert (vezérigazgató-helyettes),  ÁCS Balázs (vezérigazgató-helyettes), JANCSÓ Illés Zoltán (vezérigazgató-helyettes), BUNFORD Tivadar, LUKÁCS Flórián László (vezérigazgató-helyettes), PÉCSI László",
+  "felugyelobizottsag": null,
+  "cegvezetes_frissitve": "2025. jún. 04."
+}

@@ -1,0 +1,27 @@
+{
+  "seccode": "STRT",
+  "isin": "HU0000202080",
+  "bevezetes_datuma": "2025. dec. 19.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "100 HUF",
+  "bevezetett_mennyiseg": "6 665 665",
+  "kapitalizacio_m_ft": "5 932",
+  "tulajdonosok": [
+    {
+      "nev": "Balogh Péter Zoltán",
+      "tulajdoni_hanyad": "19.56%",
+      "darabszam": "1303939"
+    },
+    {
+      "nev": "Balogh-Mázi Mária",
+      "tulajdoni_hanyad": "10.95%",
+      "darabszam": "730000"
+    }
+  ],
+  "kozkezhanyad": "69.49%",
+  "kozkezhanyad_frissitve": "2026. máj. 30.",
+  "igazgatosag": "BALOGH Péter Zoltán (elnök), BALOGH-MÁZI Mária, LANGMÁR Péter Bálint, NAGY István, P. TÓTH András, Dr. BUDAI Judit",
+  "vallalatvezetes": "BALOGH Péter Zoltán (vezérigazgató), BALOGH-MÁZI Mária (oktatási igazgató), NAGY István (pénzügyi igazgató), LANGMÁR Péter Bálint (befektetési igazgató), P. TÓTH András (technológiai igazgató), Dr. BUDAI Judit",
+  "felugyelobizottsag": "SERES Béla (elnök), Dr. HÜMPFNER Viktória, KÖCSE István Attila, PALAINÉ FEKETE Zsuzsanna",
+  "cegvezetes_frissitve": "2025. szept. 11."
+}

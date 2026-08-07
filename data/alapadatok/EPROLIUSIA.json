@@ -1,0 +1,22 @@
+{
+  "seccode": "EPROLIUSIA",
+  "isin": "HU0000188776",
+  "bevezetes_datuma": "2021. nov. 26.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "1 000 HUF",
+  "bevezetett_mennyiseg": "6 000 000",
+  "kapitalizacio_m_ft": "7 140",
+  "tulajdonosok": [
+    {
+      "nev": "Eprolius Hungary Zrt. (közvetett részesedés: LISS Zrt. 18,24%; közvetett részesedés az Eprolius H. Zrt-n és a LISS Zrt-n keresztül: Érdi Zoltán T. 27,92%; Hanzsér Irén 27,59%; Pintér Attila 27,59% )",
+      "tulajdoni_hanyad": "82.95%",
+      "darabszam": "4976763"
+    }
+  ],
+  "kozkezhanyad": "17.05%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "ÉRDI Zoltán Tamás (elnök), Dr. ÁRVAI Roland Richárd, NYÍRI Szabolcs Gyula",
+  "vallalatvezetes": "ÉRDI Zoltán Tamás (igazgatóság elnöke), Dr. ÁRVAI Roland Richárd (igazgatósági tag), NYÍRI Szabolcs Gyula (igazgatósági tag)",
+  "felugyelobizottsag": "HANZSÉR Irén (elnök), KOPCSÁNDI Katalin, MOLONTAY Tamás Péter",
+  "cegvezetes_frissitve": "2023. jún. 13."
+}

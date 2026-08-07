@@ -1,0 +1,22 @@
+{
+  "seccode": "BGREIT",
+  "isin": "HU0000194964",
+  "bevezetes_datuma": "2023. okt. 27.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "1 000 HUF",
+  "bevezetett_mennyiseg": "3 785 905",
+  "kapitalizacio_m_ft": "3 532",
+  "tulajdonosok": [
+    {
+      "nev": "Biggeorge Property Nyrt.",
+      "tulajdoni_hanyad": "74.87%",
+      "darabszam": "2834505"
+    }
+  ],
+  "kozkezhanyad": "25.13%",
+  "kozkezhanyad_frissitve": "2026. febr. 20.",
+  "igazgatosag": "Nagygyörgy Tibor János (elnök), Nagygyörgy Tamás László, Bozsovics Zsolt",
+  "vallalatvezetes": null,
+  "felugyelobizottsag": "dr. Gyulánszki Edit (elnök), Nagy Kálmán, Mészáros Katalin",
+  "cegvezetes_frissitve": "2023. okt. 27."
+}

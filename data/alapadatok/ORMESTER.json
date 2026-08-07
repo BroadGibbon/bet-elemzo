@@ -1,0 +1,47 @@
+{
+  "seccode": "ORMESTER",
+  "isin": "HU0000180211",
+  "bevezetes_datuma": "2010. dec. 01.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "100 HUF",
+  "bevezetett_mennyiseg": "2 598 300",
+  "kapitalizacio_m_ft": "1 003",
+  "tulajdonosok": [
+    {
+      "nev": "KINCS István",
+      "tulajdoni_hanyad": "25.56%",
+      "darabszam": "664221"
+    },
+    {
+      "nev": "Kincs Liliána",
+      "tulajdoni_hanyad": "14.74%",
+      "darabszam": "383000"
+    },
+    {
+      "nev": "KINCS Gergely",
+      "tulajdoni_hanyad": "14.55%",
+      "darabszam": "378165"
+    },
+    {
+      "nev": "KINCS Eszter Titanilla",
+      "tulajdoni_hanyad": "13.85%",
+      "darabszam": "360000"
+    },
+    {
+      "nev": "BODORKÓS László",
+      "tulajdoni_hanyad": "12.51%",
+      "darabszam": "325048"
+    },
+    {
+      "nev": "Saját részvény",
+      "tulajdoni_hanyad": "5.60%",
+      "darabszam": "145580"
+    }
+  ],
+  "kozkezhanyad": "13.19%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "KINCS Gergely (Elnök), KINCS Lilianna, KINCS Gergely",
+  "vallalatvezetes": "KINCS István (általános igazgató, cégalapító)",
+  "felugyelobizottsag": "MOLNÁRNÉ BOROS Anikó (elnök), BUDAHÁZI Attila, BOGDÁNY Zsolt",
+  "cegvezetes_frissitve": "2025. ápr. 22."
+}

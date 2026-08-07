@@ -1,0 +1,52 @@
+{
+  "seccode": "MBHBANK",
+  "isin": "HU0000139761",
+  "bevezetes_datuma": "2019. máj. 30.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "1 000 HUF",
+  "bevezetett_mennyiseg": "322 529 625",
+  "kapitalizacio_m_ft": "899 858",
+  "tulajdonosok": [
+    {
+      "nev": "Zenith Asset Management Zrt.",
+      "tulajdoni_hanyad": "24.84%",
+      "darabszam": "80123046"
+    },
+    {
+      "nev": "Corvinus BHG Zrt.",
+      "tulajdoni_hanyad": "15.01%",
+      "darabszam": "48397682"
+    },
+    {
+      "nev": "CEE Horizon Capital Zrt.",
+      "tulajdoni_hanyad": "11.38%",
+      "darabszam": "36706059"
+    },
+    {
+      "nev": "CEE Paramount Equity Zrt.",
+      "tulajdoni_hanyad": "10.70%",
+      "darabszam": "34503690"
+    },
+    {
+      "nev": "Hungary Apex Investments Zrt.",
+      "tulajdoni_hanyad": "6.20%",
+      "darabszam": "19994628"
+    },
+    {
+      "nev": "Pinnacle Asset Group Zrt.",
+      "tulajdoni_hanyad": "6.20%",
+      "darabszam": "19990761"
+    },
+    {
+      "nev": "MBH Bank Munkavállalói Résztulajdonosi Program Szervezet",
+      "tulajdoni_hanyad": "5.00%",
+      "darabszam": "16126481"
+    }
+  ],
+  "kozkezhanyad": "25.67%",
+  "kozkezhanyad_frissitve": "2026. júl. 01.",
+  "igazgatosag": "dr. Barna Zsolt (elnök-vezérigazgató), Takács Marcell Tamás, dr. Tajthy Attila, dr. Léfai Koppány, Egerszegi Ádám, Szabó Levente László, dr. Kandrács Csaba",
+  "vallalatvezetes": "dr. Barna Zsolt (elnök-vezérigazgató), Ginzer Ildikó (Standard kiszolgálásért felelős üzleti vezérigazgató-helyettes), Dobi Kitti (Humán erőforrásért felelős vezérigazgató-helyettes), Egerszegi Ádám (Transzformációért felelős vezérigazgató-helyettes), dr. Mészáros Beatrix (Leányvállalatokért felelős vezérigazgató-helyettes), Szabó Levente László (Egyedi kiszolgálásért felelős üzleti vezérigazgató-helyettes), Krizsanovich Péter (Pénzügyekért felelős vezérigazgató-helyettes), Bakonyi András (Kockázatkezelésért felelős vezérigazgató-helyettes), Puskás András (Önkormányzati és egyházi kiszolgálás, ESG és fenntarthatóság, kommunikáció és államigazgatási kapcsolatokért felelős vezérigazgató-helyettes)",
+  "felugyelobizottsag": "Czene Árpád, Vaszily Miklós, dr. Török Ilona,  Feodor Rita, Bechtold Balázs, Dobi Kitti",
+  "cegvezetes_frissitve": "2026. jún. 30."
+}

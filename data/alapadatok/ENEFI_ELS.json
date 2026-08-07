@@ -1,0 +1,27 @@
+{
+  "seccode": "ENEFI ELS",
+  "isin": "HU0000173737",
+  "bevezetes_datuma": "2021. nov. 12.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "10 HUF",
+  "bevezetett_mennyiseg": "2 119 966",
+  "kapitalizacio_m_ft": "591",
+  "tulajdonosok": [
+    {
+      "nev": "Leányvállalatok",
+      "tulajdoni_hanyad": "68.53%",
+      "darabszam": "1452898"
+    },
+    {
+      "nev": "SOÓS Csaba",
+      "tulajdoni_hanyad": "31.47%",
+      "darabszam": "667068"
+    }
+  ],
+  "kozkezhanyad": "0%",
+  "kozkezhanyad_frissitve": "2026. febr. 19.",
+  "igazgatosag": "SOÓS Csaba (elnök), VIRÁG Ferenc, dr. SÁRKÁNY Gergely",
+  "vallalatvezetes": null,
+  "felugyelobizottsag": "Dr. BAKACSI Gyula, Dr. SISKA Miklós László, KOVÁCS Kristóf",
+  "cegvezetes_frissitve": "2025. okt. 31."
+}

@@ -1,0 +1,32 @@
+{
+  "seccode": "DELTA",
+  "isin": "HU0000151956",
+  "bevezetes_datuma": "1999. febr. 01.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "0,78 HUF",
+  "bevezetett_mennyiseg": "383 000 000",
+  "kapitalizacio_m_ft": "19 150",
+  "tulajdonosok": [
+    {
+      "nev": "Deltagroup Holding Zrt.",
+      "tulajdoni_hanyad": "25.90%",
+      "darabszam": "99195873"
+    },
+    {
+      "nev": "Berki Ferenc",
+      "tulajdoni_hanyad": "15.78%",
+      "darabszam": "60450000"
+    },
+    {
+      "nev": "Delta Technologies Munkavállalói Résztulajdonosi Program Szervezet",
+      "tulajdoni_hanyad": "11.41%",
+      "darabszam": "43699377"
+    }
+  ],
+  "kozkezhanyad": "46.91%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "CSONTOS Zoltán (elnök), BÁRTFAI Zsolt, BODZÁSI Gergely, PÉRCSI Levente Gábor, BAKOS Róbert",
+  "vallalatvezetes": null,
+  "felugyelobizottsag": "KÖVESDI Péter (elnök), HORVÁTH Zsolt, KERESZTYÉNNÉ Deák Katalin, dr. KREZINGER Viktor, KÁLLAY András, SZALAI Sándor, CZEGLE János",
+  "cegvezetes_frissitve": "2026. márc. 04."
+}

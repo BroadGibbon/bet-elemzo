@@ -1,0 +1,37 @@
+{
+  "seccode": "MEGAKRAN",
+  "isin": "HU0000178272",
+  "bevezetes_datuma": "2021. dec. 17.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "1 HUF",
+  "bevezetett_mennyiseg": "970 263 000",
+  "kapitalizacio_m_ft": "3 493",
+  "tulajdonosok": [
+    {
+      "nev": "Langmáhr Tamás",
+      "tulajdoni_hanyad": "41.66%",
+      "darabszam": "404176760"
+    },
+    {
+      "nev": "KÉSZ HOLDING Zrt.",
+      "tulajdoni_hanyad": "19.89%",
+      "darabszam": "193000000"
+    },
+    {
+      "nev": "APELSO TRUST Bizalmi Vagyonkezelő Zrt.",
+      "tulajdoni_hanyad": "10.04%",
+      "darabszam": "97447385"
+    },
+    {
+      "nev": "Széchenyi Alapok Kockázati Tőkealap",
+      "tulajdoni_hanyad": "7.56%",
+      "darabszam": "73350000"
+    }
+  ],
+  "kozkezhanyad": "20.85%",
+  "kozkezhanyad_frissitve": "2026. febr. 28.",
+  "igazgatosag": "LANGMÁHR Tamás (igazgató elnök), LÉHMANN Henriett, LOBOGÓS János, TAKÁCS Marianna, VARGA Mihály",
+  "vallalatvezetes": "VIOLA Csilla (vezérigazgató-helyettes), TÓTH Gábor (vezérigazgató-helyettes)",
+  "felugyelobizottsag": "VITKOVICS Péter (felügyelőbizottság elnöke), dr. SZABÓ Gyula, TARABIAH Ádám, VIDA Tamás",
+  "cegvezetes_frissitve": "2024. máj. 16."
+}

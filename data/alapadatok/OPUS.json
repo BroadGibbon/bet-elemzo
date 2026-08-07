@@ -1,0 +1,42 @@
+{
+  "seccode": "OPUS",
+  "isin": "HU0000110226",
+  "bevezetes_datuma": "1998. ápr. 22.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "25 HUF",
+  "bevezetett_mennyiseg": "698 379 268",
+  "kapitalizacio_m_ft": "249 671",
+  "tulajdonosok": [
+    {
+      "nev": "MÉSZÁROS Lőrinc (közvetett részesedés az Addition OPUS Zrt.-n keresztül 2,56%)",
+      "tulajdoni_hanyad": "24.65%",
+      "darabszam": "172180457"
+    },
+    {
+      "nev": "OPUS GLOBAL Nyrt. (Leányvállalatokon keresztül 14,56%)",
+      "tulajdoni_hanyad": "22.36%",
+      "darabszam": "156171626"
+    },
+    {
+      "nev": "DANUBE Magántőkealap",
+      "tulajdoni_hanyad": "6.11%",
+      "darabszam": "42642994"
+    },
+    {
+      "nev": "Talentis Management Kft.",
+      "tulajdoni_hanyad": "5.15%",
+      "darabszam": "35976482"
+    },
+    {
+      "nev": "Talentis Group Zrt.",
+      "tulajdoni_hanyad": "5.06%",
+      "darabszam": "35305404"
+    }
+  ],
+  "kozkezhanyad": "36.67%",
+  "kozkezhanyad_frissitve": "2026. júl. 14.",
+  "igazgatosag": "VIDA József (elnök), Dr. LÉLFAI Koppány, dr. MAKAI Szabolcs, dr. DÉTÁRI-SZABÓ Ádám, TORDA Balázs, SUSÁN Zoltán",
+  "vallalatvezetes": "Dr. LÉLFAI Koppány (vezérigazgató), MEDGYESI Attila (vezérigazgató-helyettes), dr. MAKAI Szabolcs (élelmiszeripari divízió vezető), dr. DÉTÁRI-SZABÓ Ádám (turizmus-vendéglátás divízió vezető), TORDA Balázs (energetika divízió vezető), SUSÁN Zoltán (Ipari termelés divízió vezető),  dr. NÉMETH Krisztián (vezérigazgató-helyettes)",
+  "felugyelobizottsag": "KONCZNÉ Kondás Tünde (elnök), TIMA János, Dr. GÖDÖR Éva Szilvia, KERESZTYÉNNÉ DEÁK Katalin",
+  "cegvezetes_frissitve": "2025. aug. 31."
+}

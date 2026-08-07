@@ -1,0 +1,27 @@
+{
+  "seccode": "ZWACK",
+  "isin": "HU0000074844",
+  "bevezetes_datuma": "1993. máj. 27.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "1 000 HUF",
+  "bevezetett_mennyiseg": "2 000 000",
+  "kapitalizacio_m_ft": "75 800",
+  "tulajdonosok": [
+    {
+      "nev": "Peter Zwack & Consorten Handels GmbH.",
+      "tulajdoni_hanyad": "50.00%",
+      "darabszam": "1000001"
+    },
+    {
+      "nev": "Diageo Holdings Netherlands B.V.",
+      "tulajdoni_hanyad": "26.00%",
+      "darabszam": "520000"
+    }
+  ],
+  "kozkezhanyad": "24%",
+  "kozkezhanyad_frissitve": "2026. febr. 28.",
+  "igazgatosag": "ZWACK Sándor (elnök), Wolfgang SPILLER, ZWACK Isabella Veronika, HANGODI Zoltán, HARKAI-JÓZSA Gabriella, BELOVAI Csaba, GUTTENGEBER György",
+  "vallalatvezetes": "BELOVAI Csaba (Vezérigazgató), GUTTENGEBER György (Gazdasági igazgató, vezérigazgató-helyettes), FARKAS Amanda (Kereskedelmi és export igazgató), HARCSA Beáta (Marketing igazgató), VIRÁGH Orsolya (Humánpolitikai igazgató), KOCSI Sándor Attila (Termelési-műszaki igazgató)",
+  "felugyelobizottsag": "Dr. Hubertine UNDERBERG-RUDER (elnök), Thomas MEMPEL, Dr. SZECSKAY András, SZAKOLCZAI Nándor, Dr. GEISZL György, Frank ODZUCK",
+  "cegvezetes_frissitve": "2025. szept. 08."
+}

@@ -1,0 +1,22 @@
+{
+  "seccode": "AMIXA",
+  "isin": "HU0000198668",
+  "bevezetes_datuma": "1998. jún. 02.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "20 HUF",
+  "bevezetett_mennyiseg": "13 006 098",
+  "kapitalizacio_m_ft": "3 434",
+  "tulajdonosok": [
+    {
+      "nev": "3E Holding Kereskedelmi Kft., K-Consultor Hungary Zrt., Valorum Kft.",
+      "tulajdoni_hanyad": "81.71%",
+      "darabszam": "10627895"
+    }
+  ],
+  "kozkezhanyad": "18.29%",
+  "kozkezhanyad_frissitve": "2026. máj. 22.",
+  "igazgatosag": null,
+  "vallalatvezetes": null,
+  "felugyelobizottsag": null,
+  "cegvezetes_frissitve": "2025. máj. 12."
+}

@@ -1,0 +1,27 @@
+{
+  "seccode": "GOODWILLPHRM",
+  "isin": "HU0000199575",
+  "bevezetes_datuma": "2025. ápr. 25.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "10 HUF",
+  "bevezetett_mennyiseg": "107 175 445",
+  "kapitalizacio_m_ft": "61 626",
+  "tulajdonosok": [
+    {
+      "nev": "Dr. Jójárt Ferenc",
+      "tulajdoni_hanyad": "71.10%",
+      "darabszam": "76199169"
+    },
+    {
+      "nev": "Dr. Jójártné Dr. Kardos Mária",
+      "tulajdoni_hanyad": "22.45%",
+      "darabszam": "24065789"
+    }
+  ],
+  "kozkezhanyad": "6.45%",
+  "kozkezhanyad_frissitve": "2026. febr. 18.",
+  "igazgatosag": "Dr. JÓJÁRT Ferenc (elnök), Dr. JÓJÁRTNÉ Dr. KARDOS Mária, BAJÚSZ Gábor, RÁCZ Csaba",
+  "vallalatvezetes": "Dr. JÓJÁRT Ferenc (vezérigazgató), Dr. JÓJÁRTNÉ Dr. KARDOS Mária (marketing igazgató), BAJÚSZ Gábor (vezérigazgató), RÁCZ Csaba (gazdasági igazgató)",
+  "felugyelobizottsag": "VITKOVICS Péter, HORVÁTH Zsolt, LUKÁCSI István, KŐVÁGÓ János",
+  "cegvezetes_frissitve": "2025. szept. 02."
+}

@@ -1,0 +1,57 @@
+{
+  "seccode": "UBM",
+  "isin": "HU0000207543",
+  "bevezetes_datuma": "2016. dec. 15.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "5 HUF",
+  "bevezetett_mennyiseg": "23 703 700",
+  "kapitalizacio_m_ft": "22 281",
+  "tulajdonosok": [
+    {
+      "nev": "MFB Vállalati Beruházási és Tranzakciós Magántőkealap",
+      "tulajdoni_hanyad": "15.41%",
+      "darabszam": "3652251"
+    },
+    {
+      "nev": "Botos Andor Ágoston",
+      "tulajdoni_hanyad": "13.47%",
+      "darabszam": "3191158"
+    },
+    {
+      "nev": "Varga Ákos",
+      "tulajdoni_hanyad": "12.63%",
+      "darabszam": "2993646"
+    },
+    {
+      "nev": "Varga Imre",
+      "tulajdoni_hanyad": "11.57%",
+      "darabszam": "2741479"
+    },
+    {
+      "nev": "Varga Gábor",
+      "tulajdoni_hanyad": "8.77%",
+      "darabszam": "2078826"
+    },
+    {
+      "nev": "Bustyaházai László",
+      "tulajdoni_hanyad": "8.76%",
+      "darabszam": "2077266"
+    },
+    {
+      "nev": "Horváth Péter",
+      "tulajdoni_hanyad": "8.71%",
+      "darabszam": "2065401"
+    },
+    {
+      "nev": "Saját részvény",
+      "tulajdoni_hanyad": "7.58%",
+      "darabszam": "1796871"
+    }
+  ],
+  "kozkezhanyad": "13.1%",
+  "kozkezhanyad_frissitve": "2026. febr. 28.",
+  "igazgatosag": "VARGA Ákos (elnök),  BOTOS Andor Ágoston, BUSTYAHÁZAI László, FEKETE Mihály, HORVÁTH Péter, JANOSITZ Balázs Ferenc, SZALONTAI Szabolcs, TÓTH József, VARGA Gábor",
+  "vallalatvezetes": "HORVÁTH Péter (vezérigazgató), BAGOSI Dávid, BUSTYAHÁZAI László, HORVÁTH László, JANOSITZ Balázs Ferenc, NÉMETH Bernadett, SZALONTAI Szabolcs, SZAUTER-SAX Judit, TARBAJ Péter",
+  "felugyelobizottsag": "TÓTH József Mihály (elnök), FAZEKAS Attila, FEKETE Ildikó",
+  "cegvezetes_frissitve": "2026. febr. 28."
+}

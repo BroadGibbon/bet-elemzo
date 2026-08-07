@@ -1,0 +1,32 @@
+{
+  "seccode": "PENSUM",
+  "isin": "HU0000165675",
+  "bevezetes_datuma": "2020. jan. 29.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "10 HUF",
+  "bevezetett_mennyiseg": "2 000 000",
+  "kapitalizacio_m_ft": "4 520",
+  "tulajdonosok": [
+    {
+      "nev": "dr. Hadházy Péter Tibor",
+      "tulajdoni_hanyad": "33.97%",
+      "darabszam": "679464"
+    },
+    {
+      "nev": "dr. Hadházy Tamás Attila",
+      "tulajdoni_hanyad": "33.72%",
+      "darabszam": "674555"
+    },
+    {
+      "nev": "Tóth Péter",
+      "tulajdoni_hanyad": "13.93%",
+      "darabszam": "278508"
+    }
+  ],
+  "kozkezhanyad": "18.38%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "Dr.HADHÁZY Péter, Dr. HADHÁZY Tamás, TÓTH Péter",
+  "vallalatvezetes": null,
+  "felugyelobizottsag": "FODOR László (elnök), Fazekas Ágnes, Dr. Tarnóczi Tibor, Dr. Vinkler Laura",
+  "cegvezetes_frissitve": "2024. okt. 04."
+}

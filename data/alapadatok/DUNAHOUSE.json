@@ -1,0 +1,27 @@
+{
+  "seccode": "DUNAHOUSE",
+  "isin": "HU0000177613",
+  "bevezetes_datuma": "2015. okt. 28.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "5 HUF",
+  "bevezetett_mennyiseg": "34 387 870",
+  "kapitalizacio_m_ft": "42 641",
+  "tulajdonosok": [
+    {
+      "nev": "GD Holding Kt.",
+      "tulajdoni_hanyad": "38.86%",
+      "darabszam": "13366425"
+    },
+    {
+      "nev": "DDGroup Kft.",
+      "tulajdoni_hanyad": "38.86%",
+      "darabszam": "13366425"
+    }
+  ],
+  "kozkezhanyad": "22.28%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "Guy DYMSCHIZ (Elnök), Doron DYMSCHIZ, MÁTÉ Ferenc, NAGY Jenő, SCHILLING Dániel",
+  "vallalatvezetes": "Guy DYMSCHIZ (vezérigazgató), MÁTÉ Ferenc (Country Manager), Marta ZOLKOWSKA (Country Manager), Letterio MORABITO (Country Manager), SCHILLING Dániel (Gazdasági Igazgató)",
+  "felugyelobizottsag": "REDLING Károly (elnök), DR. MARTIN HAJDU György, NAGY Kálmán",
+  "cegvezetes_frissitve": "2025. okt. 29."
+}

@@ -1,0 +1,32 @@
+{
+  "seccode": "4IG",
+  "isin": "HU0000167788",
+  "bevezetes_datuma": "2004. szept. 22.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "20 HUF",
+  "bevezetett_mennyiseg": "299 074 974",
+  "kapitalizacio_m_ft": "510 820",
+  "tulajdonosok": [
+    {
+      "nev": "iG COM Magántőkealap (38,93%), KZF Vagyonkezelő Zrt. (12,12%) és iG TECH Invest Kft. (1,71%)",
+      "tulajdoni_hanyad": "52.76%",
+      "darabszam": "157787385"
+    },
+    {
+      "nev": "Rheinmetall AG",
+      "tulajdoni_hanyad": "25.12%",
+      "darabszam": "75125069"
+    },
+    {
+      "nev": "Bartolomeu ICT Kft.",
+      "tulajdoni_hanyad": "5.72%",
+      "darabszam": "17104822"
+    }
+  ],
+  "kozkezhanyad": "16.4%",
+  "kozkezhanyad_frissitve": "2026. ápr. 20.",
+  "igazgatosag": "JÁSZAI Gellért Zoltán (elnök), TÓTH Béla Zsolt, BLÉNESSY László, FEKETE Péter Krisztián, TOMCSÁNYI Gábor, THURZÓ Csaba Ferenc, Dr. SÁRHEGYI István",
+  "vallalatvezetes": "JÁSZAI Gellért Zoltán (vezérigazgató)",
+  "felugyelobizottsag": "Klaus Jürgen NEUMANN, Dr. PAFFÉRI Zoltán Lajos, TÓTHNÉ dr. RÓZSA Ildikó, Dr. VEIT József András",
+  "cegvezetes_frissitve": "2026. máj. 29."
+}

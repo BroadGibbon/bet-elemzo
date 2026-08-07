@@ -1,0 +1,27 @@
+{
+  "seccode": "AUTOWALLIS",
+  "isin": "HU0000164504",
+  "bevezetes_datuma": "2013. jún. 25.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "12,5 HUF",
+  "bevezetett_mennyiseg": "539 456 846",
+  "kapitalizacio_m_ft": "77 682",
+  "tulajdonosok": [
+    {
+      "nev": "Wallis Tőkeholding Zrt.",
+      "tulajdoni_hanyad": "65.39%",
+      "darabszam": "352777622"
+    },
+    {
+      "nev": "Széchenyi Alapok Kockázati Tőkealap (korábban: Kárpát-medencei Vállalkozásfejlesztési Kockázati Tőkealap)",
+      "tulajdoni_hanyad": "7.59%",
+      "darabszam": "40939324"
+    }
+  ],
+  "kozkezhanyad": "27.02%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "MÜLLNER Zsolt (IG elnök), ORMOSY Gábor, KARVALITS Ferenc, MEZŐ Gyula, VACZLAVIK Ferenc, VERES Tibor",
+  "vallalatvezetes": "ORMOSY Gábor (vezérigazgató), VACZLAVIK Ferenc (Csoport Gazdasági Igazgató), CSATALINÁCZ Adrienn (Csoport HR Igazgató), dr. PATAKI Zoltán (Csoport Társasági Ügyek Igazgató), dr. TARÓDY Dávid (Csoport Transzformációs Igazgató), BIHARI Pál (Nagykereskedelmi üzletág igazgató), ANTAL Péter (Kiskereskedelmi üzletág igazgató)",
+  "felugyelobizottsag": "ifj. CHIKÁN Attila (elnök), ECSERI György, DEME Géza, Dr. LAKATOS László Péter",
+  "cegvezetes_frissitve": "2026. júl. 27."
+}

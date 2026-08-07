@@ -1,0 +1,22 @@
+{
+  "seccode": "CIVITA",
+  "isin": "HU0000200548",
+  "bevezetes_datuma": "2023. máj. 23.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "100 HUF",
+  "bevezetett_mennyiseg": "12 029 690",
+  "kapitalizacio_m_ft": "3 007",
+  "tulajdonosok": [
+    {
+      "nev": "Vapozit Trust Befektetési Zrt.",
+      "tulajdoni_hanyad": "95.12%",
+      "darabszam": "11442190"
+    }
+  ],
+  "kozkezhanyad": "4.88%",
+  "kozkezhanyad_frissitve": "2026. febr. 17.",
+  "igazgatosag": "Vaszkó Gábor (elnök), Vaszkó László, Vaszkó Péter",
+  "vallalatvezetes": "Vaszkó Gábor, Vaszkó László, Vaszkó Péter",
+  "felugyelobizottsag": "Eszter Elemér (elnök), Dezse Margaret Elizabeth, Dr. Fenyves Veronika",
+  "cegvezetes_frissitve": "2026. febr. 17."
+}

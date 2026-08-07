@@ -1,0 +1,42 @@
+{
+  "seccode": "SUNDELL",
+  "isin": "HU0000233879",
+  "bevezetes_datuma": "2020. jún. 22.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "5 HUF",
+  "bevezetett_mennyiseg": "28 640 000",
+  "kapitalizacio_m_ft": "80 192",
+  "tulajdonosok": [
+    {
+      "nev": "GOPD Nyrt.",
+      "tulajdoni_hanyad": "33.76%",
+      "darabszam": "9668400"
+    },
+    {
+      "nev": "MFB Invest Zrt.",
+      "tulajdoni_hanyad": "9.79%",
+      "darabszam": "2804360"
+    },
+    {
+      "nev": "MEQHLYN Kft.",
+      "tulajdoni_hanyad": "8.73%",
+      "darabszam": "2500000"
+    },
+    {
+      "nev": "Copa Carpa Kft.",
+      "tulajdoni_hanyad": "8.73%",
+      "darabszam": "2500000"
+    },
+    {
+      "nev": "ApaChCo Zrt.",
+      "tulajdoni_hanyad": "6.67%",
+      "darabszam": "1910500"
+    }
+  ],
+  "kozkezhanyad": "32.32%",
+  "kozkezhanyad_frissitve": "2026. aug. 06.",
+  "igazgatosag": "UZSOKI András, KUN Róbert, HRADSZKI László (MFB Invest Zrt.), MICHALETZKY Márton, PIUKOVICS Gábor",
+  "vallalatvezetes": "NAGY Attila (projektvzeteő), RADETZKY Tamás (projektvezető), Dr.UZSOKI Máté (operatív vezető)",
+  "felugyelobizottsag": "HORVÁTH Gábor Ferenc, BÉLA Gyula, BUDA Sándor, Dr. VETÉSI Ágnes Nóra",
+  "cegvezetes_frissitve": "2025. febr. 28."
+}

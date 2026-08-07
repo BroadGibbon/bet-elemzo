@@ -1,0 +1,42 @@
+{
+  "seccode": "SPLUS",
+  "isin": "HU0000192786",
+  "bevezetes_datuma": "2023. okt. 27.",
+  "kereskedes_penzneme": "EUR",
+  "nevertek": "0,1 EUR",
+  "bevezetett_mennyiseg": "22 797 618",
+  "kapitalizacio_m_ft": "117 522",
+  "tulajdonosok": [
+    {
+      "nev": "Penta CEE Holding Zrt (A Penta CEE Holding Zrt. és az Adventum Penta Co-Investment SCSp együtt szavaz a végső döntéshozójukon, Bárány Kristóf Péteren keresztül)",
+      "tulajdoni_hanyad": "27.81%",
+      "darabszam": "6340828"
+    },
+    {
+      "nev": "PortfoLion Partner Magántőkealap",
+      "tulajdoni_hanyad": "10.78%",
+      "darabszam": "2458086"
+    },
+    {
+      "nev": "Adventum Penta Co-Investment SCSp (A Penta CEE Holding Zrt. és az Adventum Penta Co-Investment SCSp együtt szavaz a végső döntéshozójukon, Bárány Kristóf Péteren keresztül)",
+      "tulajdoni_hanyad": "10.31%",
+      "darabszam": "2349912"
+    },
+    {
+      "nev": "VIG Befektetési Alapkezelő Magyarország Zrt. (7 db kezelt entitáson keresztül)",
+      "tulajdoni_hanyad": "6.50%",
+      "darabszam": "1480912"
+    },
+    {
+      "nev": "OTP Alapkezelő Zrt. (11 db kezelt entitáson keresztül)",
+      "tulajdoni_hanyad": "5.79%",
+      "darabszam": "1320000"
+    }
+  ],
+  "kozkezhanyad": "38.81%",
+  "kozkezhanyad_frissitve": "2026. febr. 28.",
+  "igazgatosag": "BÁRÁNY Kristóf Péter (elnök), MARTON András, MOLNÁR András, NÉMETH Gábor, Michele Sharon SMALL",
+  "vallalatvezetes": "a vállalatvezetési feladatokat az Igazgatóság látja el",
+  "felugyelobizottsag": "dr. BERECZ József, MAKRA Sándor, dr. SZŰCS Gergely",
+  "cegvezetes_frissitve": "2024. febr. 06."
+}

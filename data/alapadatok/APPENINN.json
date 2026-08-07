@@ -1,0 +1,32 @@
+{
+  "seccode": "APPENINN",
+  "isin": "HU0000102132",
+  "bevezetes_datuma": "2010. júl. 02.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "100 HUF",
+  "bevezetett_mennyiseg": "47 371 419",
+  "kapitalizacio_m_ft": "30 649",
+  "tulajdonosok": [
+    {
+      "nev": "Avellino Holding Zrt.",
+      "tulajdoni_hanyad": "24.00%",
+      "darabszam": "11369141"
+    },
+    {
+      "nev": "Sequor Holding Zártkörűen Működő Részvénytársaság",
+      "tulajdoni_hanyad": "23.84%",
+      "darabszam": "11297291"
+    },
+    {
+      "nev": "OTP Ingatlanbefektetési Alap",
+      "tulajdoni_hanyad": "5.09%",
+      "darabszam": "2410372"
+    }
+  ],
+  "kozkezhanyad": "47.07%",
+  "kozkezhanyad_frissitve": "2026. febr. 28.",
+  "igazgatosag": null,
+  "vallalatvezetes": "Szathmáriné Szűcs Györgyi Magdolna  (vezérigazgató)",
+  "felugyelobizottsag": null,
+  "cegvezetes_frissitve": "2025. márc. 03."
+}

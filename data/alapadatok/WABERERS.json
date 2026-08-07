@@ -1,0 +1,37 @@
+{
+  "seccode": "WABERERS",
+  "isin": "HU0000120720",
+  "bevezetes_datuma": "2017. jún. 20.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "0,35 EUR",
+  "bevezetett_mennyiseg": "17 693 734",
+  "kapitalizacio_m_ft": "84 753",
+  "tulajdonosok": [
+    {
+      "nev": "Merkport Zrt. (BDPST Csoport tagja)",
+      "tulajdoni_hanyad": "49.64%",
+      "darabszam": "8783620"
+    },
+    {
+      "nev": "MOL Vagyonkezelő Kft.",
+      "tulajdoni_hanyad": "15.00%",
+      "darabszam": "2654061"
+    },
+    {
+      "nev": "Geraldton Invest Zrt. (BDPST Csoport tagja)",
+      "tulajdoni_hanyad": "4.90%",
+      "darabszam": "867459"
+    },
+    {
+      "nev": "Tiborcz István Ferenc (BDPST Csoport irányító tulajdonosa)",
+      "tulajdoni_hanyad": "0.26%",
+      "darabszam": "45454"
+    }
+  ],
+  "kozkezhanyad": "30.2%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "BARNA Zsolt (elnök), ERDÉLYI Barna, BARLAI Róbert, Dr. BACSA György, TÓTH Szabolcs",
+  "vallalatvezetes": "BARNA Zsolt (vezérigazgató), TÓTH Szabolcs (gazdasági és stratégiai vezérigazgató-helyettes)",
+  "felugyelobizottsag": "HEGEDÜS Éva (elnök), David THOMPSON, RENCZ Botond, HALL Krisztián, HLUDEK Magdolna, VERESTÓY Attila",
+  "cegvezetes_frissitve": "2025. szept. 01."
+}

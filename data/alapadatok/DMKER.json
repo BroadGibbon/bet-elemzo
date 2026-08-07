@@ -1,0 +1,42 @@
+{
+  "seccode": "DMKER",
+  "isin": "HU0000176722",
+  "bevezetes_datuma": "2022. márc. 24.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "5 HUF",
+  "bevezetett_mennyiseg": "126 231 000",
+  "kapitalizacio_m_ft": "3 459",
+  "tulajdonosok": [
+    {
+      "nev": "BF Trustee Kft.",
+      "tulajdoni_hanyad": "20.36%",
+      "darabszam": "25700000"
+    },
+    {
+      "nev": "Intravirtus Kft.",
+      "tulajdoni_hanyad": "15.54%",
+      "darabszam": "19620000"
+    },
+    {
+      "nev": "Bátor Ferenc",
+      "tulajdoni_hanyad": "15.04%",
+      "darabszam": "18980000"
+    },
+    {
+      "nev": "Széchenyi Alapok Kockázati Tőkealap Széchenyi Alapok Zrt.",
+      "tulajdoni_hanyad": "12.65%",
+      "darabszam": "15969321"
+    },
+    {
+      "nev": "Megyeri Sándor",
+      "tulajdoni_hanyad": "6.25%",
+      "darabszam": "7895000"
+    }
+  ],
+  "kozkezhanyad": "30.16%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "BÁTOR Ferenc (igazgatóság elnöke), Dr. HAJNAL Tamás, VITKOVICS Péter",
+  "vallalatvezetes": "BÁTOR Ferenc (vezérigazgató)",
+  "felugyelobizottsag": "RÉVÉSZ Miklós László (elnök), PETŐHÁZI Tamás, Dr. SÜKÖSD Tamás, GAYER Attila",
+  "cegvezetes_frissitve": "2025. nov. 26."
+}

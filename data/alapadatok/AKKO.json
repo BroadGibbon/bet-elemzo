@@ -1,0 +1,32 @@
+{
+  "seccode": "AKKO",
+  "isin": "HU0000170824",
+  "bevezetes_datuma": "2011. febr. 15.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "25 HUF",
+  "bevezetett_mennyiseg": "40 026 239",
+  "kapitalizacio_m_ft": "10 087",
+  "tulajdonosok": [
+    {
+      "nev": "MEVINVEST Vagyonkezelő Kft.",
+      "tulajdoni_hanyad": "44.25%",
+      "darabszam": "17711807"
+    },
+    {
+      "nev": "B + N Referencia Zrt.",
+      "tulajdoni_hanyad": "6.56%",
+      "darabszam": "2627137"
+    },
+    {
+      "nev": "DAYTON-Invest Kft.",
+      "tulajdoni_hanyad": "5.81%",
+      "darabszam": "2325335"
+    }
+  ],
+  "kozkezhanyad": "43.38%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": null,
+  "vallalatvezetes": "GERŐ János (vezérigazgató)",
+  "felugyelobizottsag": null,
+  "cegvezetes_frissitve": "2026. máj. 04."
+}

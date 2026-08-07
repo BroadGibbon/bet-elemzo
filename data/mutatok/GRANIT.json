@@ -1,0 +1,80 @@
+{
+  "seccode": "GRANIT",
+  "utolso_ev": "2025",
+  "penznem": "HUF",
+  "arfolyam_mutatok": {
+    "pe": 8.8327244317287,
+    "pbv": 1.0196134221721267
+  },
+  "dupont": {
+    "roa": 0.010220670768742099,
+    "tokeattetel": 11.294355767249634,
+    "roe_szamolt": 0.11543589184210208
+  },
+  "bet_sajat_mutatok": {
+    "roe_bet": 0.11543589184210207,
+    "roa_bet": 0.010220670768742099,
+    "tokeattetel_bet": 10.294355767249634
+  },
+  "likviditas": null,
+  "piotroski": {
+    "pontszam": 2,
+    "maximum": 3,
+    "reszletek": {
+      "Pozitív nettó eredmény": "✓",
+      "Pozitív működési cash flow": "nincs adat",
+      "Növekvő eszközarányos megtérülés (ROA)": "✗",
+      "Cash flow meghaladja a nyereséget (minőségi jel)": "nincs adat",
+      "Csökkenő eladósodottság": "✓",
+      "Nincs jelentős részvénykibocsátás (közelítés)": "nincs adat",
+      "Növekvő nettó árrés (közelítés bruttó árrés helyett)": "nincs adat",
+      "Növekvő eszközforgási sebesség": "nincs adat"
+    },
+    "ev": "2025"
+  },
+  "historikus": {
+    "evek": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "roe_bet": {
+      "2022": 0.20030117933706706,
+      "2023": 0.2716675688263951,
+      "2024": 0.14290055715009287,
+      "2025": 0.11543589184210207
+    },
+    "roa_bet": {
+      "2022": 0.011137915202059357,
+      "2023": 0.016439986166065113,
+      "2024": 0.012649979375033628,
+      "2025": 0.010220670768742099
+    },
+    "tokeattetel_bet": {
+      "2022": 16.9837227796484,
+      "2023": 15.524805196440036,
+      "2024": 10.296505149417525,
+      "2025": 10.294355767249634
+    },
+    "adozott_eredmeny": {
+      "2022": 11838000000.0,
+      "2023": 21581000000.0,
+      "2024": 21160000000.0,
+      "2025": 19049000000.0
+    },
+    "arbevetel": {},
+    "sajat_toke": {
+      "2022": 59101000000.0,
+      "2023": 79439000000.0,
+      "2024": 148075000000.0,
+      "2025": 165018000000.0
+    },
+    "eszkozok": {
+      "2022": 1062856000000.0,
+      "2023": 1312714000000.0,
+      "2024": 1672730000000.0,
+      "2025": 1863772000000.0
+    }
+  }
+}

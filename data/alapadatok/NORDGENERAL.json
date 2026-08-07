@@ -1,0 +1,27 @@
+{
+  "seccode": "NORDGENERAL",
+  "isin": "HU0000213632",
+  "bevezetes_datuma": "2009. dec. 15.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "0,4 HUF",
+  "bevezetett_mennyiseg": "65 966 125",
+  "kapitalizacio_m_ft": "396",
+  "tulajdonosok": [
+    {
+      "nev": "BELTÁV Kft.",
+      "tulajdoni_hanyad": "24.66%",
+      "darabszam": "16267834"
+    },
+    {
+      "nev": "Dr. Zombori Zoltán",
+      "tulajdoni_hanyad": "15.15%",
+      "darabszam": "10000000"
+    }
+  ],
+  "kozkezhanyad": "60.19%",
+  "kozkezhanyad_frissitve": "2026. júl. 28.",
+  "igazgatosag": null,
+  "vallalatvezetes": null,
+  "felugyelobizottsag": null,
+  "cegvezetes_frissitve": "2022. febr. 25."
+}

@@ -1,0 +1,27 @@
+{
+  "seccode": "BET",
+  "isin": "HU0000063078",
+  "bevezetes_datuma": "2023. jún. 07.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "100 HUF",
+  "bevezetett_mennyiseg": "5 413 481",
+  "kapitalizacio_m_ft": "64 962",
+  "tulajdonosok": [
+    {
+      "nev": "Magyar Nemzeti Bank",
+      "tulajdoni_hanyad": "81.35%",
+      "darabszam": "4403872"
+    },
+    {
+      "nev": "Patria Finance a.s",
+      "tulajdoni_hanyad": "5.20%",
+      "darabszam": "281667"
+    }
+  ],
+  "kozkezhanyad": "13.45%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "VIRÁG Barnabás (elnök), TÓTH Tibor, dr. BACSA György, BÁNFI Attila, dr. TÓTH Simon Attila, KUTI Zsolt, KURALI Zoltán",
+  "vallalatvezetes": "TÓTH Tibor (vezérigazgató), MÁTÉ-TÓTH István (vezérigazgató-helyettes)",
+  "felugyelobizottsag": "GION Gábor (elnök), DOBOS Annamária, dr. HARDY Ilona, CSELOVSZKI Róbert, RÉGELY Károly,",
+  "cegvezetes_frissitve": "2026. jún. 19."
+}

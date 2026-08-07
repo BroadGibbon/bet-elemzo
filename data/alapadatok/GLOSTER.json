@@ -1,0 +1,27 @@
+{
+  "seccode": "GLOSTER",
+  "isin": "HU0000189600",
+  "bevezetes_datuma": "2024. jan. 26.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "10 HUF",
+  "bevezetett_mennyiseg": "18 176 440",
+  "kapitalizacio_m_ft": "9 997",
+  "tulajdonosok": [
+    {
+      "nev": "Szekeres Viktor Vagyonkezelő Alapítvány",
+      "tulajdoni_hanyad": "52.35%",
+      "darabszam": "9514797"
+    },
+    {
+      "nev": "Széchenyi Alapok Kockázati Tőkealap",
+      "tulajdoni_hanyad": "19.45%",
+      "darabszam": "3535477"
+    }
+  ],
+  "kozkezhanyad": "28.2%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "SZEKERES Viktor (elnök), SUM Viktor, LÓDI Kata, GAYER Attila, OSZLÁNSZKI Péter, CSILLAG Péter",
+  "vallalatvezetes": "CSILLAG Péter (vezérigazgató), OSZLÁNSZKI Péter (Humán Erőforrás vezető), FÖLDESI László Ákos (Cloud üzletágvezető), MURVAI Attila (Nemzetközi szofverfejlesztési üzletágvezető)",
+  "felugyelobizottsag": "Dr. BALÁSFALVI-KISS András, VINCZE Andrea, Dr. ZANATHY László, DEME Géza",
+  "cegvezetes_frissitve": "2026. máj. 22."
+}

@@ -1,0 +1,37 @@
+{
+  "seccode": "RICHTER",
+  "isin": "HU0000123096",
+  "bevezetes_datuma": "1994. nov. 09.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "100 HUF",
+  "bevezetett_mennyiseg": "186 374 860",
+  "kapitalizacio_m_ft": "2 251 408",
+  "tulajdonosok": [
+    {
+      "nev": "Maecenas Universitatis Corvini Alapítvány",
+      "tulajdoni_hanyad": "10.00%",
+      "darabszam": "18637486"
+    },
+    {
+      "nev": "Mathias Corvinus Collegium Alapítvány",
+      "tulajdoni_hanyad": "10.00%",
+      "darabszam": "18637486"
+    },
+    {
+      "nev": "Nemzeti Egészségügyi és Orvosképzésért Alapítvány",
+      "tulajdoni_hanyad": "5.25%",
+      "darabszam": "9777658"
+    },
+    {
+      "nev": "FMR LLC",
+      "tulajdoni_hanyad": "5.07%",
+      "darabszam": "9457941"
+    }
+  ],
+  "kozkezhanyad": "69.68%",
+  "kozkezhanyad_frissitve": "2026. febr. 28.",
+  "igazgatosag": "Prof. Dr. VIZI Elek Szilveszter (Igazgatóság elnöke), Dr. PINTÉRNÉ dr. HARDY Ilona (Igazgatóság helyettes elnöke), ORBÁN Gábor, KOVÁCS László András, BOGSCH Erik (Örökös Tiszteletbeli Elnök), Dr. PANDURICS Anett, SZÉCSÉNYI Bálint, Prof. Dr. ÁCS Nándor, BALOGH Gabriella",
+  "vallalatvezetes": "ORBÁN Gábor (vezérigazgató), KOVÁCS László András (vezérigazgató-helyettes, gazdasági igazgató), Prof. Dr. GREINER István (kutatási és fejlesztési igazgató),  ERDEI Katalin (emberierőforrás és műszaki igazgató), SZOLYÁK Tamás (kereskedelmi igazgató), SZÉNÁSI Attila (termelési és logisztikai igazgató)",
+  "felugyelobizottsag": "Dr. PAVLIK Lívia (FB elnöke), Dr. BEDROS Jonathán Róbert, Dale André MARTIN, CSEPREGI Gábor, Dr. GÁL Krisztina, SALLAI Ferenc",
+  "cegvezetes_frissitve": "2026. júl. 06."
+}

@@ -1,0 +1,32 @@
+{
+  "seccode": "GRANIT",
+  "isin": "HU0000094149",
+  "bevezetes_datuma": "2024. nov. 25.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "1 000 HUF",
+  "bevezetett_mennyiseg": "18 091 889",
+  "kapitalizacio_m_ft": "169 702",
+  "tulajdonosok": [
+    {
+      "nev": "TiberisDigital Tanácsadó Kft.",
+      "tulajdoni_hanyad": "39.19%",
+      "darabszam": "7090429"
+    },
+    {
+      "nev": "Gránit Bank Munkavállalói Résztulajdonosi Program Szervezet",
+      "tulajdoni_hanyad": "34.96%",
+      "darabszam": "6324697"
+    },
+    {
+      "nev": "Pannónia Nyugdíjpénztár",
+      "tulajdoni_hanyad": "6.31%",
+      "darabszam": "1141952"
+    }
+  ],
+  "kozkezhanyad": "19.54%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "HEGEDŰS Éva (elnök), JENDROLOVICS Péter Bence, MAJOR János, Dr. TÓTH Judit, VIDA István",
+  "vallalatvezetes": "HEGEDŰS Éva (vezérigazgató), JENDROLOVICS Péter Bence (vezérigazgató-helyettes), MAJOR János (vezérigazgató-helyettes), SIKLÓS Jenő (Pénzügyi és Operációs Divízió vezérigazgató-helyettes (első vezérigazgató-helyettes)), HANKISS László Balázs (Stratégiai Divízió vezérigazgató-helyettes), NAGY Zoltán (Compliance Divízió vezérigazgató-helyettes), TÖLGYESI Zoltán Béla (Vállalati Divízió vezérigazgató-helyettes)",
+  "felugyelobizottsag": "NYÚL Sándor (elnök), Dr. GUBUZNAI Judit, OLÁH Márton, TÓTH Szabolcs Gábor, Benczédi Balázs",
+  "cegvezetes_frissitve": "2025. máj. 08."
+}

@@ -1,0 +1,37 @@
+{
+  "seccode": "PANNERGY",
+  "isin": "HU0000089867",
+  "bevezetes_datuma": "1994. jún. 13.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "20 HUF",
+  "bevezetett_mennyiseg": "16 000 000",
+  "kapitalizacio_m_ft": "46 080",
+  "tulajdonosok": [
+    {
+      "nev": "Saját részvény (amelyből 11,94% leányvállalati)",
+      "tulajdoni_hanyad": "16.21%",
+      "darabszam": "2593365"
+    },
+    {
+      "nev": "Rencsár Kálmán (közvetett részesedés a Soltút Útépítő Fenntartó és Kereskedelmi Kft-n keresztül 9,98%)",
+      "tulajdoni_hanyad": "11.90%",
+      "darabszam": "1903741"
+    },
+    {
+      "nev": "Juhász Attila (ebből közvetett részesedés a Beratti Fortis Kft.-n keresztül 7,58% és az FCI Kompozit Kft.-n keresztül 2,38%)",
+      "tulajdoni_hanyad": "9.96%",
+      "darabszam": "1593005"
+    },
+    {
+      "nev": "Juhász Bertalan (ebből közvetett részesedés a Beratti Fortis Kft.-n keresztül 7,58% és az FCI Kompozit Kft.-n keresztül 2,38%)",
+      "tulajdoni_hanyad": "9.96%",
+      "darabszam": "1593005"
+    }
+  ],
+  "kozkezhanyad": "51.97%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": null,
+  "vallalatvezetes": "JAKSA István (vezérigazgató)",
+  "felugyelobizottsag": null,
+  "cegvezetes_frissitve": "2025. febr. 28."
+}

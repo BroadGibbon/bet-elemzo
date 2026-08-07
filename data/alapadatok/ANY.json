@@ -1,0 +1,32 @@
+{
+  "seccode": "ANY",
+  "isin": "HU0000093257",
+  "bevezetes_datuma": "2005. dec. 08.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "98 HUF",
+  "bevezetett_mennyiseg": "14 794 650",
+  "kapitalizacio_m_ft": "99 124",
+  "tulajdonosok": [
+    {
+      "nev": "EG Capital LLC",
+      "tulajdoni_hanyad": "11.75%",
+      "darabszam": "1738623"
+    },
+    {
+      "nev": "Digital Forest LLC",
+      "tulajdoni_hanyad": "6.89%",
+      "darabszam": "1020001"
+    },
+    {
+      "nev": "Alfa Csoport (közkézhányad adat)",
+      "tulajdoni_hanyad": "5.03%",
+      "darabszam": "745576"
+    }
+  ],
+  "kozkezhanyad": "81.36%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "Dr. ERDŐS Ákos (elnök), ZSÁMBOKI Gábor (elnök-helyettes), Rober Elton BROOKER III., Dr. KEPECS Gábor, ERDŐS Tamás",
+  "vallalatvezetes": "ZSÁMBOKI Gábor (vezérigazgató), dr. IGNÁCZ István (biztonsági vezérigazgató-helyettes), KARAKÓ Tamás (gazdasági vezérigazgató-helyettes), MEGYERI Balázs (kutatás-fejlesztési vezérigazgató-helyettes), PÉTER Gábor (informatikai vezérigazgató-helyettes), SAJÓ Nikoletta (operatív vezérigazgató-helyettes)",
+  "felugyelobizottsag": "Prof. Dr. Stumpf István (elnök), Dr. GÖMÖRI Istvánné (elnök-helyettes), Dr. REPA Imre, HEGEDŰS Katalin, HANZSEK László, KUN Gábor",
+  "cegvezetes_frissitve": "2026. márc. 04."
+}

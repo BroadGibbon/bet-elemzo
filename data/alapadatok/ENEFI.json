@@ -1,0 +1,27 @@
+{
+  "seccode": "ENEFI",
+  "isin": "HU0000089198",
+  "bevezetes_datuma": "2007. máj. 29.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "10 HUF",
+  "bevezetett_mennyiseg": "11 150 000",
+  "kapitalizacio_m_ft": "2 609",
+  "tulajdonosok": [
+    {
+      "nev": "SOÓS Csaba",
+      "tulajdoni_hanyad": "19.99%",
+      "darabszam": "2229975"
+    },
+    {
+      "nev": "Whiteless Rock Tanácsadó Zrt.",
+      "tulajdoni_hanyad": "18.83%",
+      "darabszam": "2100000"
+    }
+  ],
+  "kozkezhanyad": "61.18%",
+  "kozkezhanyad_frissitve": "2026. febr. 19.",
+  "igazgatosag": "SOÓS Csaba (elnök), VIRÁG Ferenc, dr. SÁRKÁNY Gergely",
+  "vallalatvezetes": null,
+  "felugyelobizottsag": "Dr. BAKACSI Gyula, Dr. SISKA Miklós László, KOVÁCS Kristóf",
+  "cegvezetes_frissitve": "2025. okt. 31."
+}

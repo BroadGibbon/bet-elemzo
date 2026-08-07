@@ -1,0 +1,27 @@
+{
+  "seccode": "MBHJB",
+  "isin": "HU0000078175",
+  "bevezetes_datuma": "2003. nov. 24.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "100 HUF",
+  "bevezetett_mennyiseg": "108 490 300",
+  "kapitalizacio_m_ft": "53 703",
+  "tulajdonosok": [
+    {
+      "nev": "MBH Befektetési Bank Zrt.",
+      "tulajdoni_hanyad": "48.42%",
+      "darabszam": "52531760"
+    },
+    {
+      "nev": "Magyar Posta Zrt.",
+      "tulajdoni_hanyad": "39.71%",
+      "darabszam": "43076417"
+    }
+  ],
+  "kozkezhanyad": "11.87%",
+  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "igazgatosag": "VIDA József (elnök), Dr. NAGY Gyula László, TÓTH Illés, GINZER Ildikó, dr. TÖRÖK Ilona, BREZINA Szabolcs Károly",
+  "vallalatvezetes": "Dr. NAGY Gyula László (ügyvezető), TÓTH Illés (ügyvezető)",
+  "felugyelobizottsag": "dr. LÁNG Géza Károly (elnök), dr. LÉLFAI Koppány Tibor, KRIZSANOVICH Péter, dr. GÖDÖR Éva Szilvia, dr. TISZA-PAPP Ákos Ferenc, BAKONYI András",
+  "cegvezetes_frissitve": "2024. máj. 31."
+}
