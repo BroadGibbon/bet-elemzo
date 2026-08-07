@@ -1,0 +1,48 @@
+name: BET alapadatok es mutatok
+
+# Ez a workflow:
+# 1. letolti az alapadatokat (ISIN, nevertek, tulajdonosok, cegvezetes)
+# 2. kiszamolja a penzugyi mutatokat (P/E, P/BV, DuPont, Piotroski)
+# 3. kiszamolja a piaci/szektor atlagokat az osszehasonlitasokhoz
+#
+# A 2-3. lepes a mar meglevo data/penzugy es data/ixbrl adatra epul,
+# ezert erdemes ezt a workflow-t A TOBBI UTAN futtatni (miutan a
+# penzugyi es ixbrl adatok mar frissek).
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 1 * *"   # minden honap 1-jen, az osszes tobbi utan
+
+permissions:
+  contents: write
+
+jobs:
+  mutatok:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Kod letoltese
+        uses: actions/checkout@v4
+
+      - name: Python beallitasa
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Alapadatok es tulajdonosok letoltese
+        run: python fetch_alapadatok.py
+
+      - name: Penzugyi mutatok szamitasa
+        run: python compute_mutatok.py
+
+      - name: Piaci es szektor atlagok szamitasa
+        run: python compute_piaci_atlagok.py
+
+      - name: Eredmeny visszamentese a repoba
+        run: |
+          git config user.name "BET robot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Alapadatok es mutatok: $(date -u '+%Y-%m-%d') UTC"
+          git push
