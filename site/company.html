@@ -171,9 +171,30 @@
       Bread Board Capital — Márkakönyv V1.0 alapján. Adatforrás: Budapesti Értéktőzsde és MNB
       közzétételi rendszer. Ez az oldal nem minősül befektetési tanácsadásnak.
     </p>
+    <button id="adminMegnyitoGomb" class="admin-megnyito">Adatfrissítés (admin)</button>
+    <div id="adminPanel" class="admin-panel" hidden>
+      <label class="admin-panel__label">
+        Mit frissítsünk?
+        <select id="adminMit" class="admin-panel__select">
+          <option value="arfolyam">Napi árfolyam (gyors, ~1 perc)</option>
+          <option value="tortenet">Teljes árfolyam-történet (~2 perc)</option>
+          <option value="penzugy">Pénzügyi kimutatások (~2 perc)</option>
+          <option value="ixbrl">Részletes iXBRL-adatok (~10-20 perc)</option>
+          <option value="mutatok">Alapadatok és mutatók (~2 perc)</option>
+          <option value="mind">Minden egyszerre</option>
+        </select>
+      </label>
+      <label class="admin-panel__label">
+        Jelszó
+        <input type="password" id="adminJelszo" class="admin-panel__input" autocomplete="current-password">
+      </label>
+      <button id="adminInditoGomb" class="admin-panel__gomb">Frissítés indítása</button>
+      <p id="adminUzenet" class="admin-panel__uzenet"></p>
+    </div>
   </footer>
 
   <script src="config.js"></script>
   <script src="company.js"></script>
+  <script src="admin.js"></script>
 </body>
 </html>

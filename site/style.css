@@ -397,3 +397,74 @@ body {
   padding: 1.25rem 1.5rem;
   font-size: 0.8rem;
 }
+
+/* ---------- Admin adatfrissito panel ---------- */
+
+.admin-megnyito {
+  margin-top: 0.75rem;
+  background: none;
+  border: 1px solid var(--fustolt-bezs);
+  color: var(--fustolt-bezs);
+  font-family: var(--font-adat);
+  font-size: 0.72rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-megnyito:hover { color: var(--vajkrem); border-color: var(--vajkrem); }
+
+.admin-panel {
+  max-width: 360px;
+  margin: 0.9rem auto 0;
+  padding: 1rem;
+  background: rgba(251, 236, 210, 0.06);
+  border: 1px dashed var(--fustolt-bezs);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.admin-panel__label {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--fustolt-bezs);
+  margin-bottom: 0.6rem;
+}
+
+.admin-panel__select, .admin-panel__input {
+  display: block;
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.45rem 0.6rem;
+  font-family: var(--font-torzs);
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid var(--fustolt-bezs);
+  background: var(--vajkrem);
+  color: var(--espresso);
+}
+
+.admin-panel__gomb {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.55rem;
+  background: var(--karamell);
+  color: var(--espresso);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.admin-panel__gomb:hover { filter: brightness(1.08); }
+.admin-panel__gomb:disabled { opacity: 0.6; cursor: wait; }
+
+.admin-panel__uzenet {
+  margin: 0.6rem 0 0;
+  font-size: 0.8rem;
+  min-height: 1.2em;
+}
+
+.admin-panel__uzenet--siker { color: var(--friss-zold); }
+.admin-panel__uzenet--hiba { color: var(--sult-piros); }

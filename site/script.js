@@ -373,7 +373,7 @@ async function inditas() {
   } catch (hiba) {
     console.error(hiba);
     freshnessNote.textContent =
-      "Nem sikerült betölteni az adatokat. Ellenőrizd a script.js tetején a " +
+      "Nem sikerült betölteni az adatokat. Ellenőrizd a config.js fájlban a " +
       "GITHUB_USER és GITHUB_REPO beállítást, és hogy a repo publikus-e.";
     freshnessNote.style.color = "#A6412B";
   }
