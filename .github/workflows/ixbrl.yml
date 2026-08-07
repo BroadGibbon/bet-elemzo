@@ -28,6 +28,9 @@ jobs:
       - name: iXBRL eves jelentesek letoltese es feldolgozasa
         run: python fetch_ixbrl.py
 
+      - name: Frissesegi ellenorzes
+        run: python audit_ixbrl.py
+
       - name: Eredmeny visszamentese a repoba
         run: |
           git config user.name "BET robot"
