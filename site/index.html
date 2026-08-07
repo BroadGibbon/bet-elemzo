@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bread Board Capital — BÉT részvénytérkép</title>
+<meta name="description" content="A Budapesti Értéktőzsde részvényei egy pillantásra — élő treemap piaci kapitalizáció és napi teljesítmény alapján.">
+
+<!-- Google Fonts - a markakonyv altal eloirt negy betutipus -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@500;600&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tetejen futo "ticker szalag" - a markakonyv borito-mockupjabol atemelt otlet,
+       csak itt VALODI, elo BET adatokkal toltjuk fel -->
+  <div class="ticker-tape" id="tickerTape" aria-hidden="true">
+    <div class="ticker-tape__track" id="tickerTrack">
+      <!-- ide generalja a script.js a valodi arfolyam-csikot -->
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <img src="assets/logo-szines.png" alt="Bread Board Capital" class="site-header__logo">
+      <div class="site-header__text">
+        <h1 class="site-header__title">Bread Board Capital</h1>
+        <p class="site-header__tagline">„Friss hírek, ropogósra pirítva.”</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="intro">
+      <h2 class="intro__title">BÉT részvénytérkép</h2>
+      <p class="intro__text">
+        Minden budapesti tőzsdei részvény egy térképen. A téglalap <strong>mérete</strong> a piaci
+        kapitalizációt mutatja, a <strong>színe</strong> a mai árfolyamváltozást — minél telítettebb
+        a zöld vagy a piros, annál nagyobb a mai mozgás. Kattints egy téglalapra a részletekért.
+      </p>
+      <p class="intro__meta" id="freshnessNote">Adatok betöltése…</p>
+    </section>
+
+    <section class="treemap-wrap">
+      <div id="treemap" class="treemap" role="img" aria-label="BÉT reszvenyek treemap-je"></div>
+      <div id="tooltip" class="tooltip" hidden></div>
+    </section>
+
+    <section class="legend">
+      <span class="legend__label">Napi teljesítmény:</span>
+      <div class="legend__scale">
+        <span class="legend__chip legend__chip--neg-strong"></span>
+        <span class="legend__chip legend__chip--neg"></span>
+        <span class="legend__chip legend__chip--neutral"></span>
+        <span class="legend__chip legend__chip--pos"></span>
+        <span class="legend__chip legend__chip--pos-strong"></span>
+      </div>
+      <span class="legend__range">−5% és −alatt &nbsp;→&nbsp; 0% &nbsp;→&nbsp; +5% és afölött</span>
+    </section>
+
+    <section class="missing" id="missingSection" hidden>
+      <h3 class="missing__title">Nincs elég adat a térképhez</h3>
+      <p class="missing__text">
+        Ezeknél a papíroknál a BÉT jelenleg nem közöl piaci kapitalizációt (jellemzően alacsony
+        forgalom miatt), ezért nem férnek el a fenti térképen:
+      </p>
+      <ul class="missing__list" id="missingList"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Bread Board Capital — Márkakönyv V1.0 alapján. Adatforrás: Budapesti Értéktőzsde
+      (kb. 15 perccel késleltetett adat). Ez az oldal nem minősül befektetési tanácsadásnak.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

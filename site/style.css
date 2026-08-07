@@ -1,0 +1,314 @@
+/* ============================================================
+   Bread Board Capital - BET reszvenyterkep
+   Szinek, betutipusok es szabalyok a Markakonyv V1.0 alapjan.
+   ============================================================ */
+
+:root {
+  /* Ot fo szin a markakonyvbol - EZEKET SOSEM hasznaljuk adatjelzesre */
+  --espresso: #3C2A1B;   /* elsodleges - szoveg, kontur */
+  --vajkrem: #FBECD2;    /* elsodleges - alaphatter */
+  --kereg: #E8BD82;      /* masodlagos - kiemeles */
+  --karamell: #C98A4B;   /* masodlagos - CTA, gombok */
+  --fustolt-bezs: #BEB3A0; /* semleges - alairas, keret */
+
+  /* Ket funkcionalis adatszin - KIZAROLAG arfolyam/teljesitmeny jelzesere,
+     sosem markaelemre (logo, felirat, gomb) - a markakonyv kifejezett szabalya */
+  --friss-zold: #4B7A3F;
+  --sult-piros: #A6412B;
+
+  /* Betutipusok a markakonyv szerint */
+  --font-display: 'Alfa Slab One', serif;   /* cimsor / display */
+  --font-idezet: 'Caveat', cursive;         /* idezet / kiemelt gondolat */
+  --font-torzs: 'Work Sans', sans-serif;    /* torzsszoveg */
+  --font-adat: 'IBM Plex Mono', monospace;  /* adat / jeloles */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--vajkrem);
+  color: var(--espresso);
+  font-family: var(--font-torzs);
+  line-height: 1.5;
+}
+
+/* ---------- Ticker szalag (a boritomockup otlete, elo adattal) ---------- */
+
+.ticker-tape {
+  background: var(--espresso);
+  color: var(--vajkrem);
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--karamell);
+}
+
+.ticker-tape__track {
+  display: inline-flex;
+  gap: 2.5rem;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-adat);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  animation: ticker-scroll 60s linear infinite;
+  will-change: transform;
+}
+
+.ticker-tape:hover .ticker-tape__track {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.ticker-item { display: inline-flex; gap: 0.4em; align-items: baseline; }
+.ticker-item__code { color: var(--vajkrem); font-weight: 600; }
+.ticker-item--up   { color: var(--friss-zold); }
+.ticker-item--down { color: var(--sult-piros); }
+.ticker-item--flat { color: var(--fustolt-bezs); }
+
+/* ---------- Fejlec ---------- */
+
+.site-header {
+  background: var(--vajkrem);
+  border-bottom: 3px solid var(--espresso);
+}
+
+.site-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-header__logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.site-header__title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  margin: 0;
+  color: var(--espresso);
+}
+
+.site-header__tagline {
+  font-family: var(--font-idezet);
+  font-size: 1.15rem;
+  color: var(--karamell);
+  margin: 0.15rem 0 0;
+}
+
+/* ---------- Fooldal tartalom ---------- */
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.intro__title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin: 0 0 0.75rem;
+}
+
+.intro__text {
+  max-width: 68ch;
+  color: var(--espresso);
+}
+
+.intro__meta {
+  font-family: var(--font-adat);
+  font-size: 0.85rem;
+  color: var(--fustolt-bezs);
+  border-left: 3px solid var(--fustolt-bezs);
+  padding-left: 0.6rem;
+}
+
+/* ---------- Treemap ---------- */
+
+.treemap-wrap {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.treemap {
+  position: relative;
+  width: 100%;
+  height: 640px;
+  background: var(--espresso);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--espresso);
+}
+
+@media (max-width: 640px) {
+  .treemap { height: 520px; }
+}
+
+.tile {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid rgba(59, 42, 27, 0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.35rem 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: filter 0.15s ease, transform 0.1s ease;
+}
+
+.tile:hover, .tile:focus-visible {
+  filter: brightness(1.12);
+  transform: scale(1.01);
+  z-index: 5;
+  outline: 2px solid var(--vajkrem);
+  outline-offset: -2px;
+}
+
+.tile--selected {
+  outline: 3px solid var(--vajkrem);
+  outline-offset: -3px;
+  z-index: 6;
+}
+
+.tile__code {
+  font-family: var(--font-adat);
+  font-weight: 600;
+  color: var(--vajkrem);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tile__pct {
+  font-family: var(--font-adat);
+  color: var(--vajkrem);
+  opacity: 0.92;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
+
+/* Kis csempeknel csak a kod fer el, kisebb betuvel */
+.tile--tiny .tile__pct { display: none; }
+.tile--tiny .tile__code { font-size: 0.7rem; }
+
+/* ---------- Tooltip / reszlet panel ---------- */
+
+.tooltip {
+  position: absolute;
+  min-width: 220px;
+  background: var(--vajkrem);
+  border: 2px solid var(--espresso);
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  box-shadow: 0 6px 18px rgba(60, 42, 27, 0.25);
+  pointer-events: none;
+  z-index: 20;
+  font-size: 0.9rem;
+}
+
+.tooltip__title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.tooltip__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-adat);
+  font-size: 0.82rem;
+  color: var(--espresso);
+  border-top: 1px dashed var(--fustolt-bezs);
+  padding-top: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.tooltip__row span:first-child { color: var(--fustolt-bezs); }
+
+.tooltip__pct--pos { color: var(--friss-zold); font-weight: 600; }
+.tooltip__pct--neg { color: var(--sult-piros); font-weight: 600; }
+
+/* ---------- Jelmagyarazat ---------- */
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--espresso);
+}
+
+.legend__label { font-weight: 600; }
+
+.legend__scale {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--espresso);
+}
+
+.legend__chip { width: 32px; height: 16px; display: inline-block; }
+.legend__chip--neg-strong { background: var(--sult-piros); }
+.legend__chip--neg        { background: #D39F87; }
+.legend__chip--neutral    { background: var(--fustolt-bezs); }
+.legend__chip--pos        { background: #ACB990; }
+.legend__chip--pos-strong { background: var(--friss-zold); }
+
+.legend__range {
+  font-family: var(--font-adat);
+  font-size: 0.78rem;
+  color: var(--fustolt-bezs);
+}
+
+/* ---------- Hianyzo adat szekcio ---------- */
+
+.missing {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  background: rgba(190, 179, 160, 0.18);
+  border: 1px dashed var(--fustolt-bezs);
+  border-radius: 8px;
+}
+
+.missing__title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  margin: 0 0 0.4rem;
+}
+
+.missing__text { margin: 0 0 0.5rem; font-size: 0.9rem; }
+
+.missing__list {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-family: var(--font-adat);
+  font-size: 0.85rem;
+}
+
+/* ---------- Labjegyzet ---------- */
+
+.site-footer {
+  background: var(--espresso);
+  color: var(--fustolt-bezs);
+  text-align: center;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.8rem;
+}
