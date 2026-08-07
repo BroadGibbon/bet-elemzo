@@ -1,0 +1,202 @@
+{
+  "seccode": "BIF",
+  "hivatalos_nev": "Budapesti Ingatlan Nyrt.",
+  "lei": "529900MBH2PPLPLX3782",
+  "csomagok_szama": 4,
+  "fogalmak_szama": 38,
+  "adatok": {
+    "Goodwill": {
+      "2025-12-31": 0.0,
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0
+    },
+    "InvestmentsInSubsidiariesJointVenturesAndAssociates": {
+      "2025-12-31": 0.0,
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0,
+      "2021-12-31": 0.0
+    },
+    "DeferredTaxAssets": {
+      "2025-12-31": 0.0,
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0,
+      "2021-12-31": 0.0
+    },
+    "OtherWorkPerformedByEntityAndCapitalised": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "ProfitLossAttributableToNoncontrollingInterests": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "OtherComprehensiveIncome": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "OtherComprehensiveIncomeBeforeTaxGainsLossesOnRevaluation": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "IncomeTaxRelatingToChangesInRevaluationSurplusOfOtherComprehensiveIncome": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "ComprehensiveIncomeAttributableToNoncontrollingInterests": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "BasicEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 39.3,
+      "2024-01-01..2024-12-31": 40.32,
+      "2023-01-01..2023-12-31": 41.88,
+      "2022-01-01..2022-12-31": 39.87,
+      "2021-01-01..2021-12-31": 32.86
+    },
+    "DilutedEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 39.3,
+      "2024-01-01..2024-12-31": 40.32,
+      "2023-01-01..2023-12-31": 41.88,
+      "2022-01-01..2022-12-31": 39.87,
+      "2021-01-01..2021-12-31": 32.86
+    },
+    "PurchaseOfTreasuryShares": {
+      "2024-01-01..2024-12-31": 0.0,
+      "2025-01-01..2025-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "IncreaseDecreaseThroughTreasuryShareTransactions": {
+      "2024-01-01..2024-12-31": 0.0,
+      "2025-01-01..2025-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "DividendsPaid": {
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "IncreaseDecreaseThroughDisposalOfSubsidiary": {
+      "2024-01-01..2024-12-31": 0.0,
+      "2025-01-01..2025-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "SaleOrIssueOfTreasuryShares": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "AdjustmentsForImpairmentLossRecognisedInProfitOrLossGoodwill": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "AdjustmentsForUnrealisedForeignExchangeLossesGains": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "AdjustmentsForGainLossOnDisposalsPropertyPlantAndEquipment": {
+      "2025-01-01..2025-12-31": -188000.0,
+      "2023-01-01..2023-12-31": 886000.0
+    },
+    "InventoryWritedown2011": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "ProceedsFromIssuingShares": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "DividendsPaidClassifiedAsFinancingActivities": {
+      "2024-01-01..2024-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "ProceedsFromIssueOfOrdinaryShares": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "InterestPaidClassifiedAsFinancingActivities": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "ProceedsFromBorrowingsClassifiedAsFinancingActivities": {
+      "2025-01-01..2025-12-31": 0.0
+    },
+    "NoncurrentReceivablesFromRentalOfProperties": {
+      "2023-12-31": 0.0
+    },
+    "DeferredTaxLiabilities": {
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0,
+      "2021-12-31": 0.0
+    },
+    "ChangesInInventoriesOfFinishedGoodsAndWorkInProgress": {
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "DeferredTaxExpenseIncome": {
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "AdjustmentsForIncreaseDecreaseInOtherLiabilities": {
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities": {
+      "2023-01-01..2023-12-31": 886000.0
+    },
+    "PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities": {
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "OtherNoncurrentNonfinancialLiabilities": {
+      "2022-12-31": 0.0,
+      "2021-12-31": 0.0
+    },
+    "AdjustmentsForProvisions": {
+      "2022-01-01..2022-12-31": 546000.0
+    },
+    "OtherAdjustmentsForWhichCashEffectsAreInvestingOrFinancingCashFlow": {
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "PaymentsToAcquireOrRedeemEntitysShares": {
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "DividendsProposedOrDeclaredBeforeFinancialStatementsAuthorisedForIssueButNotRecognisedAsDistributionToOwnersPerShare": {
+      "2022-01-01..2022-12-31": 35.0
+    }
+  }
+}

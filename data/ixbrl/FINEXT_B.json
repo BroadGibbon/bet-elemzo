@@ -1,0 +1,113 @@
+{
+  "seccode": "FINEXT B",
+  "hivatalos_nev": "Finext Nyrt.",
+  "lei": "5493002UZIVLMZ8H6757",
+  "csomagok_szama": 3,
+  "fogalmak_szama": 27,
+  "adatok": {
+    "BasicEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 0.81,
+      "2024-01-01..2024-12-31": 0.09
+    },
+    "Inventories": {
+      "2025-12-31": 0.0
+    },
+    "CurrentTaxAssetsCurrent": {
+      "2025-12-31": 0.0,
+      "2024-12-31": 963.0
+    },
+    "ShorttermBorrowings": {
+      "2025-12-31": 0.0
+    },
+    "OtherShorttermProvisions": {
+      "2025-12-31": 0.0,
+      "2023-12-31": 0.0
+    },
+    "ProceedsFromBorrowingsClassifiedAsFinancingActivities": {
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "DividendsPaidClassifiedAsFinancingActivities": {
+      "2024-01-01..2024-12-31": -0.0
+    },
+    "EffectOfExchangeRateChangesOnCashAndCashEquivalents": {
+      "2025-01-01..2025-12-31": 451.0,
+      "2022-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "GainsLossesOnDisposalsOfInvestmentProperties": {
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation": {
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "OtherComprehensiveIncome": {
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "IntangibleAssetsOtherThanGoodwill": {
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0
+    },
+    "OtherNoncurrentFinancialAssets": {
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0
+    },
+    "NoncurrentDerivativeFinancialLiabilities": {
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0
+    },
+    "OtherNoncurrentLiabilities": {
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0
+    },
+    "NoncurrentLeaseLiabilities": {
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0
+    },
+    "OtherLongtermProvisions": {
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0
+    },
+    "CurrentAdvances": {
+      "2024-12-31": 0.0,
+      "2022-12-31": 0.0
+    },
+    "CurrentDerivativeFinancialLiabilities": {
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0
+    },
+    "CurrentLeaseLiabilities": {
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0
+    },
+    "AdjustmentsForGainLossOnDisposalOfInvestmentsInSubsidiariesJointVenturesAndAssociates": {
+      "2024-01-01..2024-12-31": -0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "AdjustmentsForDecreaseIncreaseInInventories": {
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "AdjustmentsForDepreciationExpense": {
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 910.0
+    },
+    "AdjustmentsForGainLossOnDisposalsPropertyPlantAndEquipment": {
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "ProceedsFromSalesOfInvestmentProperty": {
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "ProceedsFromDisposalsOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets": {
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities": {
+      "2023-01-01..2023-12-31": -0.0
+    }
+  }
+}

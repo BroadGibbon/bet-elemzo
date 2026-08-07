@@ -1,0 +1,160 @@
+{
+  "seccode": "FUTURAQUA",
+  "hivatalos_nev": "FuturAqua Nyrt.",
+  "lei": "5299001G3Y6HV6RQ4D54",
+  "csomagok_szama": 2,
+  "fogalmak_szama": 39,
+  "adatok": {
+    "CurrentPrepaymentsAndOtherCurrentAssets": {
+      "2022-12-31": 114000.0,
+      "2021-12-31": 132000.0,
+      "2020-12-31": 474000.0
+    },
+    "ConstructionInProgress": {
+      "2023-12-31": 0.0
+    },
+    "DeferredTaxAssets": {
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0
+    },
+    "NoncurrentLoansAndReceivables": {
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0
+    },
+    "InvestmentsInSubsidiaries": {
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0
+    },
+    "InvestmentsInAssociatesAccountedForUsingEquityMethod": {
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0
+    },
+    "NoncurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod": {
+      "2022-12-31": 0.0
+    },
+    "TradeAndOtherCurrentPayablesToTradeSuppliers": {
+      "2023-12-31": 299000.0
+    },
+    "CurrentProvisions": {
+      "2023-12-31": 0.0,
+      "2020-12-31": 0.0
+    },
+    "LongtermBorrowings": {
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0,
+      "2021-12-31": 0.0
+    },
+    "NoncontrollingInterests": {
+      "2023-12-31": 0.0,
+      "2022-12-31": 0.0,
+      "2021-12-31": 0.0,
+      "2020-12-31": 0.0
+    },
+    "OtherIncome": {
+      "2022-01-01..2022-12-31": 316000.0
+    },
+    "RawMaterialsAndConsumablesUsed": {
+      "2023-01-01..2023-12-31": 32000.0
+    },
+    "CostOfMerchandiseSold": {
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 24000.0,
+      "2021-01-01..2021-12-31": 284000.0
+    },
+    "EmployeeBenefitsExpense": {
+      "2023-01-01..2023-12-31": 180000.0
+    },
+    "FinanceIncomeCost": {
+      "2022-01-01..2022-12-31": 288000.0,
+      "2021-01-01..2021-12-31": -302000.0
+    },
+    "IncomeTaxExpenseContinuingOperations": {
+      "2023-01-01..2023-12-31": 55000.0,
+      "2022-01-01..2022-12-31": 36000.0,
+      "2021-01-01..2021-12-31": 51000.0
+    },
+    "ProfitLossFromDiscontinuedOperations": {
+      "2023-01-01..2023-12-31": -667000.0
+    },
+    "OtherComprehensiveIncome": {
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "ComprehensiveIncomeAttributableToNoncontrollingInterests": {
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss": {
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "AdjustmentsForSharebasedPayments": {
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets": {
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": -36000.0
+    },
+    "AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities": {
+      "2022-01-01..2022-12-31": 306000.0
+    },
+    "AdjustmentsForDecreaseIncreaseInTradeAndOtherReceivables": {
+      "2022-01-01..2022-12-31": -115000.0
+    },
+    "IncomeTaxesPaidClassifiedAsOperatingActivities": {
+      "2023-01-01..2023-12-31": 55000.0,
+      "2022-01-01..2022-12-31": 36000.0,
+      "2021-01-01..2021-12-31": 51000.0
+    },
+    "OtherAdjustmentsToReconcileProfitLoss": {
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities": {
+      "2022-01-01..2022-12-31": -322000.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "ProceedsFromDisposalsOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets": {
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 36000.0
+    },
+    "PaymentsToAcquireOrRedeemEntitysShares": {
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "ProceedsFromSaleOrIssueOfTreasuryShares": {
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "RepaymentsOfBorrowingsClassifiedAsFinancingActivities": {
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities": {
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "PurchaseOfTreasuryShares": {
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "IncreaseDecreaseThroughTransfersAndOtherChangesEquity": {
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "BasicEarningsLossPerShare": {
+      "2022-01-01..2022-12-31": -3.458,
+      "2021-01-01..2021-12-31": -18.023
+    },
+    "DilutedEarningsLossPerShare": {
+      "2022-01-01..2022-12-31": -3.458,
+      "2021-01-01..2021-12-31": -18.023
+    },
+    "ProceedsFromBorrowingsClassifiedAsFinancingActivities": {
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "IncreaseDecreaseInCashAndCashEquivalents": {
+      "2021-01-01..2021-12-31": 207000.0
+    }
+  }
+}

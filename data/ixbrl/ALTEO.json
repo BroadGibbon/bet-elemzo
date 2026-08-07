@@ -1,0 +1,31 @@
+{
+  "seccode": "ALTEO",
+  "hivatalos_nev": "ALTEO Nyrt.",
+  "lei": "529900PHL3J3ZRBC2J44",
+  "csomagok_szama": 4,
+  "fogalmak_szama": 4,
+  "adatok": {
+    "BasicEarningsLossPerShare": {
+      "2024-01-01..2024-12-31": 484.8,
+      "2023-01-01..2023-12-31": 644.75,
+      "2022-01-01..2022-12-31": 653.61,
+      "2021-01-01..2021-12-31": 309.96,
+      "2020-01-01..2020-12-31": 31.48
+    },
+    "DilutedEarningsLossPerShare": {
+      "2024-01-01..2024-12-31": 482.86,
+      "2023-01-01..2023-12-31": 642.07,
+      "2022-01-01..2022-12-31": 653.4,
+      "2021-01-01..2021-12-31": 302.03,
+      "2020-01-01..2020-12-31": 30.26
+    },
+    "InvestmentsInAssociatesAccountedForUsingEquityMethod": {
+      "2022-12-31": 100000.0,
+      "2021-12-31": 100000.0,
+      "2020-12-31": 100000.0
+    },
+    "IncreaseDecreaseThroughTransfersAndOtherChangesEquity": {
+      "2020-01-01..2020-12-31": 84000.0
+    }
+  }
+}

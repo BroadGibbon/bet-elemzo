@@ -1,0 +1,79 @@
+{
+  "seccode": "SPLUS",
+  "hivatalos_nev": "Shopper Park Plus Nyrt.",
+  "lei": "529900WMJW5U55FMKN19",
+  "csomagok_szama": 3,
+  "fogalmak_szama": 20,
+  "adatok": {
+    "OtherIncome": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "OtherComprehensiveIncomeNetOfTaxChangeInValueOfForeignCurrencyBasisSpreadsThatHedgeTimeperiodRelatedHedgedItems": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "BasicEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 2.07,
+      "2024-01-01..2024-12-31": 1.85,
+      "2023-01-01..2023-12-31": 1.12,
+      "2022-01-01..2022-12-31": 4.13
+    },
+    "OtherNoncurrentLiabilities": {
+      "2025-12-31": 0.0
+    },
+    "DividendsProposedOrDeclaredBeforeFinancialStatementsAuthorisedForIssueButNotRecognisedAsDistributionToOwnersPerShare": {
+      "2025-01-01..2025-12-31": 0.92,
+      "2024-01-01..2024-12-31": 0.84
+    },
+    "ProfitLossAttributableToNoncontrollingInterests": {
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "ComprehensiveIncomeAttributableToNoncontrollingInterests": {
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "ReserveOfExchangeDifferencesOnTranslation": {
+      "2023-12-31": 0.0
+    },
+    "NoncontrollingInterests": {
+      "2023-12-31": 0.0
+    },
+    "AdjustmentsForProvisions": {
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities": {
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "ProceedsFromBorrowingsClassifiedAsFinancingActivities": {
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "DerivativeFinancialAssetsHeldForHedging": {
+      "2023-12-31": 0.0
+    },
+    "CurrentProvisions": {
+      "2023-12-31": 0.0
+    },
+    "DerivativeFinancialLiabilitiesHeldForHedging": {
+      "2022-12-31": 0.0
+    },
+    "IncreaseDecreaseThroughAppropriationOfRetainedEarnings": {
+      "2022-01-01..2022-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0
+    },
+    "CashRepaymentsOfAdvancesAndLoansFromRelatedParties": {
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "PaymentsForShareIssueCosts": {
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "DividendsPaidClassifiedAsFinancingActivities": {
+      "2022-01-01..2022-12-31": 0.0
+    }
+  }
+}

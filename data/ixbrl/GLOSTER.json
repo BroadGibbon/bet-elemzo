@@ -1,0 +1,407 @@
+{
+  "seccode": "GLOSTER",
+  "hivatalos_nev": "Gloster Digital Group Nyrt.",
+  "lei": "529900UXKCCC7E845C20",
+  "csomagok_szama": 1,
+  "fogalmak_szama": 101,
+  "adatok": {
+    "IntangibleAssetsOtherThanGoodwill": {
+      "2025-12-31": 196936000.0,
+      "2024-12-31": 165238000.0
+    },
+    "PropertyPlantAndEquipment": {
+      "2025-12-31": 146105000.0,
+      "2024-12-31": 195116000.0
+    },
+    "DeferredTaxAssets": {
+      "2025-12-31": 14267000.0,
+      "2024-12-31": 14461000.0
+    },
+    "RightofuseAssets": {
+      "2025-12-31": 161642000.0,
+      "2024-12-31": 180867000.0
+    },
+    "OtherNoncurrentAssets": {
+      "2025-12-31": 22394000.0,
+      "2024-12-31": 36611000.0
+    },
+    "Goodwill": {
+      "2025-12-31": 2788459000.0,
+      "2024-12-31": 2788459000.0
+    },
+    "NoncurrentAssets": {
+      "2025-12-31": 3329803000.0,
+      "2024-12-31": 3380752000.0
+    },
+    "InventoriesTotal": {
+      "2025-12-31": 6169000.0,
+      "2024-12-31": 4863000.0
+    },
+    "TradeReceivables": {
+      "2025-12-31": 1366523000.0,
+      "2024-12-31": 1507955000.0
+    },
+    "OtherReceivables": {
+      "2025-12-31": 531669000.0,
+      "2024-12-31": 588091000.0
+    },
+    "CurrentTaxAssets": {
+      "2025-12-31": 50706000.0,
+      "2024-12-31": 15418000.0
+    },
+    "CurrentInvestments": {
+      "2025-12-31": 104000.0,
+      "2024-12-31": 104000.0
+    },
+    "CashAndCashEquivalents": {
+      "2025-12-31": 1019221000.0,
+      "2024-12-31": 687604000.0,
+      "2023-12-31": 1135475000.0
+    },
+    "NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale": {
+      "2024-12-31": 2185465000.0
+    },
+    "CurrentAssets": {
+      "2025-12-31": 2974392000.0,
+      "2024-12-31": 4989500000.0
+    },
+    "Assets": {
+      "2025-12-31": 6304195000.0,
+      "2024-12-31": 8370252000.0
+    },
+    "IssuedCapital": {
+      "2025-12-31": 181764000.0,
+      "2024-12-31": 181764000.0
+    },
+    "TreasuryShares": {
+      "2025-12-31": 10884000.0,
+      "2024-12-31": 567697000.0
+    },
+    "CapitalReserve": {
+      "2025-12-31": 2830593000.0,
+      "2024-12-31": 2830593000.0
+    },
+    "ReserveOfSharebasedPayments": {
+      "2024-12-31": 32654000.0
+    },
+    "ReserveOfExchangeDifferencesOnTranslation": {
+      "2025-12-31": 1509000.0
+    },
+    "RetainedEarnings": {
+      "2025-12-31": -1122958000.0,
+      "2024-12-31": 431706000.0
+    },
+    "EquityAttributableToOwnersOfParent": {
+      "2025-12-31": 1880024000.0,
+      "2024-12-31": 2909020000.0
+    },
+    "NoncontrollingInterests": {
+      "2025-12-31": 268142000.0,
+      "2024-12-31": 468428000.0
+    },
+    "Equity": {
+      "2025-12-31": 2148166000.0,
+      "2024-12-31": 3377448000.0,
+      "2023-12-31": 3521502000.0
+    },
+    "LongtermBorrowings": {
+      "2025-12-31": 1304213000.0,
+      "2024-12-31": 610014000.0
+    },
+    "NoncurrentGovernmentGrants": {
+      "2025-12-31": 33459000.0,
+      "2024-12-31": 61517000.0
+    },
+    "NoncurrentLeaseLiabilities": {
+      "2025-12-31": 67953000.0,
+      "2024-12-31": 65971000.0
+    },
+    "NoncurrentLiabilities": {
+      "2025-12-31": 1405625000.0,
+      "2024-12-31": 737502000.0
+    },
+    "ShorttermBorrowings": {
+      "2025-12-31": 802728000.0,
+      "2024-12-31": 1189898000.0
+    },
+    "CurrentLeaseLiabilities": {
+      "2025-12-31": 85264000.0,
+      "2024-12-31": 41202000.0
+    },
+    "TradeAndOtherCurrentPayablesToTradeSuppliers": {
+      "2025-12-31": 1099046000.0,
+      "2024-12-31": 733542000.0
+    },
+    "OtherCurrentLiabilities": {
+      "2025-12-31": 757846000.0,
+      "2024-12-31": 784718000.0
+    },
+    "CurrentTaxLiabilities": {
+      "2025-12-31": 5520000.0,
+      "2024-12-31": 9087000.0
+    },
+    "LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale": {
+      "2024-12-31": 1496855000.0
+    },
+    "CurrentLiabilities": {
+      "2025-12-31": 2750404000.0,
+      "2024-12-31": 4255302000.0
+    },
+    "EquityAndLiabilities": {
+      "2025-12-31": 6304195000.0,
+      "2024-12-31": 8370252000.0
+    },
+    "Revenue": {
+      "2025-01-01..2025-12-31": 8650936000.0,
+      "2024-01-01..2024-12-31": 10321472000.0
+    },
+    "OtherIncome": {
+      "2025-01-01..2025-12-31": 48627000.0,
+      "2024-01-01..2024-12-31": 60766000.0
+    },
+    "RevenueAndOperatingIncome": {
+      "2025-01-01..2025-12-31": 8699563000.0,
+      "2024-01-01..2024-12-31": 10382238000.0
+    },
+    "RawMaterialsAndConsumablesUsed": {
+      "2025-01-01..2025-12-31": 19451000.0,
+      "2024-01-01..2024-12-31": 28357000.0
+    },
+    "CostOfSales": {
+      "2025-01-01..2025-12-31": 3157886000.0,
+      "2024-01-01..2024-12-31": 4543811000.0
+    },
+    "ServicesExpense": {
+      "2025-01-01..2025-12-31": 1973044000.0,
+      "2024-01-01..2024-12-31": 2399898000.0
+    },
+    "EmployeeBenefitsExpense": {
+      "2025-01-01..2025-12-31": 2740547000.0,
+      "2024-01-01..2024-12-31": 2351759000.0
+    },
+    "DepreciationAndAmortisationExpense": {
+      "2025-01-01..2025-12-31": 191292000.0,
+      "2024-01-01..2024-12-31": 303508000.0
+    },
+    "OtherExpenseByNature": {
+      "2025-01-01..2025-12-31": 57401000.0,
+      "2024-01-01..2024-12-31": 159036000.0
+    },
+    "OperatingExpense": {
+      "2025-01-01..2025-12-31": 8139621000.0,
+      "2024-01-01..2024-12-31": 9786369000.0
+    },
+    "ProfitLossFromOperatingActivities": {
+      "2025-01-01..2025-12-31": 559942000.0,
+      "2024-01-01..2024-12-31": 595869000.0
+    },
+    "FinanceIncome": {
+      "2025-01-01..2025-12-31": 181604000.0,
+      "2024-01-01..2024-12-31": 333690000.0
+    },
+    "FinanceCosts": {
+      "2025-01-01..2025-12-31": 274486000.0,
+      "2024-01-01..2024-12-31": 342252000.0
+    },
+    "FinanceIncomeCost": {
+      "2025-01-01..2025-12-31": -92882000.0,
+      "2024-01-01..2024-12-31": -8562000.0
+    },
+    "ProfitLossBeforeTax": {
+      "2025-01-01..2025-12-31": 467060000.0,
+      "2024-01-01..2024-12-31": 587307000.0
+    },
+    "IncomeTaxExpenseContinuingOperations": {
+      "2025-01-01..2025-12-31": 202047000.0,
+      "2024-01-01..2024-12-31": 151846000.0
+    },
+    "ProfitLossFromContinuingOperations": {
+      "2025-01-01..2025-12-31": 265013000.0,
+      "2024-01-01..2024-12-31": 435461000.0
+    },
+    "ProfitLossFromDiscontinuedOperations": {
+      "2025-01-01..2025-12-31": 191107000.0,
+      "2024-01-01..2024-12-31": 26543000.0
+    },
+    "ProfitLoss": {
+      "2025-01-01..2025-12-31": 456120000.0,
+      "2024-01-01..2024-12-31": 462004000.0
+    },
+    "OtherComprehensiveIncome": {
+      "2025-01-01..2025-12-31": 1509000.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "ComprehensiveIncome": {
+      "2025-01-01..2025-12-31": 457629000.0,
+      "2024-01-01..2024-12-31": 462004000.0
+    },
+    "ProfitLossFromContinuingOperationsAttributableToOrdinaryEquityHoldersOfParentEntity": {
+      "2025-01-01..2025-12-31": 16868000.0,
+      "2024-01-01..2024-12-31": 44738000.0
+    },
+    "ProfitLossFromContinuingOperationsAttributableToNoncontrollingInterests": {
+      "2025-01-01..2025-12-31": 248145000.0,
+      "2024-01-01..2024-12-31": 390723000.0
+    },
+    "ProfitLossFromDiscontinuedOperationsAttributableToOrdinaryEquityHoldersOfParentEntity": {
+      "2025-01-01..2025-12-31": 191107000.0,
+      "2024-01-01..2024-12-31": 26543000.0
+    },
+    "ProfitLossFromDiscontinuedOperationsAttributableToNoncontrollingInterests": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "OtherComprehensiveIncomeAttributableToOwnersOfParent": {
+      "2025-01-01..2025-12-31": 1509000.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "OtherComprehensiveIncomeAttributableToNoncontrollingInterests": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "ComprehensiveIncomeAttributableToOwnersOfParent": {
+      "2025-01-01..2025-12-31": 209484000.0,
+      "2024-01-01..2024-12-31": 71281000.0
+    },
+    "ComprehensiveIncomeAttributableToNoncontrollingInterests": {
+      "2025-01-01..2025-12-31": 248145000.0,
+      "2024-01-01..2024-12-31": 390723000.0
+    },
+    "BasicEarningsLossPerShareFromContinuingOperations": {
+      "2025-01-01..2025-12-31": 0.94,
+      "2024-01-01..2024-12-31": 2.5
+    },
+    "DilutedEarningsLossPerShareFromContinuingOperations": {
+      "2025-01-01..2025-12-31": 0.94,
+      "2024-01-01..2024-12-31": 2.5
+    },
+    "BasicEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 11.54,
+      "2024-01-01..2024-12-31": 3.98
+    },
+    "DilutedEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 11.54,
+      "2024-01-01..2024-12-31": 3.98
+    },
+    "IncreaseDecreaseThroughSharebasedPaymentTransactions": {
+      "2025-01-01..2025-12-31": -32654000.0,
+      "2024-01-01..2024-12-31": 32654000.0
+    },
+    "IncreaseDecreaseThroughTreasuryShareTransactions": {
+      "2025-01-01..2025-12-31": 552580000.0
+    },
+    "DividendsPaid": {
+      "2025-01-01..2025-12-31": 432176000.0,
+      "2024-01-01..2024-12-31": 321092000.0
+    },
+    "GainsLossesRecognisedWhenControlInSubsidiaryIsLost": {
+      "2024-01-01..2024-12-31": -44374000.0
+    },
+    "PurchaseOfTreasuryShares": {
+      "2024-01-01..2024-12-31": 245666000.0
+    },
+    "IncreaseDecreaseThroughAcquisitionOfSubsidiary": {
+      "2024-01-01..2024-12-31": 2000.0
+    },
+    "AdjustmentsForDepreciationAndAmortisationExpense": {
+      "2025-01-01..2025-12-31": 191292000.0,
+      "2024-01-01..2024-12-31": 303508000.0
+    },
+    "AdjustmentsForGainLossOnDisposalOfInvestmentsInSubsidiariesJointVenturesAndAssociates": {
+      "2025-01-01..2025-12-31": -211390000.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "AdjustmentsForSharebasedPayments": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 32654000.0
+    },
+    "AdjustmentsForInterestExpense": {
+      "2025-01-01..2025-12-31": 26408000.0,
+      "2024-01-01..2024-12-31": 133796000.0
+    },
+    "AdjustmentsForInterestIncome": {
+      "2025-01-01..2025-12-31": 35611000.0,
+      "2024-01-01..2024-12-31": 63126000.0
+    },
+    "AdjustmentsForDecreaseIncreaseInTradeAndOtherReceivables": {
+      "2025-01-01..2025-12-31": 197854000.0,
+      "2024-01-01..2024-12-31": -266035000.0
+    },
+    "AdjustmentsForDecreaseIncreaseInOtherCurrentAssets": {
+      "2025-01-01..2025-12-31": -1306000.0,
+      "2024-01-01..2024-12-31": -506976000.0
+    },
+    "AdjustmentsForIncreaseDecreaseInTradeAndOtherPayables": {
+      "2025-01-01..2025-12-31": 365504000.0,
+      "2024-01-01..2024-12-31": 570772000.0
+    },
+    "AdjustmentsForIncreaseDecreaseInOtherCurrentLiabilities": {
+      "2025-01-01..2025-12-31": -95902000.0,
+      "2024-01-01..2024-12-31": -228407000.0
+    },
+    "IncomeTaxesPaidRefundClassifiedAsOperatingActivities": {
+      "2025-01-01..2025-12-31": 240708000.0,
+      "2024-01-01..2024-12-31": 174017000.0
+    },
+    "CashFlowsFromUsedInOperatingActivities": {
+      "2025-01-01..2025-12-31": 854308000.0,
+      "2024-01-01..2024-12-31": 453840000.0
+    },
+    "ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "ProceedsFromSalesOrMaturityOfFinancialInstrumentsClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 14216000.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "InterestReceivedClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 35611000.0,
+      "2024-01-01..2024-12-31": 63126000.0
+    },
+    "CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 900000000.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 1705630000.0,
+      "2024-01-01..2024-12-31": 804196000.0
+    },
+    "CashFlowsFromUsedInInvestingActivities": {
+      "2025-01-01..2025-12-31": -910557000.0,
+      "2024-01-01..2024-12-31": -765443000.0
+    },
+    "ProceedsFromBorrowingsClassifiedAsFinancingActivities": {
+      "2025-01-01..2025-12-31": 1284048000.0,
+      "2024-01-01..2024-12-31": 1130088000.0
+    },
+    "RepaymentsOfBorrowingsClassifiedAsFinancingActivities": {
+      "2025-01-01..2025-12-31": 959033000.0,
+      "2024-01-01..2024-12-31": 811468000.0
+    },
+    "ProceedsFromSaleOrIssueOfTreasuryShares": {
+      "2025-01-01..2025-12-31": 552580000.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "DividendsPaidClassifiedAsFinancingActivities": {
+      "2025-01-01..2025-12-31": 432176000.0,
+      "2024-01-01..2024-12-31": 321092000.0
+    },
+    "InterestPaidClassifiedAsFinancingActivities": {
+      "2025-01-01..2025-12-31": 26408000.0,
+      "2024-01-01..2024-12-31": 133796000.0
+    },
+    "CashFlowsFromUsedInFinancingActivities": {
+      "2025-01-01..2025-12-31": 386357000.0,
+      "2024-01-01..2024-12-31": -136268000.0
+    },
+    "EffectOfExchangeRateChangesOnCashAndCashEquivalents": {
+      "2025-01-01..2025-12-31": -1509000.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "IncreaseDecreaseInCashAndCashEquivalents": {
+      "2025-01-01..2025-12-31": 330108000.0,
+      "2024-01-01..2024-12-31": -447871000.0
+    }
+  }
+}

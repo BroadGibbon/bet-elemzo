@@ -1,0 +1,36 @@
+{
+  "seccode": "STRT",
+  "hivatalos_nev": "STRT Holding Nyrt.",
+  "lei": "233000UW0XXXA61GFW20",
+  "csomagok_szama": 1,
+  "fogalmak_szama": 8,
+  "adatok": {
+    "FinanceCosts": {
+      "2025-01-01..2025-12-31": 768000.0
+    },
+    "BasicEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 4270.0,
+      "2024-01-01..2024-12-31": 47960.0
+    },
+    "DilutedEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 4270.0,
+      "2024-01-01..2024-12-31": 47960.0
+    },
+    "DeferredTaxAssets": {
+      "2024-12-31": 226000.0
+    },
+    "InventoriesTotal": {
+      "2025-12-31": 339000.0
+    },
+    "AdjustmentsForUnrealisedForeignExchangeLossesGains": {
+      "2025-01-01..2025-12-31": -14000.0
+    },
+    "AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets": {
+      "2024-01-01..2024-12-31": 184000.0
+    },
+    "EffectOfExchangeRateChangesOnCashAndCashEquivalents": {
+      "2025-01-01..2025-12-31": -480000.0,
+      "2024-01-01..2024-12-31": -134000.0
+    }
+  }
+}

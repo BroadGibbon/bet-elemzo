@@ -1,0 +1,170 @@
+{
+  "seccode": "GRANIT",
+  "hivatalos_nev": "GRÁNIT Bank Nyrt.",
+  "lei": "549300423T3ZCEZ1PP02",
+  "csomagok_szama": 1,
+  "fogalmak_szama": 43,
+  "adatok": {
+    "TradingIncomeExpenseOnDebtInstruments": {
+      "2025-01-01..2025-12-31": 707000000.0,
+      "2024-01-01..2024-12-31": 452000000.0
+    },
+    "RevenueFromDividends": {
+      "2025-01-01..2025-12-31": 22000000.0,
+      "2024-01-01..2024-12-31": 2000000.0
+    },
+    "MiscellaneousOtherOperatingIncome": {
+      "2025-01-01..2025-12-31": 990000000.0
+    },
+    "ChangesInOtherProvisions": {
+      "2025-01-01..2025-12-31": -228000000.0,
+      "2024-01-01..2024-12-31": 138000000.0
+    },
+    "IncreaseDecreaseThroughModificationOfContractualCashFlowsFinancialAssets": {
+      "2025-01-01..2025-12-31": -0.0,
+      "2024-01-01..2024-12-31": -27000000.0
+    },
+    "BasicEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 895.0
+    },
+    "DilutedEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 895.0
+    },
+    "GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax": {
+      "2025-01-01..2025-12-31": -301000000.0,
+      "2024-01-01..2024-12-31": -296000000.0
+    },
+    "IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss": {
+      "2025-01-01..2025-12-31": -26000000.0,
+      "2024-01-01..2024-12-31": -26000000.0
+    },
+    "ReversalOfImpairmentLossRecognisedInOtherComprehensiveIncome": {
+      "2025-01-01..2025-12-31": 14000000.0,
+      "2024-01-01..2024-12-31": 1000000.0
+    },
+    "OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax": {
+      "2025-01-01..2025-12-31": -261000000.0,
+      "2024-01-01..2024-12-31": -269000000.0
+    },
+    "OtherComprehensiveIncome": {
+      "2025-01-01..2025-12-31": -261000000.0,
+      "2024-01-01..2024-12-31": -269000000.0
+    },
+    "DeferredTaxAssets": {
+      "2025-12-31": 187000000.0,
+      "2024-12-31": 168000000.0
+    },
+    "CurrentTaxLiabilities": {
+      "2025-12-31": 497000000.0,
+      "2024-12-31": 625000000.0
+    },
+    "DeferredTaxLiabilities": {
+      "2025-12-31": 120000000.0,
+      "2024-12-31": 228000000.0
+    },
+    "Provisions": {
+      "2025-12-31": 699000000.0,
+      "2024-12-31": 447000000.0
+    },
+    "TreasuryShares": {
+      "2025-12-31": 0.0,
+      "2024-12-31": 0.0
+    },
+    "ReserveOfSharebasedPayments": {
+      "2025-12-31": 470000000.0,
+      "2024-12-31": 370000000.0
+    },
+    "AccumulatedOtherComprehensiveIncome": {
+      "2025-12-31": -400000000.0,
+      "2024-12-31": -141000000.0
+    },
+    "SaleOrIssueOfTreasuryShares": {
+      "2025-01-01..2025-12-31": 0.0
+    },
+    "IncreaseDecreaseThroughSharebasedPaymentTransactions": {
+      "2025-01-01..2025-12-31": 100000000.0,
+      "2024-01-01..2024-12-31": 190000000.0
+    },
+    "IncreaseDecreaseThroughTransferToStatutoryReserve": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "AdjustmentsForGainLossOnDisposalsPropertyPlantAndEquipment": {
+      "2025-01-01..2025-12-31": 15000000.0,
+      "2024-01-01..2024-12-31": -109000000.0
+    },
+    "AdjustmentsForProvisions": {
+      "2025-01-01..2025-12-31": 228000000.0,
+      "2024-01-01..2024-12-31": -138000000.0
+    },
+    "AdjustmentsForDeferredTaxExpense": {
+      "2025-01-01..2025-12-31": -101000000.0,
+      "2024-01-01..2024-12-31": 120000000.0
+    },
+    "AdjustmentsForSharebasedPayments": {
+      "2025-01-01..2025-12-31": 100000000.0,
+      "2024-01-01..2024-12-31": 190000000.0
+    },
+    "AdjustmentsForDividendIncome": {
+      "2025-01-01..2025-12-31": 22000000.0,
+      "2024-01-01..2024-12-31": 2000000.0
+    },
+    "AdjustmentsForDecreaseIncreaseInFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome": {
+      "2025-01-01..2025-12-31": -259000000.0,
+      "2024-01-01..2024-12-31": -277000000.0
+    },
+    "ProceedsFromContributionsOfNoncontrollingInterests": {
+      "2025-01-01..2025-12-31": -101000000.0,
+      "2024-01-01..2024-12-31": 305000000.0
+    },
+    "AdjustmentsForDecreaseIncreaseInDerivativeFinancialAssets": {
+      "2024-01-01..2024-12-31": -357000000.0
+    },
+    "AdjustmentsForIncreaseDecreaseInOtherLiabilities": {
+      "2024-01-01..2024-12-31": 395000000.0
+    },
+    "ProceedsFromSalesOrMaturityOfFinancialAssetsMeasuredAtFairValueThroughProfitOrLossClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 44000000.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 720000000.0
+    },
+    "ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 207000000.0
+    },
+    "ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 117000000.0
+    },
+    "DividendsReceivedClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 22000000.0,
+      "2024-01-01..2024-12-31": 2000000.0
+    },
+    "CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": -0.0,
+      "2024-01-01..2024-12-31": -563000000.0
+    },
+    "ProceedsFromIssuingShares": {
+      "2025-01-01..2025-12-31": 0.0
+    },
+    "ProceedsFromSaleOrIssueOfTreasuryShares": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "IncreaseDecreaseThroughObtainingOrLosingControlOfSubsidiariesOrOtherBusinessesLiabilitiesArisingFromFinancingActivities": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities": {
+      "2025-01-01..2025-12-31": 792000000.0
+    },
+    "DividendsPaidClassifiedAsFinancingActivities": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "CashFlowsFromUsedInFinancingActivities": {
+      "2025-01-01..2025-12-31": -792000000.0
+    }
+  }
+}

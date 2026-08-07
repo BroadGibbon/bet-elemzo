@@ -1,0 +1,440 @@
+{
+  "seccode": "MBHBANK",
+  "hivatalos_nev": "MBH Bank Nyrt.",
+  "lei": "3H0Q3U74FVFED2SHZT16",
+  "csomagok_szama": 3,
+  "fogalmak_szama": 110,
+  "adatok": {
+    "FinancialAssetsAtFairValueThroughProfitOrLoss": {
+      "2023-12-31": 756308000.0,
+      "2022-12-31": 819718000.0
+    },
+    "FinancialAssetsAtFairValueThroughProfitOrLossClassifiedAsHeldForTrading": {
+      "2023-12-31": 2621000.0,
+      "2022-12-31": 49923000.0
+    },
+    "DerivativeFinancialAssetsHeldForTrading": {
+      "2023-12-31": 195183000.0,
+      "2022-12-31": 326409000.0
+    },
+    "DerivativeFinancialAssetsHeldForHedging": {
+      "2023-12-31": 73652000.0,
+      "2022-12-31": 164338000.0
+    },
+    "FinancialAssetsAtFairValueThroughOtherComprehensiveIncome": {
+      "2023-12-31": 912538000.0,
+      "2022-12-31": 630845000.0
+    },
+    "LoansAndAdvancesToBanks": {
+      "2023-12-31": 106544000.0,
+      "2022-12-31": 179088000.0
+    },
+    "ReverseRepurchaseAgreementsAndCashCollateralOnSecuritiesBorrowed": {
+      "2023-12-31": 17918000.0,
+      "2022-12-31": 1070000.0
+    },
+    "InvestmentsInAssociatesAccountedForUsingEquityMethod": {
+      "2023-12-31": 55169000.0,
+      "2022-12-31": 49599000.0
+    },
+    "PropertyPlantAndEquipment": {
+      "2023-12-31": 120501000.0,
+      "2022-12-31": 98345000.0
+    },
+    "IntangibleAssetsOtherThanGoodwill": {
+      "2023-12-31": 71094000.0,
+      "2022-12-31": 70511000.0
+    },
+    "CurrentTaxAssets": {
+      "2023-12-31": 276000000.0,
+      "2022-12-31": 453000000.0
+    },
+    "DeferredTaxAssets": {
+      "2023-12-31": 13264000.0,
+      "2022-12-31": 24528000.0
+    },
+    "OtherAssets": {
+      "2023-12-31": 62367000.0,
+      "2022-12-31": 69039000.0
+    },
+    "FinancialAssetsAvailableforsale": {
+      "2023-12-31": 1369000.0,
+      "2022-12-31": 154000000.0
+    },
+    "FinancialLiabilitiesAtFairValueThroughProfitOrLoss": {
+      "2023-12-31": 152581000.0,
+      "2022-12-31": 278203000.0
+    },
+    "DerivativeFinancialLiabilitiesHeldForTrading": {
+      "2023-12-31": 129943999.99999999,
+      "2022-12-31": 235877000.0
+    },
+    "DerivativeFinancialLiabilitiesHeldForHedging": {
+      "2023-12-31": 17018000.0,
+      "2022-12-31": 1365000.0
+    },
+    "RepurchaseAgreementsAndCashCollateralOnSecuritiesLent": {
+      "2023-12-31": 11767000.0
+    },
+    "BondsIssued": {
+      "2023-12-31": 520900999.99999994,
+      "2022-12-31": 290838000.0
+    },
+    "SubordinatedLiabilities": {
+      "2023-12-31": 108341000.0,
+      "2022-12-31": 88887000.0
+    },
+    "Provisions": {
+      "2023-12-31": 31240000.0,
+      "2022-12-31": 22623000.0
+    },
+    "CurrentTaxLiabilities": {
+      "2023-12-31": 15354000.0,
+      "2022-12-31": 12378000.0
+    },
+    "DeferredTaxLiabilities": {
+      "2023-12-31": 1631000.0,
+      "2022-12-31": 3105000.0
+    },
+    "OtherLiabilities": {
+      "2023-12-31": 76028000.0,
+      "2022-12-31": 71737000.0
+    },
+    "IssuedCapital": {
+      "2023-12-31": 322530000.0,
+      "2022-12-31": 321699000.0
+    },
+    "CapitalReserve": {
+      "2023-12-31": 348894000.0,
+      "2022-12-31": 313947000.0
+    },
+    "RetainedEarningsExcludingProfitLossForReportingPeriod": {
+      "2023-12-31": 44754000.0,
+      "2022-12-31": 32592000.0
+    },
+    "OtherReserves": {
+      "2023-12-31": 51066000.0,
+      "2022-12-31": 32552000.0
+    },
+    "RetainedEarningsProfitLossForReportingPeriod": {
+      "2023-12-31": 176679000.0,
+      "2022-12-31": 88942000.0
+    },
+    "AccumulatedOtherComprehensiveIncome": {
+      "2023-12-31": 36465000.0,
+      "2022-12-31": -21357000.0
+    },
+    "EquityAttributableToOwnersOfParent": {
+      "2023-12-31": 980388000.0,
+      "2022-12-31": 768375000.0
+    },
+    "NoncontrollingInterests": {
+      "2023-12-31": 42983000.0,
+      "2022-12-31": 40361000.0
+    },
+    "Equity": {
+      "2022-12-31": 808736000.0,
+      "2021-12-31": 249753000.0
+    },
+    "RevenueFromInterest": {
+      "2022-01-01..2022-12-31": 678949000.0
+    },
+    "InterestRevenueCalculatedUsingEffectiveInterestMethod": {
+      "2023-01-01..2023-12-31": 780138000.0,
+      "2022-01-01..2022-12-31": 471917000.0
+    },
+    "InterestExpense": {
+      "2023-01-01..2023-12-31": 639153000.0,
+      "2022-01-01..2022-12-31": 313222000.0
+    },
+    "InterestRevenueExpense": {
+      "2023-01-01..2023-12-31": 565557000.0,
+      "2022-01-01..2022-12-31": 365727000.0
+    },
+    "FeeAndCommissionIncome": {
+      "2023-01-01..2023-12-31": 188872000.0,
+      "2022-01-01..2022-12-31": 142020000.0
+    },
+    "FeeAndCommissionExpense": {
+      "2023-01-01..2023-12-31": 49431000.0,
+      "2022-01-01..2022-12-31": 37591000.0
+    },
+    "FeeAndCommissionIncomeExpense": {
+      "2023-01-01..2023-12-31": 139441000.0,
+      "2022-01-01..2022-12-31": 104429000.0
+    },
+    "HedgingGainsLossesForHedgeOfGroupOfItemsWithOffsettingRiskPositions": {
+      "2023-01-01..2023-12-31": 24248000.0,
+      "2022-01-01..2022-12-31": -5288000.0
+    },
+    "GainsLossesOnExchangeDifferencesOnTranslationRecognisedInProfitOrLoss": {
+      "2023-01-01..2023-12-31": 50141000.0,
+      "2022-01-01..2022-12-31": -46460000.0
+    },
+    "ImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss": {
+      "2023-01-01..2023-12-31": 75461000.0,
+      "2022-01-01..2022-12-31": 93176000.0
+    },
+    "ImpairmentLossImpairmentGainAndReversalOfImpairmentLossDeterminedInAccordanceWithIFRS9": {
+      "2023-01-01..2023-12-31": 58618000.0,
+      "2022-01-01..2022-12-31": 65004999.99999999
+    },
+    "IncreaseDecreaseThroughModificationOfContractualCashFlowsFinancialAssets": {
+      "2023-01-01..2023-12-31": 14449000.0,
+      "2022-01-01..2022-12-31": 23222000.0
+    },
+    "RevenueFromDividends": {
+      "2023-01-01..2023-12-31": 1628000.0,
+      "2022-01-01..2022-12-31": 728000000.0
+    },
+    "AdministrativeExpense": {
+      "2023-01-01..2023-12-31": 419069000.0,
+      "2022-01-01..2022-12-31": 310056000.0
+    },
+    "OtherIncome": {
+      "2023-01-01..2023-12-31": 25776000.0,
+      "2022-01-01..2022-12-31": 13317000.0
+    },
+    "OtherExpenseByFunction": {
+      "2023-01-01..2023-12-31": 21215000.0,
+      "2022-01-01..2022-12-31": 10536000.0
+    },
+    "ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod": {
+      "2023-01-01..2023-12-31": -2256000.0,
+      "2022-01-01..2022-12-31": 2704000.0
+    },
+    "GainsLossesOnDisposalsOfOtherNoncurrentAssets": {
+      "2022-01-01..2022-12-31": -1893000.0
+    },
+    "ProfitLossBeforeTax": {
+      "2023-01-01..2023-12-31": 221876000.0,
+      "2022-01-01..2022-12-31": 103390000.0
+    },
+    "IncomeTaxExpenseContinuingOperations": {
+      "2023-01-01..2023-12-31": 38686000.0,
+      "2022-01-01..2022-12-31": 12222000.0
+    },
+    "ProfitLoss": {
+      "2023-01-01..2023-12-31": 183190000.0,
+      "2022-01-01..2022-12-31": 91168000.0
+    },
+    "ProfitLossAttributableToOwnersOfParent": {
+      "2023-01-01..2023-12-31": 176679000.0,
+      "2022-01-01..2022-12-31": 88942000.0
+    },
+    "ProfitLossAttributableToNoncontrollingInterests": {
+      "2023-01-01..2023-12-31": 6511000.0,
+      "2022-01-01..2022-12-31": 2226000.0
+    },
+    "OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax": {
+      "2023-01-01..2023-12-31": 53202000.0,
+      "2022-01-01..2022-12-31": 4972000.0
+    },
+    "OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments": {
+      "2023-01-01..2023-12-31": -333000000.0,
+      "2022-01-01..2022-12-31": 457000000.0
+    },
+    "GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeBeforeTax": {
+      "2023-01-01..2023-12-31": 58303000.0,
+      "2022-01-01..2022-12-31": 3917000.0
+    },
+    "IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss": {
+      "2023-01-01..2023-12-31": 4768000.0,
+      "2022-01-01..2022-12-31": -598000000.0
+    },
+    "OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax": {
+      "2023-01-01..2023-12-31": 4711000.0,
+      "2022-01-01..2022-12-31": -210000000.0
+    },
+    "OtherComprehensiveIncome": {
+      "2023-01-01..2023-12-31": 57913000.0,
+      "2022-01-01..2022-12-31": 4762000.0
+    },
+    "ComprehensiveIncome": {
+      "2023-01-01..2023-12-31": 241103000.0,
+      "2022-01-01..2022-12-31": 95930000.0
+    },
+    "ComprehensiveIncomeAttributableToOwnersOfParent": {
+      "2023-01-01..2023-12-31": 234233000.0,
+      "2022-01-01..2022-12-31": 93606000.0
+    },
+    "ComprehensiveIncomeAttributableToNoncontrollingInterests": {
+      "2023-01-01..2023-12-31": 6870000.0,
+      "2022-01-01..2022-12-31": 2324000.0
+    },
+    "ProfitLossFromContinuingOperations": {
+      "2023-01-01..2023-12-31": 183190000.0,
+      "2022-01-01..2022-12-31": 91168000.0
+    },
+    "ComprehensiveIncomeFromContinuingOperations": {
+      "2023-01-01..2023-12-31": 241103000.0,
+      "2022-01-01..2022-12-31": 95930000.0
+    },
+    "ProfitLossAttributableToOrdinaryEquityHoldersOfParentEntity": {
+      "2023-01-01..2023-12-31": 176679000.0,
+      "2022-01-01..2022-12-31": 88942000.0
+    },
+    "WeightedAverageShares": {
+      "2023-01-01..2023-12-31": 322257.0,
+      "2022-01-01..2022-12-31": 259781.99999999997
+    },
+    "BasicEarningsLossPerShare": {
+      "2023-01-01..2023-12-31": 548.0,
+      "2022-01-01..2022-12-31": 342.0
+    },
+    "DilutedEarningsLossPerShare": {
+      "2023-01-01..2023-12-31": 548000000.0,
+      "2022-01-01..2022-12-31": 342000000.0
+    },
+    "IssueOfEquity": {
+      "2022-01-01..2022-12-31": 208221000.0
+    },
+    "DividendsPaid": {
+      "2022-01-01..2022-12-31": 4300000.0,
+      "2023-01-01..2023-12-31": 25093000.0
+    },
+    "ChangesInEquity": {
+      "2022-01-01..2022-12-31": 463053000.0,
+      "2023-01-01..2023-12-31": -26468000.0
+    },
+    "AdjustmentsForDepreciationAndAmortisationExpense": {
+      "2023-01-01..2023-12-31": 35655000.0,
+      "2022-01-01..2022-12-31": 27320000.0
+    },
+    "AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossLoansAndAdvances": {
+      "2023-01-01..2023-12-31": 56397000.0,
+      "2022-01-01..2022-12-31": 53282000.0
+    },
+    "AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossInventories": {
+      "2023-01-01..2023-12-31": 74000000.0,
+      "2022-01-01..2022-12-31": 231000000.0
+    },
+    "AdjustmentsForProvisions": {
+      "2023-01-01..2023-12-31": 1382000.0,
+      "2022-01-01..2022-12-31": 3379000.0
+    },
+    "OtherAdjustmentsForNoncashItems": {
+      "2023-01-01..2023-12-31": -21736000.0,
+      "2022-01-01..2022-12-31": -88345000.0
+    },
+    "AdjustmentsForUnrealisedForeignExchangeLossesGains": {
+      "2023-01-01..2023-12-31": -7174000.0,
+      "2022-01-01..2022-12-31": -22024000.0
+    },
+    "AdjustmentsForReconcileProfitLoss": {
+      "2023-01-01..2023-12-31": -360355000.0,
+      "2022-01-01..2022-12-31": -253072000.0
+    },
+    "AdjustmentsForDecreaseIncreaseInLoansAndAdvancesToBanks": {
+      "2023-01-01..2023-12-31": 32506000.0,
+      "2022-01-01..2022-12-31": -181274000.0
+    },
+    "AdjustmentsForDecreaseIncreaseInLoansAndAdvancesToCustomers": {
+      "2023-01-01..2023-12-31": -159527000.0,
+      "2022-01-01..2022-12-31": 233747000.0
+    },
+    "AdjustmentsForDecreaseIncreaseInDerivativeFinancialAssets": {
+      "2023-01-01..2023-12-31": 167855000.0,
+      "2022-01-01..2022-12-31": -350571000.0
+    },
+    "AdjustmentsForDecreaseIncreaseInOtherAssets": {
+      "2023-01-01..2023-12-31": -14890000.0,
+      "2022-01-01..2022-12-31": -38394000.0
+    },
+    "AdjustmentsForIncreaseDecreaseInDepositsFromCustomers": {
+      "2023-01-01..2023-12-31": 383222000.0,
+      "2022-01-01..2022-12-31": 209702000.0
+    },
+    "AdjustmentsForIncreaseDecreaseInOtherLiabilities": {
+      "2023-01-01..2023-12-31": -532000000.0,
+      "2022-01-01..2022-12-31": -39251000.0
+    },
+    "AdjustmentsForIncreaseDecreaseInDerivativeFinancialLiabilities": {
+      "2023-01-01..2023-12-31": -109673000.0,
+      "2022-01-01..2022-12-31": 154133000.0
+    },
+    "InterestReceivedClassifiedAsOperatingActivities": {
+      "2022-01-01..2022-12-31": 678949000.0
+    },
+    "InterestPaidClassifiedAsOperatingActivities": {
+      "2023-01-01..2023-12-31": 669618000.0,
+      "2022-01-01..2022-12-31": 313222000.0
+    },
+    "DividendsReceivedClassifiedAsOperatingActivities": {
+      "2023-01-01..2023-12-31": 1628000.0,
+      "2022-01-01..2022-12-31": 728000000.0
+    },
+    "IncomeTaxesPaidRefundClassifiedAsOperatingActivities": {
+      "2023-01-01..2023-12-31": -25732000.0,
+      "2022-01-01..2022-12-31": -9129000.0
+    },
+    "OtherInflowsOutflowsOfCashClassifiedAsOperatingActivities": {
+      "2023-01-01..2023-12-31": 483771000.0,
+      "2022-01-01..2022-12-31": 576481000.0
+    },
+    "CashFlowsFromUsedInOperatingActivities": {
+      "2023-01-01..2023-12-31": 123416000.0,
+      "2022-01-01..2022-12-31": 323409000.0
+    },
+    "PurchaseOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets": {
+      "2023-01-01..2023-12-31": 49111000.0,
+      "2022-01-01..2022-12-31": 117711000.0
+    },
+    "ProceedsFromDisposalsOfPropertyPlantAndEquipmentIntangibleAssetsOtherThanGoodwillInvestmentPropertyAndOtherNoncurrentAssets": {
+      "2023-01-01..2023-12-31": 317000000.0,
+      "2022-01-01..2022-12-31": 87847000.0
+    },
+    "OtherCashPaymentsToAcquireEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities": {
+      "2023-01-01..2023-12-31": 372901000.0,
+      "2022-01-01..2022-12-31": 501166000.0
+    },
+    "OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities": {
+      "2023-01-01..2023-12-31": 218883000.0,
+      "2022-01-01..2022-12-31": 138294000.0
+    },
+    "ProceedsFromDisposalOfNoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleAndDiscontinuedOperations": {
+      "2022-01-01..2022-12-31": 5001000.0
+    },
+    "CashFlowsFromUsedInInvestingActivities": {
+      "2023-01-01..2023-12-31": -167795000.0,
+      "2022-01-01..2022-12-31": 53393000.0
+    },
+    "ProceedsFromIssueOfBondsNotesAndDebentures": {
+      "2023-01-01..2023-12-31": 237312000.0,
+      "2022-01-01..2022-12-31": 3251000.0
+    },
+    "RepaymentsOfBondsNotesAndDebentures": {
+      "2023-01-01..2023-12-31": 8936000.0
+    },
+    "ProceedsFromIssueOfSubordinatedLiabilities": {
+      "2023-01-01..2023-12-31": 24529000.0,
+      "2022-01-01..2022-12-31": 47634000.0
+    },
+    "PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities": {
+      "2023-01-01..2023-12-31": 12985000.0,
+      "2022-01-01..2022-12-31": 8945000.0
+    },
+    "ProceedsFromIssueOfOrdinaryShares": {
+      "2022-01-01..2022-12-31": 208221000.0
+    },
+    "DividendsPaidToEquityHoldersOfParentClassifiedAsFinancingActivities": {
+      "2023-01-01..2023-12-31": 25093000.0,
+      "2022-01-01..2022-12-31": 4300000.0
+    },
+    "CashFlowsFromUsedInFinancingActivities": {
+      "2023-01-01..2023-12-31": 23779000.0,
+      "2022-01-01..2022-12-31": 107519000.0
+    },
+    "IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges": {
+      "2023-01-01..2023-12-31": -20600000.0,
+      "2022-01-01..2022-12-31": 484321000.0
+    },
+    "CashAndCashEquivalents": {
+      "2021-12-31": 854970000.0
+    },
+    "EffectOfExchangeRateChangesOnCashAndCashEquivalents": {
+      "2023-01-01..2023-12-31": 7174000.0,
+      "2022-01-01..2022-12-31": 22024000.0
+    }
+  }
+}

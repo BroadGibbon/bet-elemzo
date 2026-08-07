@@ -1,0 +1,60 @@
+{
+  "seccode": "AMIXA",
+  "hivatalos_nev": "Amixa Holding Nyrt.",
+  "lei": "5299006RPUPYH0IUOW38",
+  "csomagok_szama": 4,
+  "fogalmak_szama": 14,
+  "adatok": {
+    "ChangesInInventoriesOfFinishedGoodsAndWorkInProgress": {
+      "2024-01-01..2024-12-31": 283000.0
+    },
+    "BasicEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 30.82,
+      "2024-01-01..2024-12-31": -24.8,
+      "2023-01-01..2023-12-31": 58.12
+    },
+    "DilutedEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": 30.82,
+      "2024-01-01..2024-12-31": -24800.0,
+      "2023-01-01..2023-12-31": 58120.0
+    },
+    "FinancialAssetsAtFairValueThroughProfitOrLoss": {
+      "2024-12-31": 404000.0
+    },
+    "DerivativeFinancialLiabilities": {
+      "2025-12-31": 218000.0
+    },
+    "Advances": {
+      "2024-12-31": 801000.0
+    },
+    "RevenueFromInterest": {
+      "2025-01-01..2025-12-31": 949000.0,
+      "2024-01-01..2024-12-31": 318000.0
+    },
+    "AdjustmentsForGainsLossesOnChangeInFairValueOfFinancialAssets": {
+      "2025-01-01..2025-12-31": -622000.0,
+      "2024-01-01..2024-12-31": 404000.0
+    },
+    "AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets": {
+      "2025-01-01..2025-12-31": -101000.0,
+      "2023-01-01..2023-12-31": -160000.0
+    },
+    "AdjustmentsForDecreaseIncreaseInPrepaidExpenses": {
+      "2024-01-01..2024-12-31": -443000.0
+    },
+    "InterestReceivedClassifiedAsInvestingActivities": {
+      "2025-01-01..2025-12-31": 574000.0,
+      "2024-01-01..2024-12-31": 318000.0
+    },
+    "EffectOfExchangeRateChangesOnCashAndCashEquivalents": {
+      "2025-01-01..2025-12-31": 432000.0,
+      "2024-01-01..2024-12-31": 243000.0
+    },
+    "IncreaseDecreaseThroughDisposalOfSubsidiary": {
+      "2023-01-01..2023-12-31": 159000.0
+    },
+    "CurrentAdvances": {
+      "2024-12-31": 801000.0
+    }
+  }
+}

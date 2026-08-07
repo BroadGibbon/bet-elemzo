@@ -1,0 +1,73 @@
+{
+  "seccode": "MASTERPLAST",
+  "hivatalos_nev": "MASTERPLAST Nyrt.",
+  "lei": "529900T52BKQIM96BG24",
+  "csomagok_szama": 3,
+  "fogalmak_szama": 15,
+  "adatok": {
+    "NoncurrentFinancialAssets": {
+      "2025-12-31": 0.0,
+      "2024-12-31": 0.0,
+      "2023-12-31": 0.0,
+      "2021-12-31": 0.0
+    },
+    "CurrentDerivativeFinancialAssets": {
+      "2025-12-31": 0.0,
+      "2024-12-31": 0.0
+    },
+    "BasicEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": -0.81,
+      "2024-01-01..2024-12-31": -0.29,
+      "2023-01-01..2023-12-31": -0.95,
+      "2022-01-01..2022-12-31": 0.0105,
+      "2021-01-01..2021-12-31": 0.011000000000000001
+    },
+    "DilutedEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": -0.8,
+      "2024-01-01..2024-12-31": -0.29,
+      "2023-01-01..2023-12-31": -0.95,
+      "2022-01-01..2022-12-31": 0.0105,
+      "2021-01-01..2021-12-31": 0.011000000000000001
+    },
+    "IncreaseDecreaseThroughSharebasedPaymentTransactions": {
+      "2024-01-01..2024-12-31": 0.0,
+      "2025-01-01..2025-12-31": 0.0
+    },
+    "IncreaseDecreaseThroughAppropriationOfRetainedEarnings": {
+      "2024-01-01..2024-12-31": 0.0,
+      "2025-01-01..2025-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0,
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "PaymentsFromChangesInOwnershipInterestsInSubsidiaries": {
+      "2025-01-01..2025-12-31": 0.0
+    },
+    "ProceedsFromIssuingShares": {
+      "2024-01-01..2024-12-31": 0.0,
+      "2023-01-01..2023-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "ProceedsFromGovernmentGrantsClassifiedAsFinancingActivities": {
+      "2025-01-01..2025-12-31": 0.0
+    },
+    "DerivativeFinancialAssets": {
+      "2024-12-31": 0.0
+    },
+    "NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale": {
+      "2023-12-31": 0.0
+    },
+    "RepaymentsOfBondsNotesAndDebentures": {
+      "2023-01-01..2023-12-31": -0.0
+    },
+    "CurrentBondsIssuedAndCurrentPortionOfNoncurrentBondsIssued": {
+      "2021-12-31": 0.0
+    },
+    "PaymentsToAcquireOrRedeemEntitysShares": {
+      "2021-01-01..2021-12-31": -0.0
+    },
+    "ProceedsFromIssueOfBondsNotesAndDebentures": {
+      "2022-01-01..2022-12-31": 0.0
+    }
+  }
+}

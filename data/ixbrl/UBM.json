@@ -1,0 +1,61 @@
+{
+  "seccode": "UBM",
+  "hivatalos_nev": "UBM Holding Nyrt.",
+  "lei": "529900ACAB9KE7RVYT92",
+  "csomagok_szama": 3,
+  "fogalmak_szama": 14,
+  "adatok": {
+    "BasicEarningsLossPerShare": {
+      "2024-07-01..2025-06-30": -22.9,
+      "2023-07-01..2024-06-30": 61.45,
+      "2022-07-01..2023-06-30": 40.94,
+      "2021-07-01..2022-06-30": 142.23
+    },
+    "DilutedEarningsLossPerShare": {
+      "2024-07-01..2025-06-30": -22.48,
+      "2023-07-01..2024-06-30": 61.45,
+      "2022-07-01..2023-06-30": 40.94,
+      "2021-07-01..2022-06-30": 142.23
+    },
+    "AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLossPropertyPlantAndEquipment": {
+      "2024-07-01..2025-06-30": 210000.0,
+      "2023-07-01..2024-06-30": 55000.0,
+      "2022-07-01..2023-06-30": 617000.0
+    },
+    "AdjustmentsForProvisions": {
+      "2023-07-01..2024-06-30": 0.0
+    },
+    "EffectOfExchangeRateChangesOnCashAndCashEquivalents": {
+      "2024-07-01..2025-06-30": -637000.0,
+      "2022-07-01..2023-06-30": -756000.0,
+      "2021-07-01..2022-06-30": 300000.0
+    },
+    "DividendsProposedOrDeclaredBeforeFinancialStatementsAuthorisedForIssueButNotRecognisedAsDistributionToOwners": {
+      "2024-07-01..2025-06-30": 0.0
+    },
+    "ReserveOfSharebasedPayments": {
+      "2023-06-30": 0.0
+    },
+    "CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities": {
+      "2022-07-01..2023-06-30": 0.0
+    },
+    "DividendsReceivedClassifiedAsInvestingActivities": {
+      "2022-07-01..2023-06-30": 0.0
+    },
+    "PaymentsToAcquireOrRedeemEntitysShares": {
+      "2022-07-01..2023-06-30": 0.0
+    },
+    "ProceedsFromChangesInOwnershipInterestsInSubsidiaries": {
+      "2021-07-01..2022-06-30": 0.0
+    },
+    "PaymentsFromChangesInOwnershipInterestsInSubsidiaries": {
+      "2022-07-01..2023-06-30": 0.0
+    },
+    "CashAndCashEquivalentsInSubsidiaryOrBusinessesAcquiredOrDisposed2013": {
+      "2022-07-01..2023-06-30": 0.0
+    },
+    "ProceedsFromIssuingShares": {
+      "2022-07-01..2023-06-30": 0.0
+    }
+  }
+}

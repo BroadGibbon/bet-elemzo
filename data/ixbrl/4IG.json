@@ -1,0 +1,173 @@
+{
+  "seccode": "4IG",
+  "hivatalos_nev": "4iG Nyrt.",
+  "lei": "529900Z0H3HIEFLKSP77",
+  "csomagok_szama": 2,
+  "fogalmak_szama": 47,
+  "adatok": {
+    "ProfitLossFromOperatingActivities": {
+      "2022-01-01..2022-12-31": -773000000.0
+    },
+    "ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod": {
+      "2022-01-01..2022-12-31": -27000000.0
+    },
+    "OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments": {
+      "2023-01-01..2023-12-31": 150000000.0
+    },
+    "OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax": {
+      "2023-01-01..2023-12-31": 150000000.0
+    },
+    "BasicEarningsLossPerShare": {
+      "2023-01-01..2023-12-31": -93.91,
+      "2022-01-01..2022-12-31": -67.5,
+      "2021-01-01..2021-12-31": 68.6
+    },
+    "DilutedEarningsLossPerShare": {
+      "2023-01-01..2023-12-31": -92.52,
+      "2022-01-01..2022-12-31": -67.5,
+      "2021-01-01..2021-12-31": 67.6
+    },
+    "DeferredTaxAssets": {
+      "2023-12-31": 688000000.0,
+      "2022-12-31": 366000000.0,
+      "2021-12-31": 0.0
+    },
+    "NoncurrentFinanceLeaseReceivables": {
+      "2023-12-31": 752000000.0,
+      "2022-12-31": 190000000.0
+    },
+    "NoncurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod": {
+      "2023-12-31": 639000000.0,
+      "2022-12-31": 521000000.0,
+      "2021-12-31": 236000000.0
+    },
+    "OtherNoncurrentAssets": {
+      "2022-12-31": 457000000.0
+    },
+    "CurrentFinanceLeaseReceivables": {
+      "2023-12-31": 563000000.0,
+      "2022-12-31": 137000000.0
+    },
+    "NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale": {
+      "2023-12-31": 0.0
+    },
+    "TreasuryShares": {
+      "2022-12-31": 922000000.0,
+      "2021-12-31": 246000000.0
+    },
+    "ReserveOfSharebasedPayments": {
+      "2023-12-31": 397000000.0,
+      "2022-12-31": 0.0
+    },
+    "CurrentDividendPayables": {
+      "2023-12-31": 8000000.0,
+      "2022-12-31": 8000000.0,
+      "2021-12-31": 0.0
+    },
+    "LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale": {
+      "2023-12-31": 0.0,
+      "2021-12-31": 0.0
+    },
+    "CurrentTaxLiabilitiesCurrent": {
+      "2022-12-31": 664000000.0
+    },
+    "IncreaseDecreaseThroughSharebasedPaymentTransactions": {
+      "2023-01-01..2023-12-31": 397000000.0
+    },
+    "DividendsRecognisedAsDistributionsToNoncontrollingInterests": {
+      "2023-01-01..2023-12-31": 340000000.0
+    },
+    "OtherAdjustmentsForNoncashItems": {
+      "2023-01-01..2023-12-31": 0.0,
+      "2021-01-01..2021-12-31": 126000000.0
+    },
+    "AdjustmentsForUndistributedProfitsOfAssociates": {
+      "2022-01-01..2022-12-31": -27000000.0,
+      "2021-01-01..2021-12-31": -1000000.0
+    },
+    "AdjustmentsForLossesGainsOnDisposalOfNoncurrentAssets": {
+      "2022-01-01..2022-12-31": 0.0
+    },
+    "AdjustmentsForDecreaseIncreaseInTradeAccountReceivable": {
+      "2022-01-01..2022-12-31": -907000000.0
+    },
+    "AdjustmentsForDecreaseIncreaseInInventories": {
+      "2022-01-01..2022-12-31": -586000000.0
+    },
+    "ProceedsFromIssuingShares": {
+      "2023-01-01..2023-12-31": 381000000.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "DividendsPaidClassifiedAsFinancingActivities": {
+      "2023-01-01..2023-12-31": -0.0
+    },
+    "DividendsPaidToNoncontrollingInterestsClassifiedAsFinancingActivities": {
+      "2023-01-01..2023-12-31": 340000000.0,
+      "2022-01-01..2022-12-31": -0.0,
+      "2021-01-01..2021-12-31": 243000000.0
+    },
+    "EffectOfExchangeRateChangesOnCashAndCashEquivalents": {
+      "2022-01-01..2022-12-31": 104000000.0,
+      "2021-01-01..2021-12-31": 8000000.0
+    },
+    "OtherExpenseByNature": {
+      "2021-01-01..2021-12-31": 846000000.0
+    },
+    "OtherComprehensiveIncome": {
+      "2021-01-01..2021-12-31": 136000000.0
+    },
+    "ComprehensiveIncomeFromDiscontinuedOperations": {
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 0.0
+    },
+    "ProfitLossAttributableToNoncontrollingInterests": {
+      "2021-01-01..2021-12-31": 185000000.0
+    },
+    "ComprehensiveIncomeAttributableToNoncontrollingInterests": {
+      "2021-01-01..2021-12-31": 185000000.0
+    },
+    "NoncurrentContractAssets": {
+      "2021-12-31": 398000000.0
+    },
+    "AccumulatedOtherComprehensiveIncome": {
+      "2021-12-31": 136000000.0
+    },
+    "NoncurrentProvisions": {
+      "2021-12-31": 841000000.0
+    },
+    "OtherNoncurrentLiabilities": {
+      "2021-12-31": 0.0
+    },
+    "ShorttermBorrowings": {
+      "2021-12-31": 0.0
+    },
+    "CurrentProvisions": {
+      "2021-12-31": 426000000.0
+    },
+    "PurchaseOfTreasuryShares": {
+      "2022-01-01..2022-12-31": 752000000.0
+    },
+    "SaleOrIssueOfTreasuryShares": {
+      "2022-01-01..2022-12-31": -131000000.0
+    },
+    "AdjustmentsForImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss": {
+      "2021-01-01..2021-12-31": -401000000.0
+    },
+    "AdjustmentsForProvisions": {
+      "2021-01-01..2021-12-31": -622000000.0
+    },
+    "AdjustmentsForSharebasedPayments": {
+      "2022-01-01..2022-12-31": 0.0,
+      "2021-01-01..2021-12-31": 521000000.0
+    },
+    "AdjustmentsForUnrealisedForeignExchangeLossesGains": {
+      "2021-01-01..2021-12-31": -8000000.0
+    },
+    "IncomeTaxesPaidRefundClassifiedAsOperatingActivities": {
+      "2021-01-01..2021-12-31": -0.0
+    },
+    "AdjustmentsForIncreaseDecreaseInTradeAccountPayable": {
+      "2021-01-01..2021-12-31": -248000000.0
+    }
+  }
+}

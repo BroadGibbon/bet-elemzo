@@ -1,0 +1,46 @@
+{
+  "seccode": "CIVITA",
+  "hivatalos_nev": "CIVITA GROUP Nyrt.",
+  "lei": "233000N8LG2R4JS7XW28",
+  "csomagok_szama": 1,
+  "fogalmak_szama": 10,
+  "adatok": {
+    "NoncontrollingInterests": {
+      "2025-12-31": 0.0,
+      "2024-12-31": 0.0
+    },
+    "OtherComprehensiveIncome": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "ComprehensiveIncomeAttributableToNoncontrollingInterests": {
+      "2025-01-01..2025-12-31": 0.0,
+      "2024-01-01..2024-12-31": 0.0
+    },
+    "BasicEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": -3.89,
+      "2024-01-01..2024-12-31": -0.97
+    },
+    "DilutedEarningsLossPerShare": {
+      "2025-01-01..2025-12-31": -3.89,
+      "2024-01-01..2024-12-31": -0.97
+    },
+    "IssueOfEquity": {
+      "2024-01-01..2024-12-31": 0.0,
+      "2025-01-01..2025-12-31": 0.0
+    },
+    "IncreaseDecreaseThroughTransferToStatutoryReserve": {
+      "2024-01-01..2024-12-31": 0.0,
+      "2025-01-01..2025-12-31": 0.0
+    },
+    "DividendsPaid": {
+      "2025-01-01..2025-12-31": 0.0
+    },
+    "AdjustmentsForProvisions": {
+      "2024-01-01..2024-12-31": 211000.0
+    },
+    "OtherCashReceiptsFromSalesOfEquityOrDebtInstrumentsOfOtherEntitiesClassifiedAsInvestingActivities": {
+      "2024-01-01..2024-12-31": 0.0
+    }
+  }
+}
