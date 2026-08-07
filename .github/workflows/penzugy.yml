@@ -1,0 +1,43 @@
+name: BET penzugyi adatok
+
+# Az eves jelentesek ritkan valtoznak (evente 1-2x), ezert eleg
+# havonta frissiteni - vagy amikor kezzel elinditod.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 4 1 * *"   # minden honap 1-jen, kicsit a tortenet.yml utan
+
+permissions:
+  contents: write
+
+jobs:
+  penzugy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kod letoltese
+        uses: actions/checkout@v4
+
+      - name: Python beallitasa
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fuggosegek telepitese
+        run: pip install openpyxl
+
+      - name: Friss reszvenylista
+        run: |
+          mkdir -p data
+          python fetch_bet.py
+
+      - name: Penzugyi adatok letoltese
+        run: python fetch_penzugy.py
+
+      - name: Eredmeny visszamentese a repoba
+        run: |
+          git config user.name "BET robot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Penzugyi adatok: $(date -u '+%Y-%m-%d') UTC"
+          git push
