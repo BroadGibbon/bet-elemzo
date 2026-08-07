@@ -74,14 +74,15 @@
               <h3 class="csempe__cim">Árfolyam</h3>
               <div class="idosik-valaszto" id="idosikValaszto">
                 <button data-idosik="1H">1H</button>
-                <button data-idosik="1M">1Hó</button>
+                <button data-idosik="1M" class="aktiv">1Hó</button>
                 <button data-idosik="6M">6Hó</button>
-                <button data-idosik="1Y" class="aktiv">1É</button>
+                <button data-idosik="1Y">1É</button>
                 <button data-idosik="5Y">5É</button>
                 <button data-idosik="MAX">Max</button>
               </div>
             </div>
             <canvas id="arfolyamGrafikon" class="grafikon" height="260"></canvas>
+            <div id="arfolyamTooltip" class="grafikon-tooltip" hidden></div>
           </div>
         </div>
 
@@ -104,15 +105,16 @@
           <canvas id="penzugyGrafikon" class="grafikon" height="260"></canvas>
         </div>
 
-        <div class="cf-grid cf-grid--2osz">
-          <div class="csempe">
-            <h3 class="csempe__cim">Eredménykimutatás — fontosabb sorok</h3>
-            <div id="cfEredmenykimutatas" class="tablazat-wrap"></div>
-          </div>
-          <div class="csempe">
-            <h3 class="csempe__cim">Mérleg — fontosabb sorok</h3>
-            <div id="cfMerleg" class="tablazat-wrap"></div>
-          </div>
+        <div class="csempe csempe--nagy">
+          <h3 class="csempe__cim">Eredménykimutatás — fontosabb sorok</h3>
+          <p class="csempe__alcim">Minden sor alatt dőlttel az előző évhez képesti változás (YoY%).</p>
+          <div id="cfEredmenykimutatas" class="tablazat-wrap"></div>
+        </div>
+
+        <div class="csempe csempe--nagy">
+          <h3 class="csempe__cim">Mérleg — fontosabb sorok</h3>
+          <p class="csempe__alcim">Minden sor alatt dőlttel az előző évhez képesti változás (YoY%).</p>
+          <div id="cfMerleg" class="tablazat-wrap"></div>
         </div>
 
         <div class="csempe csempe--nagy" id="sankeySzekcio" hidden>
@@ -149,16 +151,15 @@
 
       <!-- TULAJDONOSOK TAB -->
       <section class="cf-tabtartalom" data-tabtartalom="tulajdonosok">
-        <div class="cf-grid cf-grid--2osz">
-          <div class="csempe">
-            <h3 class="csempe__cim">Tulajdonosok (5% fölött)</h3>
-            <div id="cfTulajdonosok" class="tablazat-wrap"></div>
-            <p id="cfKozkezhanyad" class="csempe__lablec"></p>
-          </div>
-          <div class="csempe">
-            <h3 class="csempe__cim">Cégvezetés</h3>
-            <div id="cfCegvezetes" class="kv-lista kv-lista--tomb"></div>
-          </div>
+        <div class="csempe csempe--nagy">
+          <h3 class="csempe__cim">Tulajdonosok (5% fölött)</h3>
+          <div id="cfTulajdonosok" class="tablazat-wrap"></div>
+          <p id="cfKozkezhanyad" class="csempe__lablec"></p>
+        </div>
+
+        <div class="csempe csempe--nagy">
+          <h3 class="csempe__cim">Cégvezetés</h3>
+          <div id="cfCegvezetes" class="cegvezetes-wrap"></div>
         </div>
       </section>
 

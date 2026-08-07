@@ -142,14 +142,17 @@
 }
 
 .cf-tabtartalom { display: none; }
-.cf-tabtartalom--aktiv { display: block; }
+.cf-tabtartalom--aktiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
 
 /* ---------- Csempek / blokkok ---------- */
 
 .cf-grid {
   display: grid;
   gap: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .cf-grid--2osz {
@@ -161,11 +164,28 @@
 }
 
 .csempe {
+  position: relative;
   background: #fff;
   border: 1px solid var(--fustolt-bezs);
   border-radius: 10px;
   padding: 1.1rem 1.25rem;
 }
+
+.grafikon-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: var(--espresso);
+  color: var(--vajkrem);
+  font-family: var(--font-adat);
+  font-size: 0.8rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  z-index: 15;
+  transform: translate(-50%, -110%);
+}
+
+.grafikon-tooltip strong { display: block; font-size: 0.92rem; }
 
 .csempe--nagy { grid-column: 1 / -1; }
 
@@ -281,7 +301,22 @@
 
 /* ---------- Tablazatok ---------- */
 
-.tablazat-wrap { overflow-x: auto; }
+/* Gorgetheto blokkok mobilon: a tartalom vizszintesen gorgetheto, es egy
+   halvany "arnyek" jelzi a szeleken, ha van meg tobb lathatatlan tartalom -
+   ez tiszta CSS-es trukk, nincs hozza JS. */
+.tablazat-wrap, .mutato-reszletek, .dupont-fa-wrap, .sankey-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background:
+    linear-gradient(to right, #fff 30%, rgba(255,255,255,0)),
+    linear-gradient(to right, rgba(255,255,255,0), #fff 70%) 100% 0,
+    linear-gradient(to right, rgba(60,42,27,.18), rgba(255,255,255,0)),
+    linear-gradient(to left, rgba(60,42,27,.18), rgba(255,255,255,0)) 100% 0;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: 32px 100%, 32px 100%, 12px 100%, 12px 100%;
+  background-attachment: local, local, scroll, scroll;
+}
 
 table.adat-tablazat {
   width: 100%;
@@ -310,9 +345,35 @@ table.adat-tablazat thead th {
 
 table.adat-tablazat tbody td { font-family: var(--font-adat); }
 
+table.adat-tablazat tbody tr:hover td { background: rgba(232, 189, 130, 0.15); }
+
+/* Penzugyi tablazatok (eredmenykimutatas / merleg) - ertek + YoY% par soronkent */
+.adat-tablazat--penzugyi .penzugyi-sor td {
+  border-bottom: none;
+  padding-top: 0.55rem;
+  font-weight: 600;
+}
+
+.adat-tablazat--penzugyi .penzugyi-sor:not(:first-child) td {
+  border-top: 1px solid rgba(190, 179, 160, 0.5);
+}
+
+.adat-tablazat--penzugyi .penzugyi-sor__yoy td {
+  border-bottom: 1px dashed rgba(190, 179, 160, 0.4);
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  font-size: 0.76rem;
+  font-style: italic;
+  color: var(--fustolt-bezs);
+}
+
+.adat-tablazat--penzugyi .penzugyi-sor__yoy td.yoy--pos { color: var(--friss-zold); }
+.adat-tablazat--penzugyi .penzugyi-sor__yoy td.yoy--neg { color: var(--sult-piros); }
+
 /* ---------- DuPont ---------- */
 
 .dupont-wrap { display: flex; flex-direction: column; gap: 0.6rem; }
+.dupont-fa-wrap svg { display: block; margin: 0 auto; }
 
 .dupont-sor {
   display: flex;
@@ -363,65 +424,93 @@ table.adat-tablazat tbody td { font-family: var(--font-adat); }
 .piotroski-jel--nem { color: var(--sult-piros); font-weight: 700; }
 .piotroski-jel--nincs { color: var(--fustolt-bezs); }
 
-/* ---------- Mutato reszletek (vs tortenet / vs piac) ---------- */
+/* ---------- Mutato osszehasonlito tablazat ---------- */
 
-.mutato-reszletek { display: flex; flex-direction: column; gap: 1rem; }
+.osszehasonlito-tablazat th, .osszehasonlito-tablazat td { text-align: center; }
+.osszehasonlito-tablazat th:first-child, .osszehasonlito-tablazat td:first-child { text-align: left; }
 
-.mutato-blokk {
+.osszehasonlito-tablazat__sajat {
+  font-weight: 700;
+  font-size: 1rem;
+  background: var(--vajkrem);
+}
+
+.osszehasonlito-tablazat td { transition: background 0.2s; }
+
+/* ---------- Cegvezetes (Igazgatosag / Vallalatvezetes / Felugyelobizottsag) ---------- */
+
+.cegvezetes-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cegvezetes-csoport__cim {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  margin: 0 0 0.6rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--kereg);
+}
+
+.cegvezetes-csoport__kartyak {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.6rem;
+}
+
+.szemely-kartya {
+  background: var(--vajkrem);
   border: 1px solid var(--fustolt-bezs);
   border-radius: 8px;
-  padding: 0.75rem 1rem;
+  padding: 0.55rem 0.75rem;
 }
 
-.mutato-blokk__fejlec {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 0.5rem;
+.szemely-kartya__nev {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--espresso);
 }
 
-.mutato-blokk__nev { font-weight: 600; }
-.mutato-blokk__sajat { font-family: var(--font-adat); font-size: 1.2rem; }
-
-.osszehasonlito-sav {
-  position: relative;
-  height: 10px;
-  background: var(--fustolt-bezs);
-  border-radius: 5px;
-  margin: 0.5rem 0 0.3rem;
-}
-
-.osszehasonlito-sav__jelolo {
-  position: absolute;
-  top: -4px;
-  width: 3px;
-  height: 18px;
-  border-radius: 2px;
-}
-
-.osszehasonlito-sav__jelolo--sajat { background: var(--espresso); }
-.osszehasonlito-sav__jelolo--piac { background: var(--karamell); }
-
-.osszehasonlito-legenda {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.75rem;
+.szemely-kartya__beosztas {
+  font-size: 0.76rem;
   color: var(--fustolt-bezs);
-}
-
-.osszehasonlito-legenda span::before {
-  content: "●";
-  margin-right: 0.3rem;
+  margin-top: 0.1rem;
 }
 
 /* ---------- Sankey ---------- */
 
-.sankey-wrap { overflow-x: auto; }
-.sankey-wrap svg { display: block; margin: 0 auto; }
+.sankey-wrap svg { display: block; margin: 0 auto 0.5rem; }
+.sankey-alcim {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  margin: 1.25rem 0 0.25rem;
+  text-align: center;
+}
+.sankey-alcim:first-child { margin-top: 0; }
 
 /* ---------- Responsive finomhangolas ---------- */
 
 @media (max-width: 640px) {
   .cf-header__ar { text-align: left; }
   .cf-header { flex-direction: column; }
+  .cf-header__ticker { font-size: 1.5rem; }
+  .cf-header__ar-szam { font-size: 1.4rem; }
+
+  .csempe { padding: 0.9rem 1rem; }
+
+  .cf-statsav__elem { flex-basis: 45%; border-right: none; border-bottom: 1px solid var(--fustolt-bezs); }
+  .cf-statsav__elem:nth-child(even) { border-left: 1px solid var(--fustolt-bezs); }
+
+  .cf-tab { padding: 0.55rem 0.75rem; font-size: 0.85rem; }
+
+  table.adat-tablazat { font-size: 0.78rem; }
+  table.adat-tablazat th, table.adat-tablazat td { padding: 0.35rem 0.5rem; }
+
+  .mutato-csempesor { grid-template-columns: repeat(2, 1fr); }
+
+  .cegvezetes-csoport__kartyak { grid-template-columns: 1fr; }
+
+  .idosik-valaszto { flex-wrap: wrap; }
+  .csempe__fejlec { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
 }

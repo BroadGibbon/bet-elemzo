@@ -183,15 +183,16 @@ function vonaldiagramRajzolasa(canvasId, pontok, szinCss, formatterY) {
   const magassag = canvas.clientHeight || 260;
   canvas.width = szelesseg * dpr;
   canvas.height = magassag * dpr;
-  const ctx = canvas.getContext("2d");
-  ctx.scale(dpr, dpr);
-  ctx.clearRect(0, 0, szelesseg, magassag);
 
   if (!pontok || pontok.length < 2) {
+    const ctx = canvas.getContext("2d");
+    ctx.scale(dpr, dpr);
+    ctx.clearRect(0, 0, szelesseg, magassag);
     ctx.fillStyle = "#BEB3A0";
     ctx.font = "14px 'IBM Plex Mono', monospace";
     ctx.textAlign = "center";
     ctx.fillText("Nincs elég adat a grafikonhoz", szelesseg / 2, magassag / 2);
+    canvas._chartAdat = null;
     return;
   }
 
@@ -214,6 +215,39 @@ function vonaldiagramRajzolasa(canvasId, pontok, szinCss, formatterY) {
   function yVaszonra(y) {
     return felso_margo + (1 - (y - yMin) / (yMax - yMin)) * rajzMagassag;
   }
+
+  // A rajzolashoz hasznalt adatokat elmentjuk a vaszonra, hogy a
+  // hover-kezeles (lentebb) barmikor ujra tudja rajzolni tiszta allapotbol.
+  canvas._chartAdat = {
+    pontok, xVaszonra, yVaszonra, formatterY, szinCss, magassag,
+    felso_margo, rajzMagassag, dpr, szelesseg, bal_margo, jobb_margo, yMin, yMax,
+  };
+
+  vonaldiagramAlapRajzolasa(canvas, canvas._chartAdat);
+
+  // Az eger-esemenyeket csak EGYSZER kotjuk be egy vaszonra (nem minden
+  // ujrarajzolaskor), kulonben egymásra halmozódnának a listenerek.
+  if (!canvas._hoverBekotve) {
+    canvas._hoverBekotve = true;
+    canvas.addEventListener("mousemove", (e) => vonaldiagramHoverKezelese(canvasId, e));
+    canvas.addEventListener("mouseleave", () => vonaldiagramHoverElrejtese(canvasId));
+  }
+}
+
+
+// ------------------------------------------------------------------
+// A vonaldiagram "tiszta" allapotanak (racsvonalak, tengelyfeliratok,
+// vonal, kitoltes) kirajzolasa - ezt hasznalja mind a kezdeti rajzolas,
+// mind a hover-kezeles (ami minden egermozdulaskor ujrarajzolja ezt,
+// mielott ra rajzolna a sajat jelzovonalat).
+// ------------------------------------------------------------------
+function vonaldiagramAlapRajzolasa(canvas, adat) {
+  const { pontok, xVaszonra, yVaszonra, formatterY, szinCss, magassag,
+    felso_margo, rajzMagassag, dpr, szelesseg, bal_margo, jobb_margo, yMin, yMax } = adat;
+
+  const ctx = canvas.getContext("2d");
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, szelesseg, magassag);
 
   // Vizszintes segedvonalak + Y feliratok
   ctx.strokeStyle = "rgba(190,179,160,0.35)";
@@ -259,6 +293,73 @@ function vonaldiagramRajzolasa(canvasId, pontok, szinCss, formatterY) {
 
 
 // ------------------------------------------------------------------
+// Vonaldiagram hover: a legkozelebbi ponthoz tartozo datum/ertek
+// megjelenitese egy kis buborekban, plusz egy fuggoleges jelzovonal.
+// ------------------------------------------------------------------
+function vonaldiagramHoverKezelese(canvasId, esemeny) {
+  const canvas = document.getElementById(canvasId);
+  const adat = canvas._chartAdat;
+  if (!adat) return;
+
+  const rect = canvas.getBoundingClientRect();
+  const egerX = esemeny.clientX - rect.left;
+
+  // A legkozelebbi pont keresese az eger X pozicioja alapjan
+  let legkozelebbi = adat.pontok[0];
+  let legkisebbTav = Infinity;
+  for (const p of adat.pontok) {
+    const tav = Math.abs(adat.xVaszonra(p.x) - egerX);
+    if (tav < legkisebbTav) { legkisebbTav = tav; legkozelebbi = p; }
+  }
+
+  // Eloszor TISZTAN ujrarajzoljuk az alap-diagramot (kulonben az elozo
+  // hover-jelzovonalak egymasra halmozodnanak), utana rakjuk ra a
+  // jelzovonalat es a kiemelt pontot.
+  vonaldiagramAlapRajzolasa(canvas, adat);
+
+  const ctx = canvas.getContext("2d");
+  const dpr = window.devicePixelRatio || 1;
+  ctx.save();
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  const px = adat.xVaszonra(legkozelebbi.x);
+  ctx.beginPath();
+  ctx.moveTo(px, adat.felso_margo);
+  ctx.lineTo(px, adat.felso_margo + adat.rajzMagassag);
+  ctx.strokeStyle = "rgba(60,42,27,0.4)";
+  ctx.lineWidth = 1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(px, adat.yVaszonra(legkozelebbi.y), 4, 0, Math.PI * 2);
+  ctx.fillStyle = adat.szinCss;
+  ctx.fill();
+  ctx.strokeStyle = "#fff";
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+  ctx.restore();
+
+  const tooltip = document.getElementById(canvasId + "Tooltip") || document.getElementById("arfolyamTooltip");
+  if (tooltip) {
+    tooltip.hidden = false;
+    const datumSzoveg = legkozelebbi.x.toLocaleDateString("hu-HU", { year: "numeric", month: "short", day: "2-digit" });
+    const ertekSzoveg = adat.formatterY ? adat.formatterY(legkozelebbi.y) : legkozelebbi.y;
+    tooltip.innerHTML = `<strong>${ertekSzoveg}</strong>${datumSzoveg}`;
+    tooltip.style.left = `${px}px`;
+    tooltip.style.top = `${adat.yVaszonra(legkozelebbi.y)}px`;
+  }
+}
+
+function vonaldiagramHoverElrejtese(canvasId) {
+  const tooltip = document.getElementById(canvasId + "Tooltip") || document.getElementById("arfolyamTooltip");
+  if (tooltip) tooltip.hidden = true;
+  const canvas = document.getElementById(canvasId);
+  if (canvas && canvas._chartAdat) {
+    vonaldiagramAlapRajzolasa(canvas, canvas._chartAdat);
+  }
+}
+
+
+// ------------------------------------------------------------------
 // Arfolyamgrafikon idosik-szures szerint
 // ------------------------------------------------------------------
 let ARFOLYAM_ADAT_CACHE = null;
@@ -300,7 +401,7 @@ function arfolyamSzekcioMegjelenitese(adat) {
     arfolyamGrafikonFrissitese(gomb.dataset.idosik);
   });
 
-  arfolyamGrafikonFrissitese("1Y");
+  arfolyamGrafikonFrissitese("1M");
 }
 
 
@@ -313,7 +414,7 @@ const EREDMENY_SOROK = ["Árbevétel", "Nettó kamatbevétel", "Nem kamatjelleg�
   "Üzleti eredmény", "Pénzügyi tevékenység nettó eredménye", "Adózás előtti eredmény",
   "Adózott eredmény", "Egy részvényre jutó eredmény (EPS)", "Egy (törzs)részvényre jutó osztalék"];
 
-function penzugyiTablaFeleptese(sorok, sorNevek, evekSzama = 5) {
+function penzugyiTablaFeleptese(sorok, sorNevek, evekSzama = 6) {
   const jelenLevoSorok = sorNevek.filter(nev => sorok[nev]);
   if (!jelenLevoSorok.length) return `<p class="csempe__lablec">Nincs adat.</p>`;
 
@@ -323,13 +424,26 @@ function penzugyiTablaFeleptese(sorok, sorNevek, evekSzama = 5) {
 
   const perReszvenySorMinta = /részvényre jutó/;
 
-  let html = `<table class="adat-tablazat"><thead><tr><th>Sor</th>${evek.map(e => `<th>${e}</th>`).join("")}</tr></thead><tbody>`;
+  function yoySzazalek(elozo, jelenlegi) {
+    if (elozo == null || jelenlegi == null || elozo === 0) return null;
+    return (jelenlegi - elozo) / Math.abs(elozo);
+  }
+
+  let html = `<table class="adat-tablazat adat-tablazat--penzugyi"><thead><tr><th>Sor</th>${evek.map(e => `<th>${e}</th>`).join("")}</tr></thead><tbody>`;
   for (const nev of jelenLevoSorok) {
     const perReszveny = perReszvenySorMinta.test(nev);
-    html += `<tr><td>${nev}</td>${evek.map(ev => {
+    html += `<tr class="penzugyi-sor"><td>${nev}</td>${evek.map(ev => {
       const ertek = sorok[nev][ev];
       if (ertek == null) return "<td>—</td>";
       return `<td>${perReszveny ? Math.round(ertek).toLocaleString("hu-HU") + " Ft" : penzFormazas(ertek)}</td>`;
+    }).join("")}</tr>`;
+
+    html += `<tr class="penzugyi-sor__yoy">${evek.map((ev, i) => {
+      if (i === 0) return "<td></td>";
+      const yoy = yoySzazalek(sorok[nev][evek[i - 1]], sorok[nev][ev]);
+      if (yoy == null) return "<td>—</td>";
+      const osztaly = yoy > 0 ? "yoy--pos" : yoy < 0 ? "yoy--neg" : "";
+      return `<td class="${osztaly}">${szazalekFormazas(yoy)}</td>`;
     }).join("")}</tr>`;
   }
   html += "</tbody></table>";
@@ -350,9 +464,10 @@ function penzugyGrafikonRajzolasa(adat) {
   const sorok = adat.penzugy?.eves_osszefoglalo?.sorok || {};
   const canvas = document.getElementById("penzugyGrafikon");
   const bevetelSor = sorok["Árbevétel"] || sorok["Nettó kamatbevétel"] || {};
+  const uzemiSor = sorok["Üzleti eredmény"] || {};
   const eredmenySor = sorok["Adózott eredmény"] || {};
 
-  const evek = [...new Set([...Object.keys(bevetelSor), ...Object.keys(eredmenySor)])]
+  const evek = [...new Set([...Object.keys(bevetelSor), ...Object.keys(uzemiSor), ...Object.keys(eredmenySor)])]
     .sort((a, b) => Number(a) - Number(b)).slice(-10);
 
   const dpr = window.devicePixelRatio || 1;
@@ -361,7 +476,7 @@ function penzugyGrafikonRajzolasa(adat) {
   canvas.width = szelesseg * dpr;
   canvas.height = magassag * dpr;
   const ctx = canvas.getContext("2d");
-  ctx.scale(dpr, dpr);
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.clearRect(0, 0, szelesseg, magassag);
 
   if (!evek.length) {
@@ -372,11 +487,11 @@ function penzugyGrafikonRajzolasa(adat) {
     return;
   }
 
-  const bal_margo = 65, jobb_margo = 15, felso_margo = 15, also_margo = 30;
+  const bal_margo = 70, jobb_margo = 15, felso_margo = 30, also_margo = 30;
   const rajzSzelesseg = szelesseg - bal_margo - jobb_margo;
   const rajzMagassag = magassag - felso_margo - also_margo;
 
-  const mindErtek = evek.flatMap(ev => [bevetelSor[ev] || 0, eredmenySor[ev] || 0]);
+  const mindErtek = evek.flatMap(ev => [bevetelSor[ev] || 0, uzemiSor[ev] || 0, eredmenySor[ev] || 0]);
   const yMax = Math.max(...mindErtek, 1) * 1.15;
   const yMin = Math.min(0, ...mindErtek);
 
@@ -407,51 +522,127 @@ function penzugyGrafikonRajzolasa(adat) {
     const x0 = bal_margo + i * oszlopSzelesseg;
     const bevetel = bevetelSor[ev];
     if (bevetel != null) {
-      const barW = oszlopSzelesseg * 0.35;
+      const barW = oszlopSzelesseg * 0.4;
       const y0 = yVaszonra(0), y1 = yVaszonra(bevetel);
       ctx.fillStyle = "#E8BD82";
-      ctx.fillRect(x0 + oszlopSzelesseg * 0.15, Math.min(y0, y1), barW, Math.abs(y1 - y0));
+      ctx.fillRect(x0 + oszlopSzelesseg * 0.3, Math.min(y0, y1), barW, Math.abs(y1 - y0));
     }
     ctx.fillStyle = "#8a7a68";
     ctx.fillText(ev, x0 + oszlopSzelesseg / 2, magassag - 8);
   });
 
-  // Nettó eredmeny vonal
-  ctx.beginPath();
-  evek.forEach((ev, i) => {
-    const x = bal_margo + i * oszlopSzelesseg + oszlopSzelesseg / 2;
-    const y = yVaszonra(eredmenySor[ev] ?? 0);
-    if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
-  });
-  ctx.strokeStyle = "#3C2A1B";
-  ctx.lineWidth = 2.5;
-  ctx.stroke();
-  evek.forEach((ev, i) => {
-    if (eredmenySor[ev] == null) return;
-    const x = bal_margo + i * oszlopSzelesseg + oszlopSzelesseg / 2;
-    const y = yVaszonra(eredmenySor[ev]);
+  function vonalRajzolasa(sor, szin) {
     ctx.beginPath();
-    ctx.arc(x, y, 3.5, 0, Math.PI * 2);
-    ctx.fillStyle = "#3C2A1B";
-    ctx.fill();
-  });
+    let elsoVan = false;
+    evek.forEach((ev, i) => {
+      if (sor[ev] == null) return;
+      const x = bal_margo + i * oszlopSzelesseg + oszlopSzelesseg / 2;
+      const y = yVaszonra(sor[ev]);
+      if (!elsoVan) { ctx.moveTo(x, y); elsoVan = true; } else { ctx.lineTo(x, y); }
+    });
+    ctx.strokeStyle = szin;
+    ctx.lineWidth = 2.5;
+    ctx.stroke();
+    evek.forEach((ev, i) => {
+      if (sor[ev] == null) return;
+      const x = bal_margo + i * oszlopSzelesseg + oszlopSzelesseg / 2;
+      const y = yVaszonra(sor[ev]);
+      ctx.beginPath();
+      ctx.arc(x, y, 3.5, 0, Math.PI * 2);
+      ctx.fillStyle = szin;
+      ctx.fill();
+    });
+  }
+
+  vonalRajzolasa(uzemiSor, "#C98A4B");
+  vonalRajzolasa(eredmenySor, "#3C2A1B");
 
   // Jelmagyarazat
   ctx.textAlign = "left";
-  ctx.fillStyle = "#E8BD82";
-  ctx.fillRect(bal_margo, 2, 10, 10);
-  ctx.fillStyle = "#3C2A1B";
-  ctx.fillText("Árbevétel", bal_margo + 15, 11);
-  ctx.beginPath();
-  ctx.moveTo(bal_margo + 100, 7); ctx.lineTo(bal_margo + 115, 7);
-  ctx.strokeStyle = "#3C2A1B"; ctx.lineWidth = 2.5; ctx.stroke();
-  ctx.fillText("Adózott eredmény", bal_margo + 120, 11);
+  ctx.font = "11px 'IBM Plex Mono', monospace";
+  const jelmagyarazat = [
+    { szin: "#E8BD82", nev: "Árbevétel", tipus: "negyzet" },
+    { szin: "#C98A4B", nev: "Üzemi eredmény", tipus: "vonal" },
+    { szin: "#3C2A1B", nev: "Nettó eredmény", tipus: "vonal" },
+  ];
+  let xPoz = bal_margo;
+  jelmagyarazat.forEach(j => {
+    if (j.tipus === "negyzet") {
+      ctx.fillStyle = j.szin;
+      ctx.fillRect(xPoz, 4, 10, 10);
+    } else {
+      ctx.beginPath();
+      ctx.moveTo(xPoz, 9); ctx.lineTo(xPoz + 14, 9);
+      ctx.strokeStyle = j.szin; ctx.lineWidth = 2.5; ctx.stroke();
+      xPoz += 4;
+    }
+    ctx.fillStyle = "#3C2A1B";
+    ctx.fillText(j.nev, xPoz + 16, 13);
+    xPoz += 16 + ctx.measureText(j.nev).width + 18;
+  });
 }
 
 
 // ------------------------------------------------------------------
-// DuPont ROE-lebontas
+// DuPont ROE-lebontas - fa-diagram: fent a szamolt ROE, alatta
+// elagazva a bemeno tenyezok (2 vagy 3, aszerint van-e bevetel-adat).
 // ------------------------------------------------------------------
+function dupontDoboz(x, y, szelesseg, magassag, cim, ertek, szin, szoveges) {
+  return `
+    <rect x="${x}" y="${y}" width="${szelesseg}" height="${magassag}" rx="8" fill="${szin}"/>
+    <text x="${x + szelesseg / 2}" y="${y + magassag / 2 - 6}" text-anchor="middle"
+      font-family="Work Sans, sans-serif" font-size="11" fill="#FBECD2" opacity="0.9">${cim}</text>
+    <text x="${x + szelesseg / 2}" y="${y + magassag / 2 + 14}" text-anchor="middle"
+      font-family="IBM Plex Mono, monospace" font-weight="600" font-size="15" fill="#FBECD2">${szoveges != null ? szoveges : ertek}</text>`;
+}
+
+function dupontFaSvg(d) {
+  const szelesseg = 600;
+  const dobozSzelesseg = 150, dobozMagassag = 56;
+  const gyokerY = 15, agakY = 110;
+
+  const harmasBontas = d["nettó_margin"] != null;
+  const gyokerX = szelesseg / 2 - dobozSzelesseg / 2;
+
+  let svg = dupontDoboz(gyokerX, gyokerY, dobozSzelesseg, dobozMagassag,
+    "Számolt ROE", null, "#3C2A1B", szazalekFormazas(d.roe_szamolt));
+
+  const agak = harmasBontas
+    ? [
+        { cim: "Nettó árrés", ertek: szazalekFormazas(d["nettó_margin"]), szin: "#4B7A3F" },
+        { cim: "Eszközforgás", ertek: szamFormazas(d.eszkoz_forgas) + "×", szin: "#C98A4B" },
+        { cim: "Tőkeáttétel", ertek: szamFormazas(d.tokeattetel) + "×", szin: "#A6412B" },
+      ]
+    : [
+        { cim: "ROA", ertek: szazalekFormazas(d.roa), szin: "#4B7A3F" },
+        { cim: "Tőkeáttétel", ertek: szamFormazas(d.tokeattetel) + "×", szin: "#A6412B" },
+      ];
+
+  const res = szelesseg / (agak.length + 1);
+  const gyokerKozepX = szelesseg / 2;
+  const gyokerAljaY = gyokerY + dobozMagassag;
+
+  agak.forEach((ag, i) => {
+    const agX = res * (i + 1) - dobozSzelesseg / 2;
+    const agKozepX = agX + dobozSzelesseg / 2;
+    // Osszekoto vonal: a gyoker aljatol az ag tetejeig, enyhe gorbevel
+    svg += `<path d="M${gyokerKozepX},${gyokerAljaY} C${gyokerKozepX},${gyokerAljaY + 30} ${agKozepX},${agakY - 30} ${agKozepX},${agakY}"
+      stroke="#BEB3A0" stroke-width="2" fill="none"/>`;
+    svg += dupontDoboz(agX, agakY, dobozSzelesseg, dobozMagassag, ag.cim, null, ag.szin, ag.ertek);
+  });
+
+  // A szorzas jelenek berajzolasa a doboz-parok kozott
+  for (let i = 0; i < agak.length - 1; i++) {
+    const x1 = res * (i + 1) + dobozSzelesseg / 2;
+    const x2 = res * (i + 2) - dobozSzelesseg / 2;
+    svg += `<text x="${(x1 + x2) / 2}" y="${agakY + dobozMagassag / 2 + 5}" text-anchor="middle"
+      font-family="Work Sans, sans-serif" font-size="18" fill="#3C2A1B">×</text>`;
+  }
+
+  const magassagOsszesen = agakY + dobozMagassag + 15;
+  return `<svg viewBox="0 0 ${szelesseg} ${magassagOsszesen}" width="${szelesseg}" height="${magassagOsszesen}">${svg}</svg>`;
+}
+
 function dupontMegjelenitese(adat) {
   const d = adat.mutatok?.dupont;
   const cel = document.getElementById("cfDupont");
@@ -459,36 +650,7 @@ function dupontMegjelenitese(adat) {
     cel.innerHTML = `<p class="csempe__lablec">Nincs elég adat a DuPont-bontáshoz.</p>`;
     return;
   }
-  let html = `
-    <div class="dupont-sor">
-      <span class="dupont-sor__label">Eszközarányos megtérülés (ROA)</span>
-      <span class="dupont-sor__ertek">${szazalekFormazas(d.roa)}</span>
-    </div>
-    <div class="dupont-sor">
-      <span class="dupont-sor__label">Tőkeáttétel (Eszközök / Saját tőke)</span>
-      <span class="dupont-sor__ertek">${szamFormazas(d.tokeattetel)}×</span>
-    </div>`;
-  if (d["nettó_margin"] != null) {
-    html = `
-    <div class="dupont-sor">
-      <span class="dupont-sor__label">Nettó árrés (Eredmény / Árbevétel)</span>
-      <span class="dupont-sor__ertek">${szazalekFormazas(d["nettó_margin"])}</span>
-    </div>
-    <div class="dupont-sor">
-      <span class="dupont-sor__label">Eszközforgás (Árbevétel / Eszközök)</span>
-      <span class="dupont-sor__ertek">${szamFormazas(d.eszkoz_forgas)}×</span>
-    </div>
-    <div class="dupont-sor">
-      <span class="dupont-sor__label">Tőkeáttétel (Eszközök / Saját tőke)</span>
-      <span class="dupont-sor__ertek">${szamFormazas(d.tokeattetel)}×</span>
-    </div>`;
-  }
-  html += `
-    <div class="dupont-eredmeny">
-      <span>Számolt ROE</span>
-      <span>${szazalekFormazas(d.roe_szamolt)}</span>
-    </div>`;
-  cel.innerHTML = html;
+  cel.innerHTML = `<div class="dupont-fa-wrap">${dupontFaSvg(d)}</div>`;
 }
 
 
@@ -540,33 +702,27 @@ function kereskedesMegjelenitese(adat) {
 
 
 // ------------------------------------------------------------------
-// Mutatok reszletesen: sajat tortenet + vs szektor + vs BET piac
+// Mutatok reszletesen: tablazatos osszehasonlitas piros-zold skalaval.
+// Minden mutatonal meghatarozzuk, hogy magasabb vagy alacsonyabb ertek
+// szamit "jobbnak", es ez alapjan szinezzuk a BET / szektor oszlopokat -
+// aszerint, hogy a SAJAT cegunk hogyan viszonyul hozzajuk.
 // ------------------------------------------------------------------
-function osszehasonlitoSavHtml(sajatErtek, piacMedian, szektorMedian, formatterFn, skalaMax) {
-  if (sajatErtek == null) return `<p class="csempe__lablec">Nincs adat.</p>`;
-  const ertekek = [sajatErtek, piacMedian, szektorMedian].filter(v => v != null);
-  const maxErtek = skalaMax || Math.max(...ertekek.map(Math.abs)) * 1.3 || 1;
-  const minErtek = Math.min(0, ...ertekek) - maxErtek * 0.05;
-  const felsoHatar = maxErtek;
+function osszehasonlitoSzin(sajat, referencia, irany) {
+  if (sajat == null || referencia == null) return null;
+  const nevezo = Math.abs(referencia) > 1e-9 ? Math.abs(referencia) : 1e-9;
+  let relDelta = (sajat - referencia) / nevezo;
+  if (irany === "alacsonyabb_jobb") relDelta = -relDelta;
+  const hatarolt = Math.max(-1, Math.min(1, relDelta / 0.4)); // +-40% valtozasnal mar teli szin
 
-  function pozicioSzazalek(v) {
-    return Math.max(0, Math.min(100, ((v - minErtek) / (felsoHatar - minErtek)) * 100));
-  }
-
-  let jelolok = `<div class="osszehasonlito-sav__jelolo osszehasonlito-sav__jelolo--sajat"
-    style="left:${pozicioSzazalek(sajatErtek)}%" title="Saját érték: ${formatterFn(sajatErtek)}"></div>`;
-  if (piacMedian != null) {
-    jelolok += `<div class="osszehasonlito-sav__jelolo osszehasonlito-sav__jelolo--piac"
-      style="left:${pozicioSzazalek(piacMedian)}%" title="BÉT medián: ${formatterFn(piacMedian)}"></div>`;
-  }
-
-  return `
-    <div class="osszehasonlito-sav">${jelolok}</div>
-    <div class="osszehasonlito-legenda">
-      <span style="color:var(--espresso)">Saját: ${formatterFn(sajatErtek)}</span>
-      ${piacMedian != null ? `<span style="color:var(--karamell)">BÉT medián: ${formatterFn(piacMedian)}</span>` : ""}
-      ${szektorMedian != null ? `<span>Szektor medián: ${formatterFn(szektorMedian)}</span>` : ""}
-    </div>`;
+  const NEUTRAL = [251, 236, 210]; // --vajkrem
+  const ZOLD = [75, 122, 63];
+  const PIROS = [166, 65, 43];
+  const cel = hatarolt >= 0 ? ZOLD : PIROS;
+  const arany = Math.abs(hatarolt);
+  const r = Math.round(NEUTRAL[0] + (cel[0] - NEUTRAL[0]) * arany);
+  const g = Math.round(NEUTRAL[1] + (cel[1] - NEUTRAL[1]) * arany);
+  const b = Math.round(NEUTRAL[2] + (cel[2] - NEUTRAL[2]) * arany);
+  return `rgb(${r},${g},${b})`;
 }
 
 function mutatoReszletekMegjelenitese(adat) {
@@ -585,30 +741,40 @@ function mutatoReszletekMegjelenitese(adat) {
   const sorok = [
     { nev: "ROE (saját tőke megtérülése)", sajat: m.bet_sajat_mutatok?.roe_bet,
       piacMedian: piac.piac_egesz?.roe_median, szektorMedian: szektorAdat?.roe_median,
-      formatter: szazalekFormazas },
+      irany: "magasabb_jobb", formatter: szazalekFormazas },
     { nev: "ROA (eszközarányos megtérülés)", sajat: m.bet_sajat_mutatok?.roa_bet,
       piacMedian: piac.piac_egesz?.roa_median, szektorMedian: szektorAdat?.roa_median,
-      formatter: szazalekFormazas },
+      irany: "magasabb_jobb", formatter: szazalekFormazas },
     { nev: "Tőkeáttétel (Kötelezettség / Saját tőke)", sajat: m.bet_sajat_mutatok?.tokeattetel_bet,
       piacMedian: piac.piac_egesz?.tokeattetel_median, szektorMedian: szektorAdat?.tokeattetel_median,
-      formatter: v => szamFormazas(v) + "×" },
-    { nev: "P/E", sajat: m.arfolyam_mutatok?.pe,
+      irany: "alacsonyabb_jobb", formatter: v => szamFormazas(v) + "×" },
+    { nev: "P/E (ár / egy részvényre jutó eredmény)", sajat: m.arfolyam_mutatok?.pe,
       piacMedian: piac.piac_egesz?.pe_median, szektorMedian: szektorAdat?.pe_median,
-      formatter: v => szamFormazas(v) },
-    { nev: "P/BV", sajat: m.arfolyam_mutatok?.pbv,
+      irany: "alacsonyabb_jobb", formatter: v => szamFormazas(v) },
+    { nev: "P/BV (ár / könyv szerinti érték)", sajat: m.arfolyam_mutatok?.pbv,
       piacMedian: piac.piac_egesz?.pbv_median, szektorMedian: szektorAdat?.pbv_median,
-      formatter: v => szamFormazas(v) },
+      irany: "alacsonyabb_jobb", formatter: v => szamFormazas(v) },
   ];
 
-  cel.innerHTML = sorok.map(s => `
-    <div class="mutato-blokk">
-      <div class="mutato-blokk__fejlec">
-        <span class="mutato-blokk__nev">${s.nev}</span>
-        <span class="mutato-blokk__sajat">${s.formatter(s.sajat)}</span>
-      </div>
-      ${osszehasonlitoSavHtml(s.sajat, s.piacMedian, s.szektorMedian, s.formatter)}
-    </div>
-  `).join("");
+  let html = `<table class="adat-tablazat osszehasonlito-tablazat"><thead><tr>
+    <th>Mutató</th><th>Ez a cég</th><th>BÉT medián</th><th>Szektor medián</th>
+  </tr></thead><tbody>`;
+
+  for (const s of sorok) {
+    const betSzin = osszehasonlitoSzin(s.sajat, s.piacMedian, s.irany);
+    const szektorSzin = osszehasonlitoSzin(s.sajat, s.szektorMedian, s.irany);
+    html += `<tr>
+      <td>${s.nev}</td>
+      <td class="osszehasonlito-tablazat__sajat">${s.formatter(s.sajat)}</td>
+      <td style="${betSzin ? `background:${betSzin}` : ""}">${s.piacMedian != null ? s.formatter(s.piacMedian) : "n/a"}</td>
+      <td style="${szektorSzin ? `background:${szektorSzin}` : ""}">${s.szektorMedian != null ? s.formatter(s.szektorMedian) : "n/a"}</td>
+    </tr>`;
+  }
+  html += "</tbody></table>";
+  html += `<p class="csempe__lablec">A BÉT / szektor oszlopok háttérszíne azt mutatja, mennyivel jobb (zöld) vagy
+    rosszabb (piros) ehhez a mutatóhoz képest a cég saját értéke. A tőkeáttételnél és az ár-alapú
+    mutatóknál (P/E, P/BV) az alacsonyabb érték számít kedvezőbbnek.</p>`;
+  cel.innerHTML = html;
 }
 
 
@@ -658,6 +824,41 @@ async function peerTablazatMegjelenitese(adat) {
 
 
 // ------------------------------------------------------------------
+// Egy vesszovel elvalasztott nevlista szetszedese egyeni "Nev (beosztas)"
+// elemekre. FONTOS: a vesszo NEM mindig valaszto - pl. "BECSEI Andras
+// (vezerigazgato-helyettes, Retail Divizio)" eseten a zarojelen BELULI
+// vesszo nem hataroljelolo, ezert zarojel-melysegben szamolunk.
+// ------------------------------------------------------------------
+function nevlistaSzetvalasztasa(szoveg) {
+  if (!szoveg) return [];
+  const elemek = [];
+  let aktualis = "";
+  let melyseg = 0;
+  for (const ch of szoveg) {
+    if (ch === "(") melyseg++;
+    if (ch === ")") melyseg--;
+    if (ch === "," && melyseg === 0) {
+      elemek.push(aktualis.trim());
+      aktualis = "";
+    } else {
+      aktualis += ch;
+    }
+  }
+  if (aktualis.trim()) elemek.push(aktualis.trim());
+  return elemek.filter(Boolean);
+}
+
+function szemelyKartyaHtml(bejegyzes) {
+  const m = bejegyzes.match(/^(.+?)\s*\(([^)]+)\)\s*$/);
+  const nev = m ? m[1].trim() : bejegyzes;
+  const beosztas = m ? m[2].trim() : "";
+  return `<div class="szemely-kartya">
+    <div class="szemely-kartya__nev">${nev}</div>
+    ${beosztas ? `<div class="szemely-kartya__beosztas">${beosztas}</div>` : ""}
+  </div>`;
+}
+
+// ------------------------------------------------------------------
 // Tulajdonosok es cegvezetes tab
 // ------------------------------------------------------------------
 function tulajdonosokMegjelenitese(adat) {
@@ -685,17 +886,24 @@ function tulajdonosokMegjelenitese(adat) {
     ? `Közkézhányad: ${a.kozkezhanyad} (frissítve: ${a.kozkezhanyad_frissitve || "n/a"})`
     : "";
 
-  const blokkok = [
+  const csoportok = [
     ["Igazgatóság", a.igazgatosag],
     ["Vállalatvezetés", a.vallalatvezetes],
     ["Felügyelőbizottság", a.felugyelobizottsag],
   ];
-  cegvezetesCel.innerHTML = blokkok.map(([cim, tartalom]) => `
-    <div class="kv-blokk">
-      <div class="kv-blokk__cim">${cim}</div>
-      <div class="kv-blokk__tartalom">${tartalom || "Nincs adat"}</div>
-    </div>
-  `).join("");
+
+  cegvezetesCel.innerHTML = csoportok.map(([cim, tartalom]) => {
+    const szemelyek = nevlistaSzetvalasztasa(tartalom);
+    return `
+      <div class="cegvezetes-csoport">
+        <h4 class="cegvezetes-csoport__cim">${cim}</h4>
+        <div class="cegvezetes-csoport__kartyak">
+          ${szemelyek.length
+            ? szemelyek.map(szemelyKartyaHtml).join("")
+            : `<p class="csempe__lablec">Nincs adat</p>`}
+        </div>
+      </div>`;
+  }).join("");
 }
 
 
@@ -721,21 +929,112 @@ function ixbrlErtekKereses(ixbrlAdatok, fogalomLista, idopontTipus) {
   return null;
 }
 
-function folyamatSavSvg(cimkekEsErtekek, szinek, szelesseg, magassagEgyseg) {
-  const osszeg = cimkekEsErtekek.reduce((s, c) => s + Math.max(c.ertek, 0), 0);
-  if (osszeg <= 0) return "";
-  let x = 0;
-  let elemek = "";
-  cimkekEsErtekek.forEach((c, i) => {
-    const w = (Math.max(c.ertek, 0) / osszeg) * szelesseg;
-    elemek += `<rect x="${x}" y="0" width="${w}" height="${magassagEgyseg}" fill="${szinek[i % szinek.length]}" stroke="#3C2A1B" stroke-width="1"/>`;
-    if (w > 60) {
-      elemek += `<text x="${x + w / 2}" y="${magassagEgyseg / 2 - 4}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#3C2A1B">${c.nev}</text>`;
-      elemek += `<text x="${x + w / 2}" y="${magassagEgyseg / 2 + 12}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#3C2A1B" opacity="0.75">${penzFormazas(c.ertek)}</text>`;
-    }
-    x += w;
+// ------------------------------------------------------------------
+// Valodi Sankey-szalagok: gorbe, aranyos szelessegu "folyok" a csomopontok
+// kozott, a GuruFocus-fele eredmenykimutatas-folyamatabra mintajara.
+// ------------------------------------------------------------------
+function sankeySzallag(x0, y0, h0, x1, y1, h1, szin) {
+  const kp = (x0 + x1) / 2;
+  return `<path d="M${x0},${y0} C${kp},${y0} ${kp},${y1} ${x1},${y1}
+    L${x1},${y1 + h1} C${kp},${y1 + h1} ${kp},${y0 + h0} ${x0},${y0 + h0} Z"
+    fill="${szin}" opacity="0.55"/>`;
+}
+
+function sankeyCsomopont(x, y, h, szelesseg, szin, nev, ertek, igazitas) {
+  let szoveg = "";
+  if (h > 16) {
+    const textX = igazitas === "jobb" ? x - 8 : x + szelesseg + 8;
+    const anchor = igazitas === "jobb" ? "end" : "start";
+    szoveg = `
+      <text x="${textX}" y="${y + h / 2 - 5}" text-anchor="${anchor}" font-family="Work Sans, sans-serif" font-weight="600" font-size="12" fill="#3C2A1B">${nev}</text>
+      <text x="${textX}" y="${y + h / 2 + 11}" text-anchor="${anchor}" font-family="IBM Plex Mono, monospace" font-size="11" fill="#8a7a68">${penzFormazas(ertek)}</text>`;
+  }
+  return `<rect x="${x}" y="${y}" width="${szelesseg}" height="${h}" rx="2" fill="${szin}"/>${szoveg}`;
+}
+
+/**
+ * Egy "elagazas" kirajzolasa: egy forras-csomopont ketfele agra bomlik
+ * (pl. Bevetel -> Koltsegek + Uzemi eredmeny). Visszaadja az SVG-t es a
+ * "folytatodo" ag also/felso pixelpoziciojat, hogy a kovetkezo elagazas
+ * pontosan ide tudjon csatlakozni.
+ */
+function sankeyElagazasRajzolasa(opciok) {
+  const { x0, x1, yKozep, forrasNev, forrasErtek, agNev, agErtek,
+    folytatasNev, folytatasErtek, skala, csomopontSzelesseg, folytatasSzinnel,
+    forrasRajzolando = true } = opciok;
+
+  const forrasH = forrasErtek * skala;
+  const agH = Math.max(agErtek, 0) * skala;
+  const folytatasH = Math.max(folytatasErtek, 0) * skala;
+
+  const forrasY = yKozep - forrasH / 2;
+  // Az ag felul, a folytatas alul helyezkedik el a cel oldalon
+  const agY = forrasY;
+  const folytatasY = forrasY + agH;
+
+  let svg = "";
+  svg += sankeySzallag(x0, forrasY, agH, x1, agY, agH, "#BEB3A0");
+  svg += sankeySzallag(x0, forrasY + agH, folytatasH, x1, folytatasY, folytatasH, folytatasSzinnel || "#C98A4B");
+  if (forrasRajzolando) {
+    svg += sankeyCsomopont(x0 - csomopontSzelesseg, forrasY, forrasH, csomopontSzelesseg, "#3C2A1B", forrasNev, forrasErtek, "jobb");
+  }
+  svg += sankeyCsomopont(x1, agY, agH, csomopontSzelesseg, "#A6412B", agNev, agErtek, "bal");
+  svg += sankeyCsomopont(x1, folytatasY, folytatasH, csomopontSzelesseg, "#4B7A3F", folytatasNev, folytatasErtek, "bal");
+
+  return { svg, folytatasYKozep: folytatasY + folytatasH / 2, folytatasH };
+}
+
+function sankeyEredmenyDiagram(revenue, koltseg, uzemiEredmeny, ado, nettoEredmeny, szelesseg) {
+  const csomopontSzelesseg = 10;
+  const x0 = 150;
+  const oszlopTav = (szelesseg - x0 - 2 * csomopontSzelesseg - 150) / 2;
+  const x1 = x0 + oszlopTav, x2 = x1 + oszlopTav;
+  const maxErtek = revenue;
+  const rendelkezesreAlloMagassag = 130;
+  const skala = rendelkezesreAlloMagassag / maxErtek;
+  const yKozep = 75;
+
+  let svg = "";
+
+  const elso = sankeyElagazasRajzolasa({
+    x0, x1, yKozep,
+    forrasNev: "Árbevétel", forrasErtek: revenue,
+    agNev: "Költségek", agErtek: koltseg,
+    folytatasNev: "Üzemi eredmény", folytatasErtek: uzemiEredmeny,
+    skala, csomopontSzelesseg, folytatasSzinnel: "#C98A4B",
   });
-  return elemek;
+  svg += elso.svg;
+
+  const masodik = sankeyElagazasRajzolasa({
+    x0: x1, x1: x2, yKozep: elso.folytatasYKozep,
+    forrasNev: "Üzemi eredmény", forrasErtek: uzemiEredmeny,
+    agNev: "Adó", agErtek: ado,
+    folytatasNev: "Nettó eredmény", folytatasErtek: nettoEredmeny,
+    skala, csomopontSzelesseg, folytatasSzinnel: "#4B7A3F",
+    forrasRajzolando: false, // mar kirajzolodott az elozo lepes "folytatas" dobozakent
+  });
+  svg += masodik.svg;
+
+  const magassagOsszesen = Math.max(yKozep + maxErtek * skala / 2, elso.folytatasYKozep + elso.folytatasH / 2) + 40;
+  return `<svg viewBox="0 0 ${szelesseg} ${magassagOsszesen}" width="${szelesseg}" height="${magassagOsszesen}">${svg}</svg>`;
+}
+
+function sankeyMerlegDiagram(assets, liabilities, equity, szelesseg) {
+  const csomopontSzelesseg = 10;
+  const x0 = 155, x1 = szelesseg - 150;
+  const skala = 130 / assets;
+  const yKozep = 75;
+
+  const { svg, folytatasYKozep, folytatasH } = sankeyElagazasRajzolasa({
+    x0, x1, yKozep,
+    forrasNev: "Eszközök összesen", forrasErtek: assets,
+    agNev: "Kötelezettségek", agErtek: liabilities,
+    folytatasNev: "Saját tőke", folytatasErtek: equity,
+    skala, csomopontSzelesseg, folytatasSzinnel: "#4B7A3F",
+  });
+
+  const magassagOsszesen = Math.max(yKozep + assets * skala / 2, folytatasYKozep + folytatasH / 2) + 40;
+  return `<svg viewBox="0 0 ${szelesseg} ${magassagOsszesen}" width="${szelesseg}" height="${magassagOsszesen}">${svg}</svg>`;
 }
 
 function sankeyMegjelenitese(adat) {
@@ -760,8 +1059,10 @@ function sankeyMegjelenitese(adat) {
     liabilities = { ertek: assets.ertek - equity.ertek, idokulcs: assets.idokulcs, szamolt: true };
   }
 
-  const vanEredmenyAdat = revenue && profitLoss;
-  const vanMerlegAdat = assets && equity && liabilities;
+  const vanEredmenyAdat = revenue && profitLoss && revenue.ertek > 0 &&
+    profitLoss.ertek >= 0 && profitLoss.ertek <= revenue.ertek;
+  const vanMerlegAdat = assets && equity && liabilities && assets.ertek > 0 &&
+    equity.ertek >= 0 && liabilities.ertek >= 0;
 
   if (!vanEredmenyAdat && !vanMerlegAdat) {
     szekcio.hidden = true;
@@ -769,57 +1070,38 @@ function sankeyMegjelenitese(adat) {
   }
   szekcio.hidden = false;
 
-  const szelesseg = 640, sorMagassag = 60, sorTav = 45;
-  let svgTartalom = "";
-  let yPoz = 10;
+  let html = "";
 
   if (vanEredmenyAdat) {
     const koltsegekAdo = revenue.ertek - profitLoss.ertek;
-    const ado = profitLossBeforeTax ? Math.max(profitLossBeforeTax.ertek - profitLoss.ertek, 0) : null;
-    const koltsegek = ado != null ? koltsegekAdo - ado : koltsegekAdo;
+    const ado = profitLossBeforeTax && profitLossBeforeTax.ertek >= profitLoss.ertek
+      ? profitLossBeforeTax.ertek - profitLoss.ertek : Math.max(koltsegekAdo * 0.15, 0);
+    const uzemiEredmeny = profitLossBeforeTax ? profitLossBeforeTax.ertek : profitLoss.ertek + ado;
+    const koltseg = Math.max(revenue.ertek - uzemiEredmeny, 0);
 
-    svgTartalom += `<text x="0" y="${yPoz}" font-family="Alfa Slab One" font-size="13" fill="#3C2A1B">Árbevétel → eredmény</text>`;
-    yPoz += 15;
-    svgTartalom += `<g transform="translate(0,${yPoz})">` +
-      folyamatSavSvg([{ nev: "Árbevétel", ertek: revenue.ertek }], ["#E8BD82"], szelesseg, sorMagassag) + "</g>";
-    yPoz += sorMagassag + sorTav;
-
-    const masodikSor = [{ nev: "Költségek", ertek: Math.max(koltsegek, 0) }];
-    if (ado != null && ado > 0) masodikSor.push({ nev: "Adó", ertek: ado });
-    masodikSor.push({ nev: "Nettó eredmény", ertek: Math.max(profitLoss.ertek, 0) });
-
-    svgTartalom += `<g transform="translate(0,${yPoz})">` +
-      folyamatSavSvg(masodikSor, ["#BEB3A0", "#A6412B", "#4B7A3F"], szelesseg, sorMagassag) + "</g>";
-    yPoz += sorMagassag + sorTav;
+    html += `<h4 class="sankey-alcim">Árbevétel → eredmény (${revenue.idokulcs.split("..").pop()})</h4>`;
+    html += sankeyEredmenyDiagram(revenue.ertek, koltseg, uzemiEredmeny, ado, profitLoss.ertek, 680);
   }
 
   if (vanMerlegAdat) {
-    svgTartalom += `<text x="0" y="${yPoz}" font-family="Alfa Slab One" font-size="13" fill="#3C2A1B">Mérleg összetétel</text>`;
+    html += `<h4 class="sankey-alcim">Mérleg összetétele (${assets.idokulcs})</h4>`;
     if (liabilities.szamolt) {
-      svgTartalom += `<text x="0" y="${yPoz + 13}" font-family="IBM Plex Mono, monospace" font-size="9" fill="#8a7a68">(kötelezettség = eszközök − saját tőke, mert nincs külön címkézve)</text>`;
-      yPoz += 13;
+      html += `<p class="csempe__lablec">(kötelezettség = eszközök − saját tőke, mert nincs külön címkézve)</p>`;
     }
-    yPoz += 15;
-    svgTartalom += `<g transform="translate(0,${yPoz})">` +
-      folyamatSavSvg([{ nev: "Eszközök összesen", ertek: assets.ertek }], ["#C98A4B"], szelesseg, sorMagassag) + "</g>";
-    yPoz += sorMagassag + sorTav;
-    svgTartalom += `<g transform="translate(0,${yPoz})">` +
-      folyamatSavSvg([
-        { nev: "Kötelezettségek", ertek: liabilities.ertek },
-        { nev: "Saját tőke", ertek: equity.ertek },
-      ], ["#BEB3A0", "#4B7A3F"], szelesseg, sorMagassag) + "</g>";
-    yPoz += sorMagassag + 10;
+    html += sankeyMerlegDiagram(assets.ertek, liabilities.ertek, equity.ertek, 680);
   }
 
-  document.getElementById("sankeyDiagram").innerHTML =
-    `<svg viewBox="0 0 ${szelesseg} ${yPoz}" width="${szelesseg}" height="${yPoz}">${svgTartalom}</svg>`;
+  document.getElementById("sankeyDiagram").innerHTML = html;
 }
 
 
 // ------------------------------------------------------------------
-// Tabok kozotti valtas
+// Tabok kozotti valtas - fontos, hogy amikor egy ful lathatova valik,
+// ujrarajzoljuk a benne levo grafikonokat, mert amikor a ful meg
+// "display:none" volt, a vaszon (canvas) 0 szelessegu volt, es semmi
+// nem jelent meg rajta.
 // ------------------------------------------------------------------
-function tabokBekotese() {
+function tabokBekotese(adat) {
   document.getElementById("cfTabok").addEventListener("click", (e) => {
     const gomb = e.target.closest(".cf-tab");
     if (!gomb) return;
@@ -827,6 +1109,13 @@ function tabokBekotese() {
     document.querySelectorAll(".cf-tabtartalom").forEach(t => t.classList.remove("cf-tabtartalom--aktiv"));
     gomb.classList.add("cf-tab--aktiv");
     document.querySelector(`[data-tabtartalom="${gomb.dataset.tab}"]`).classList.add("cf-tabtartalom--aktiv");
+
+    if (gomb.dataset.tab === "penzugyek") {
+      penzugyGrafikonRajzolasa(adat);
+    }
+    if (gomb.dataset.tab === "osszefoglalo") {
+      arfolyamGrafikonFrissitese(document.querySelector("#idosikValaszto .aktiv")?.dataset.idosik || "1M");
+    }
   });
 }
 
@@ -857,6 +1146,12 @@ async function inditas() {
       return;
     }
 
+    // FONTOS: eloszor lathatova tesszuk a konteinert, csak utana rajzolunk
+    // grafikont - kulonben a vaszon (canvas) meg 0 szelesseggel rendelkezik
+    // (mert a szulo "hidden" volt), es semmi nem jelenik meg rajta.
+    document.getElementById("betoltesUzenet").hidden = true;
+    document.getElementById("ceglapFo").hidden = false;
+
     fejlecMegjelenitese(adat);
     statSavMegjelenitese(adat);
     alapadatokMegjelenitese(adat);
@@ -872,17 +1167,14 @@ async function inditas() {
     sankeyMegjelenitese(adat);
     peerTablazatMegjelenitese(adat); // aszinkron, nem kell megvarni a tobbihez
 
-    tabokBekotese();
-
-    document.getElementById("betoltesUzenet").hidden = true;
-    document.getElementById("ceglapFo").hidden = false;
+    tabokBekotese(adat);
 
     // Ujrarajzolas ablakmeret-valtaskor
     let resizeTimer = null;
     window.addEventListener("resize", () => {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
-        arfolyamGrafikonFrissitese(document.querySelector("#idosikValaszto .aktiv")?.dataset.idosik || "1Y");
+        arfolyamGrafikonFrissitese(document.querySelector("#idosikValaszto .aktiv")?.dataset.idosik || "1M");
         penzugyGrafikonRajzolasa(adat);
       }, 200);
     });
