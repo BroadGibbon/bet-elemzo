@@ -9,8 +9,8 @@
 //   GITHUB_USER = "pistike123"
 //   GITHUB_REPO = "bet-elemzo"
 // ------------------------------------------------------------------
-const GITHUB_USER = "IDE_A_GITHUB_FELHASZNALONEVED";
-const GITHUB_REPO = "IDE_A_REPO_NEVE";
+const GITHUB_USER = "BroadGibbon";
+const GITHUB_REPO = "bet-elemzo";
 const ADAT_URL = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/data/reszvenyek.json`;
 
 // Ha a raw.githubusercontent.com valamiert nem elerheto/lassu, ez egy
