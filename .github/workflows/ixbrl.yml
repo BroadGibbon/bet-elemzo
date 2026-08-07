@@ -1,0 +1,37 @@
+name: BET iXBRL eves jelentesek
+
+# Ez a legidoigenyesebb letoltes - cegenkent akar 6 kulon fajlt is
+# letolt es dolgoz fel az MNB kozzeteteli rendszerebol. Az eves jelentesek
+# ritkan valtoznak, ezert eleg havonta futtatni, vagy kezzel amikor kell.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 5 1 * *"   # minden honap 1-jen, a tobbi utan
+
+permissions:
+  contents: write
+
+jobs:
+  ixbrl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45   # biztonsagi fek, ha valami elakadna
+
+    steps:
+      - name: Kod letoltese
+        uses: actions/checkout@v4
+
+      - name: Python beallitasa
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: iXBRL eves jelentesek letoltese es feldolgozasa
+        run: python fetch_ixbrl.py
+
+      - name: Eredmeny visszamentese a repoba
+        run: |
+          git config user.name "BET robot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "iXBRL eves jelentesek: $(date -u '+%Y-%m-%d') UTC"
+          git push
