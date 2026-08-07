@@ -1,0 +1,39 @@
+name: BET adatfrissites
+
+on:
+  # Kezi inditas: a GitHub "Actions" fulen lesz egy "Run workflow" gomb
+  workflow_dispatch:
+
+  # Automatikus inditas: hetkoznaponkent 18:10-kor (magyar ido)
+  schedule:
+    - cron: "10 16 * * 1-5"
+
+# Engedely, hogy a robot vissza tudja irni a letoltott adatot a repoba
+permissions:
+  contents: write
+
+jobs:
+  letoltes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kod letoltese
+        uses: actions/checkout@v4
+
+      - name: Python beallitasa
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Adatok letoltese a BET-rol
+        run: |
+          mkdir -p data
+          python fetch_bet.py
+
+      - name: Eredmeny visszamentese a repoba
+        run: |
+          git config user.name "BET robot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Adatfrissites: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git push
