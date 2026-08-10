@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: bet-adat-iras
+  cancel-in-progress: false
+
 jobs:
   tortenet:
     runs-on: ubuntu-latest
@@ -36,5 +40,19 @@ jobs:
           git config user.name "BET robot"
           git config user.email "actions@github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "Arfolyam-tortenet: $(date -u '+%Y-%m-%d') UTC"
-          git push
+          if git diff --staged --quiet; then
+            echo "Nincs valtozas, nincs mit menteni."
+            exit 0
+          fi
+          git commit -m "Arfolyam-tortenet: $(date -u '+%Y-%m-%d') UTC"
+          for probalkozas in 1 2 3 4 5; do
+            if git push; then
+              echo "Sikeres push."
+              exit 0
+            fi
+            echo "Push sikertelen ($probalkozas. probalkozas), ujraprobalom pull --rebase utan..."
+            git pull --rebase origin main
+            sleep $((probalkozas * 5))
+          done
+          echo "Vegleg sikertelen a push 5 probalkozas utan."
+          exit 1
