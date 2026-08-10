@@ -39,8 +39,8 @@ jobs:
       # Ha korabban hozzaadtad az audit lepest, ird vissza ide - ez a
       # lepes csak a mar letoltott fajlokat elemzi, nem tolt le semmit,
       # ezert barhova beteheted a letoltes es a push koze:
-       - name: Frissesegi ellenorzes
-         run: python audit_ixbrl.py
+      - name: Frissesegi ellenorzes
+        run: python audit_ixbrl.py
 
       - name: Eredmeny visszamentese a repoba
         run: |
