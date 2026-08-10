@@ -364,6 +364,10 @@ function szerzoKarikaBelseje(szerzo) {
   return `<span class="cikk-karika__monogram">${szerzoMonogram(szerzo)}</span>`;
 }
 
+function cikkKarikaHtml(szerzo) {
+  return `<span class="cikk-karika">${szerzoKarikaBelseje(szerzo)}</span>`;
+}
+
 async function cikkekMegjelenitese() {
   const cel = document.getElementById("cikkekLista");
   if (!cel) return;
@@ -378,11 +382,7 @@ async function cikkekMegjelenitese() {
 
     cel.innerHTML = cikkek.map(c => `
       <a class="cikk-kartya" href="${c.link}" target="_blank" rel="noopener noreferrer">
-        ${c.kep
-          ? `<img src="${c.kep}" alt="" class="cikk-kartya__kep" loading="lazy">`
-          : `<div class="cikk-kartya__kep cikk-kartya__kep--nincs"></div>`}
-        <div class="cikk-kartya__arnyek"></div>
-        <span class="cikk-kartya__karika">${szerzoKarikaBelseje(c.szerzo)}</span>
+        ${cikkKarikaHtml(c.szerzo)}
         <span class="cikk-kartya__szoveg">
           <span class="cikk-kartya__szerzo">${c.szerzo}</span>
           <span class="cikk-kartya__cim">${c.cim}</span>
@@ -414,10 +414,13 @@ async function cipokMegjelenitese() {
 
     cel.innerHTML = cipok.map(c => `
       <a class="cipo-kartya" href="cipo.html?id=${encodeURIComponent(c.id)}">
-        <img src="${c.borito_kep}" alt="" class="cipo-kartya__kep" loading="lazy">
-        <div class="cipo-kartya__arnyek"></div>
-        <span class="cipo-kartya__szerzo-karika">${szerzoKarikaBelseje(c.szerzo)}</span>
-        <span class="cipo-kartya__leiras">${c.leiras}</span>
+        <div class="cipo-kartya__kepkeret">
+          <img src="${c.borito_kep}" alt="" class="cipo-kartya__kep" loading="lazy">
+        </div>
+        <div class="cipo-kartya__szerzosor">
+          <span class="cipo-kartya__szerzo-karika">${szerzoKarikaBelseje(c.szerzo)}</span>
+          <span class="cipo-kartya__szerzo-nev">${c.szerzo}</span>
+        </div>
       </a>
     `).join("");
   } catch (hiba) {

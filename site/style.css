@@ -411,101 +411,75 @@ body {
 
 .cikkek-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1.1rem;
   margin-top: 1rem;
 }
 
 .cikk-kartya {
-  position: relative;
-  display: block;
-  height: 300px;
-  border-radius: 12px;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  border: 1px solid var(--fustolt-bezs);
+  border-radius: 10px;
+  padding: 1.15rem 1.35rem;
   text-decoration: none;
   color: var(--espresso);
-  border: 1px solid var(--fustolt-bezs);
-  background: var(--espresso);
   transition: box-shadow 0.15s, transform 0.1s;
 }
 
 .cikk-kartya:hover {
-  box-shadow: 0 4px 14px rgba(60, 42, 27, 0.2);
+  box-shadow: 0 4px 14px rgba(60, 42, 27, 0.15);
   transform: translateY(-1px);
 }
 
-.cikk-kartya__kep {
+.cikk-karika {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--kereg);
+}
+
+.cikk-karika__kep {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.2s;
 }
 
-.cikk-kartya:hover .cikk-kartya__kep { transform: scale(1.05); }
-
-.cikk-kartya__kep--nincs {
-  background: linear-gradient(135deg, var(--karamell), var(--espresso));
-}
-
-.cikk-kartya__arnyek {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(60,42,27,0.9) 0%, rgba(60,42,27,0.25) 50%, transparent 75%);
-}
-
-.cikk-kartya__karika {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px solid var(--vajkrem);
-  display: block;
-}
-
-.cikk-kartya__karika .cikk-karika__kep,
-.cikk-kartya__karika .cikk-karika__monogram {
+.cikk-karika__monogram {
   width: 100%;
   height: 100%;
-}
-
-.cikk-kartya__karika .cikk-karika__monogram {
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--fustolt-bezs);
   color: var(--vajkrem);
   font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-size: 1.3rem;
 }
 
-.cikk-kartya__szoveg {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  padding: 0.8rem 0.9rem;
-}
+.cikk-kartya__szoveg { min-width: 0; }
 
 .cikk-kartya__szerzo {
-  display: block;
   font-family: var(--font-adat);
-  font-size: 0.72rem;
-  color: var(--kereg);
+  font-size: 0.74rem;
+  color: var(--fustolt-bezs);
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
 
 .cikk-kartya__cim {
-  display: -webkit-box;
   font-family: var(--font-torzs);
   font-weight: 600;
-  font-size: 1rem;
-  color: var(--vajkrem);
+  font-size: 1.05rem;
   margin-top: 0.2rem;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
@@ -536,20 +510,30 @@ body {
 }
 
 .cipo-kartya {
-  flex: 0 0 200px;
+  flex: 0 0 240px;
   scroll-snap-align: start;
-  position: relative;
-  height: 260px;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
   text-decoration: none;
   display: block;
   border: 1px solid var(--fustolt-bezs);
-  background: var(--espresso);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  transition: box-shadow 0.15s, transform 0.1s;
+}
+
+.cipo-kartya:hover {
+  box-shadow: 0 4px 14px rgba(60, 42, 27, 0.15);
+  transform: translateY(-1px);
 }
 
 .cipok-karusel { scroll-snap-type: x proximity; }
+
+.cipo-kartya__kepkeret {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background: var(--espresso);
+}
 
 .cipo-kartya__kep {
   width: 100%;
@@ -561,40 +545,35 @@ body {
 
 .cipo-kartya:hover .cipo-kartya__kep { transform: scale(1.05); }
 
-.cipo-kartya__arnyek {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(60,42,27,0.85) 0%, rgba(60,42,27,0.15) 45%, transparent 70%);
+.cipo-kartya__szerzosor {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.7rem;
+  border-top: 1px solid var(--fustolt-bezs);
 }
 
 .cipo-kartya__szerzo-karika {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 40px;
-  height: 40px;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid var(--vajkrem);
+  border: 1px solid var(--kereg);
 }
 
 .cipo-kartya__szerzo-karika img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-.cipo-kartya__szerzo-karika .cikk-karika__monogram { font-size: 0.85rem; }
+.cipo-kartya__szerzo-karika .cikk-karika__monogram { font-size: 0.7rem; }
 
-.cipo-kartya__leiras {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  padding: 0.7rem 0.8rem;
-  color: var(--vajkrem);
-  font-family: var(--font-torzs);
+.cipo-kartya__szerzo-nev {
+  font-family: var(--font-adat);
+  font-size: 0.8rem;
   font-weight: 600;
-  font-size: 0.85rem;
+  color: var(--espresso);
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  white-space: nowrap;
 }
 
 .cipok-nyil {
@@ -622,7 +601,8 @@ body {
 
 @media (max-width: 640px) {
   .cipok-nyil { display: none; }
-  .cipo-kartya { flex-basis: 160px; height: 210px; }
+  .cipo-kartya { flex-basis: 190px; }
+  .cipo-kartya__kepkeret { height: 230px; }
 }
 
 .cipok-ures {

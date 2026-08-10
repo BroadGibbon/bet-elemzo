@@ -7,14 +7,14 @@
 .cipo-fejlec {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 0.65rem;
+  margin-bottom: 0.5rem;
 }
 
 .cipo-fejlec__karika {
   flex-shrink: 0;
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid var(--kereg);
@@ -24,16 +24,15 @@
 
 .cipo-fejlec__szerzo {
   font-family: var(--font-adat);
-  font-size: 0.8rem;
-  color: var(--fustolt-bezs);
-  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--espresso);
 }
 
 .cipo-fejlec__leiras {
   font-family: var(--font-torzs);
-  font-weight: 600;
-  font-size: 1.15rem;
-  margin: 0.15rem 0 0;
+  font-size: 1rem;
+  margin: 0 0 1.25rem;
   color: var(--espresso);
 }
 
@@ -46,8 +45,8 @@
 
 .cipo-kep-keret {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  max-height: 70vh;
+  aspect-ratio: 1080 / 1350;
+  max-height: 75vh;
   background: var(--espresso);
   border-radius: 12px;
   overflow: hidden;
@@ -59,7 +58,7 @@
 .cipo-kep-keret__kep {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   background: var(--espresso);
 }
 

@@ -84,17 +84,14 @@ async function cikkTorlese(id, gomb) {
 function cikkHozzaadasBekotese() {
   const gomb = document.getElementById("cikkHozzaadGomb");
   const uzenetEl = document.getElementById("cikkUzenet");
-  const haladasEl = document.getElementById("cikkHaladas");
 
   gomb.addEventListener("click", async () => {
     const jelszo = aktualisJelszo();
     const cim = document.getElementById("ujCikkCim").value.trim();
     const szerzo = document.getElementById("ujCikkSzerzo").value;
     const link = document.getElementById("ujCikkLink").value.trim();
-    const kepFajl = document.getElementById("ujCikkKep").files[0];
 
     uzenetEl.textContent = "";
-    haladasEl.textContent = "";
 
     if (!jelszo) {
       uzenetEl.textContent = "Add meg a jelszót fent a Belépés dobozban.";
@@ -108,41 +105,29 @@ function cikkHozzaadasBekotese() {
     }
 
     gomb.disabled = true;
+    uzenetEl.textContent = "Mentés folyamatban…";
 
     try {
-      let kepUrl = null;
-      if (kepFajl) {
-        haladasEl.textContent = "Borítókép feltöltése…";
-        const cikkId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
-        const dataUrl = await kepTomoritese(kepFajl);
-        kepUrl = await kepFeltoltese(jelszo, `site/assets/cikkek/${cikkId}/kep.jpg`, dataUrl);
-      }
-
-      haladasEl.textContent = "Mentés…";
       const valasz = await fetch("/api/cikkek", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ jelszo, cim, szerzo, link, kep: kepUrl }),
+        body: JSON.stringify({ jelszo, cim, szerzo, link }),
       });
       const adat = await valasz.json();
 
       if (valasz.ok && adat.ok) {
         uzenetEl.textContent = "Cikk hozzáadva!";
         uzenetEl.className = "admin-panel__uzenet admin-panel__uzenet--siker";
-        haladasEl.textContent = "";
         document.getElementById("ujCikkCim").value = "";
         document.getElementById("ujCikkLink").value = "";
-        document.getElementById("ujCikkKep").value = "";
         await cikkekBetoltese();
       } else {
         uzenetEl.textContent = "Hiba: " + (adat.hiba || "ismeretlen hiba történt.");
         uzenetEl.className = "admin-panel__uzenet admin-panel__uzenet--hiba";
-        haladasEl.textContent = "";
       }
     } catch (hiba) {
       uzenetEl.textContent = "Hiba: " + hiba.message;
       uzenetEl.className = "admin-panel__uzenet admin-panel__uzenet--hiba";
-      haladasEl.textContent = "";
     } finally {
       gomb.disabled = false;
     }
