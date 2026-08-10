@@ -1,6 +1,47 @@
 {
   "cipok": [
     {
+      "id": "msn4ea6r36ib",
+      "szerzo": "Katona Mátyás",
+      "leiras": "A Volkswagen részvénye ma alacsonyabban áll, mint a Dieselgate-botrány csúcspontján — és a cég akár 100 000 embert is elbocsáthat, négy németországi gyárat bezárva. Nincs egyedül: a BMW, a Mercedes és a Peugeot is komoly nehézségekkel küzd. Az európai tisztviselők szívesen mutogatnak az energiaárakra, az elöregedő munkaerőre és a brüsszeli bürokráciára, de a Bloomberg elemzése szerint ezek együtt is csak a probléma töredékét magyarázzák.\n\nA valódi ok egyszerűbb és kényelmetlenebb: Kína, amely évtizedekig a német gépek és autók vevője volt, mára önálló versenytárssá nőtte ki magát. A kínai gyártók 24 hónap alatt fejlesztenek ki egy új modellt, míg a nyugati cégeknek erre 40-80 hónapra van szükségük. Az elektromos autók gyártásában 20-50%-os költségelőnyt élveznek — ez egy 30 000 eurós Volkswagenen legalább 6000 eurós különbséget jelent. Ehhez képest a tervezett tömeges elbocsátás mindössze 1000 euró/autó megtakarítást hozna.\n\nMiközben a nyugati gyártók üresen álló gyáraikat bezárják, a kínai cégek (BYD, Chery, Geely) épp ezekbe költöznek be, hozzáférve az uniós támogatásokhoz és megkerülve a vámokat. Az EU most azon vitatkozik, hogy egy általános vámfal  vagy egy célzottabb, amerikai mintájú kereskedelmi eszköz jelentheti-e a választ.\n\nA kérdés, amivel Európának szembe kell néznie: mit ér egy ipari alapja, ha lassan egy jól márkázott elosztóközponttá zsugorodik?",
+      "borito_kep": "https://raw.githubusercontent.com/BroadGibbon/bet-elemzo/main/site/assets/hazi-cipok/msn4dz3e8fz3/borito.jpg",
+      "kepek": [
+        {
+          "url": "https://raw.githubusercontent.com/BroadGibbon/bet-elemzo/main/site/assets/hazi-cipok/msn4dz3e8fz3/kep-1.jpg",
+          "szoveg": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BroadGibbon/bet-elemzo/main/site/assets/hazi-cipok/msn4dz3e8fz3/kep-2.jpg",
+          "szoveg": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BroadGibbon/bet-elemzo/main/site/assets/hazi-cipok/msn4dz3e8fz3/kep-3.jpg",
+          "szoveg": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BroadGibbon/bet-elemzo/main/site/assets/hazi-cipok/msn4dz3e8fz3/kep-4.jpg",
+          "szoveg": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BroadGibbon/bet-elemzo/main/site/assets/hazi-cipok/msn4dz3e8fz3/kep-5.jpg",
+          "szoveg": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BroadGibbon/bet-elemzo/main/site/assets/hazi-cipok/msn4dz3e8fz3/kep-6.jpg",
+          "szoveg": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BroadGibbon/bet-elemzo/main/site/assets/hazi-cipok/msn4dz3e8fz3/kep-7.jpg",
+          "szoveg": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/BroadGibbon/bet-elemzo/main/site/assets/hazi-cipok/msn4dz3e8fz3/kep-8.jpg",
+          "szoveg": ""
+        }
+      ],
+      "hozzaadva": "2026-08-10T11:00:22.420Z"
+    },
+    {
       "id": "msn4btrr0gf8",
       "szerzo": "Katona Mátyás",
       "leiras": "Dél-Korea tőzsdéje 3 hete még a világ egyik sztárja volt: a KOSPI 12 hónap alatt csaknem 200%-ot emelkedett, a Samsung és az SK Hynix pedig extrém hozamokat hozott. Aztán 21 nap alatt a KOSPI 25%-ot esett, és 1,2 millió számla ütközött margin-hívási küszöbbe.\n\nA háttérben egy jól ismerhető mintázat áll: 14 millió koreai retail befektető (\"hangya\") gyakran hitelből, tőkeáttétellel fogadott arra, hogy az AI-hajtotta memóriachip-kereslet (Samsung, SK Hynix) tartósan felfelé viszi a két részvényt, amik önmagukban a teljes tőzsdeindex több mint felét adják. Amikor egy amerikai chipgyártó gyengébb híreket adott, a koreai piac — mivel alig két részvényen áll — sokkal élesebben reagált, mint egy diverzifikáltabb index tenné.\n\nAz érdekes kérdés: az amerikai margin adósság épp most áll minden idők csúcsán, a tőzsde felső szegmense pedig szintén néhány AI-részvényre koncentrálódik. Ez önmagában nem jelenti azt, hogy ugyanaz fog történni — de a mechanizmus, ami Koreában megmutatkozott, tanulságos arra nézve, mi történik, ha tőkeáttétellel túlfűtött piacon jön egy váratlan hír.",
