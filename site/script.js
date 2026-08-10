@@ -344,6 +344,55 @@ function hianyzoAdatokMutatasa(hianyzok) {
 
 
 // ------------------------------------------------------------------
+// Cikkek szekcio: a Bread Board Capital alapitoinak kulso portalokon
+// megjelent irasai, csempeken, kattintasra uj fulon nyilnak meg.
+// ------------------------------------------------------------------
+const SZERZO_KEPEK = {
+  "Lajer Máté": "assets/szerzo-lajer-mate.png",
+  // "Katona Mátyás": meg nincs fenykepe - monogramos korrel jelenik meg
+};
+
+function szerzoMonogram(nev) {
+  return nev.split(" ").filter(Boolean).map(sz => sz[0]).join("").toUpperCase();
+}
+
+function cikkKarikaHtml(szerzo) {
+  const kep = SZERZO_KEPEK[szerzo];
+  if (kep) {
+    return `<span class="cikk-karika"><img src="${kep}" alt="${szerzo}" class="cikk-karika__kep"></span>`;
+  }
+  return `<span class="cikk-karika"><span class="cikk-karika__monogram">${szerzoMonogram(szerzo)}</span></span>`;
+}
+
+async function cikkekMegjelenitese() {
+  const cel = document.getElementById("cikkekLista");
+  if (!cel) return;
+  try {
+    const adat = await adatFajlLetoltveVagyNull("data/cikkek.json");
+    const cikkek = adat?.cikkek || [];
+
+    if (!cikkek.length) {
+      cel.innerHTML = `<p class="cikkek-ures">Hamarosan itt lesznek olvashatók a cikkek.</p>`;
+      return;
+    }
+
+    cel.innerHTML = cikkek.map(c => `
+      <a class="cikk-kartya" href="${c.link}" target="_blank" rel="noopener noreferrer">
+        ${cikkKarikaHtml(c.szerzo)}
+        <span class="cikk-kartya__szoveg">
+          <span class="cikk-kartya__szerzo">${c.szerzo}</span>
+          <span class="cikk-kartya__cim">${c.cim}</span>
+        </span>
+      </a>
+    `).join("");
+  } catch (hiba) {
+    console.error(hiba);
+    cel.innerHTML = `<p class="cikkek-ures">A cikkek listája jelenleg nem tölthető be.</p>`;
+  }
+}
+
+
+// ------------------------------------------------------------------
 // Inditas: adat letoltese, majd minden feleptese
 // ------------------------------------------------------------------
 async function adatLetoltese() {
@@ -384,6 +433,7 @@ async function tartalekKapitalizaciokPotlasa(reszvenyek) {
 
 async function inditas() {
   const freshnessNote = document.getElementById("freshnessNote");
+  cikkekMegjelenitese(); // fuggetlen a reszveny-adattol, parhuzamosan futhat
   try {
     const adat = await adatLetoltese();
     const reszvenyek = adat.reszvenyek || [];

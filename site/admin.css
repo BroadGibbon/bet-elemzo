@@ -1,0 +1,86 @@
+/* ============================================================
+   Bread Board Capital - Admin oldal specifikus stilusok
+   ============================================================ */
+
+.admin-jelszo-csempe {
+  border-color: var(--karamell);
+  background: rgba(201, 138, 75, 0.06);
+}
+
+.admin-alcim {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  margin: 1.5rem 0 0.6rem;
+}
+
+.admin-alcim:first-of-type { margin-top: 0.5rem; }
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  max-width: 420px;
+}
+
+.admin-cikk-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-cikk-sor {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  background: var(--vajkrem);
+  border: 1px solid var(--fustolt-bezs);
+  border-radius: 8px;
+}
+
+.admin-cikk-sor__info { flex: 1; min-width: 0; }
+
+.admin-cikk-sor__szerzo {
+  font-family: var(--font-adat);
+  font-size: 0.72rem;
+  color: var(--fustolt-bezs);
+  text-transform: uppercase;
+}
+
+.admin-cikk-sor__cim {
+  font-weight: 600;
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-cikk-sor__link {
+  font-size: 0.78rem;
+  color: var(--karamell);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  max-width: 100%;
+}
+
+.admin-cikk-sor__torles {
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid var(--sult-piros);
+  color: var(--sult-piros);
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.admin-cikk-sor__torles:hover { background: var(--sult-piros); color: #fff; }
+.admin-cikk-sor__torles:disabled { opacity: 0.5; cursor: wait; }
+
+.admin-ures {
+  color: var(--fustolt-bezs);
+  font-size: 0.9rem;
+  font-style: italic;
+}

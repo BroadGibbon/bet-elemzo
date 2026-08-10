@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Bread Board Capital</title>
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@500;600&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="company.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__logo-link">
+        <img src="assets/logo-szines.png" alt="Bread Board Capital" class="site-header__logo">
+      </a>
+      <div class="site-header__text">
+        <h1 class="site-header__title">Bread Board Capital</h1>
+        <p class="site-header__tagline">Admin felület</p>
+      </div>
+      <a href="index.html" class="vissza-gomb">← Vissza a főoldalra</a>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <section class="csempe csempe--nagy admin-jelszo-csempe">
+      <h3 class="csempe__cim">Belépés</h3>
+      <p class="csempe__alcim">
+        A jelszót az alábbi minden művelethez (cikk hozzáadása/törlése, adatfrissítés indítása)
+        felhasználjuk — nem kell többször beírnod, amíg nyitva van az oldal.
+      </p>
+      <label class="admin-panel__label">
+        Jelszó
+        <input type="password" id="globalisJelszo" class="admin-panel__input" autocomplete="current-password">
+      </label>
+    </section>
+
+    <section class="csempe csempe--nagy">
+      <h3 class="csempe__cim">Cikkek kezelése</h3>
+
+      <h4 class="admin-alcim">Meglévő cikkek</h4>
+      <div id="cikkLista" class="admin-cikk-lista">Betöltés…</div>
+
+      <h4 class="admin-alcim">Új cikk hozzáadása</h4>
+      <div class="admin-form">
+        <label class="admin-panel__label">
+          Cím
+          <input type="text" id="ujCikkCim" class="admin-panel__input" placeholder="A cikk címe">
+        </label>
+        <label class="admin-panel__label">
+          Szerző
+          <select id="ujCikkSzerzo" class="admin-panel__select">
+            <option value="Lajer Máté">Lajer Máté</option>
+            <option value="Katona Mátyás">Katona Mátyás</option>
+          </select>
+        </label>
+        <label class="admin-panel__label">
+          Link
+          <input type="url" id="ujCikkLink" class="admin-panel__input" placeholder="https://...">
+        </label>
+        <button id="cikkHozzaadGomb" class="admin-panel__gomb">Cikk hozzáadása</button>
+        <p id="cikkUzenet" class="admin-panel__uzenet"></p>
+      </div>
+    </section>
+
+    <section class="csempe csempe--nagy">
+      <h3 class="csempe__cim">Adatfrissítés</h3>
+      <p class="csempe__alcim">
+        Elindítja a megfelelő GitHub Actions workflow-t. Az oldal a lefutás után, a következő
+        megnyitáskor mutatja a friss adatot.
+      </p>
+      <div class="admin-form">
+        <label class="admin-panel__label">
+          Mit frissítsünk?
+          <select id="adminMit" class="admin-panel__select">
+            <option value="arfolyam">Napi árfolyam (gyors, ~1 perc)</option>
+            <option value="tortenet">Teljes árfolyam-történet (~2 perc)</option>
+            <option value="penzugy">Pénzügyi kimutatások (~2 perc)</option>
+            <option value="ixbrl">Részletes iXBRL-adatok (~10-20 perc)</option>
+            <option value="mutatok">Alapadatok és mutatók (~2 perc)</option>
+            <option value="mind">Minden egyszerre</option>
+          </select>
+        </label>
+        <button id="adminInditoGomb" class="admin-panel__gomb">Frissítés indítása</button>
+        <p id="adminUzenet" class="admin-panel__uzenet"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Bread Board Capital — Admin felület. Ez az oldal nem publikus tartalom, de a keresők ki vannak tiltva róla.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

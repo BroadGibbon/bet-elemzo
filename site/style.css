@@ -405,7 +405,106 @@ body {
   font-size: 0.8rem;
 }
 
-/* ---------- Admin adatfrissito panel ---------- */
+/* ---------- Cikkek szekcio ---------- */
+
+.cikkek-szekcio { margin-top: 2.5rem; }
+
+.cikkek-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cikk-kartya {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: #fff;
+  border: 1px solid var(--fustolt-bezs);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  text-decoration: none;
+  color: var(--espresso);
+  transition: box-shadow 0.15s, transform 0.1s;
+}
+
+.cikk-kartya:hover {
+  box-shadow: 0 4px 14px rgba(60, 42, 27, 0.15);
+  transform: translateY(-1px);
+}
+
+.cikk-karika {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--kereg);
+}
+
+.cikk-karika__kep {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cikk-karika__monogram {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--fustolt-bezs);
+  color: var(--vajkrem);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+
+.cikk-kartya__szoveg { min-width: 0; }
+
+.cikk-kartya__szerzo {
+  font-family: var(--font-adat);
+  font-size: 0.72rem;
+  color: var(--fustolt-bezs);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.cikk-kartya__cim {
+  font-family: var(--font-torzs);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 0.15rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.cikkek-ures {
+  color: var(--fustolt-bezs);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* ---------- Admin link es panel ---------- */
+
+.admin-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--fustolt-bezs);
+  font-family: var(--font-adat);
+  font-size: 0.72rem;
+  text-decoration: none;
+  border: 1px solid var(--fustolt-bezs);
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+}
+
+.admin-link:hover { color: var(--vajkrem); border-color: var(--vajkrem); }
 
 .admin-megnyito {
   margin-top: 0.75rem;
