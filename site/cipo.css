@@ -1,0 +1,83 @@
+/* ============================================================
+   Bread Board Capital - Hazi cipo aloldal stilusai
+   ============================================================ */
+
+.cipo-oldal { max-width: 720px; }
+
+.cipo-fejlec {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cipo-fejlec__karika {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--kereg);
+}
+
+.cipo-fejlec__karika img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.cipo-fejlec__szerzo {
+  font-family: var(--font-adat);
+  font-size: 0.8rem;
+  color: var(--fustolt-bezs);
+  text-transform: uppercase;
+}
+
+.cipo-fejlec__leiras {
+  font-family: var(--font-torzs);
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin: 0.15rem 0 0;
+  color: var(--espresso);
+}
+
+.cipo-karusel-nagy-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cipo-kep-keret {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  max-height: 70vh;
+  background: var(--espresso);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cipo-kep-keret__kep {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--espresso);
+}
+
+.cipo-karusel-nagy-wrap .cipok-nyil--bal { left: 8px; }
+.cipo-karusel-nagy-wrap .cipok-nyil--jobb { right: 8px; }
+
+.cipo-kep-szamlalo {
+  text-align: center;
+  font-family: var(--font-adat);
+  font-size: 0.8rem;
+  color: var(--fustolt-bezs);
+  margin-top: 0.75rem;
+}
+
+.cipo-kep-szoveg {
+  text-align: center;
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+  min-height: 1.6em;
+}

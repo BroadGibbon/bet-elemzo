@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Házi cipó — Bread Board Capital</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@500;600&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="company.css">
+<link rel="stylesheet" href="cipo.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__logo-link">
+        <img src="assets/logo-szines.png" alt="Bread Board Capital" class="site-header__logo">
+      </a>
+      <div class="site-header__text">
+        <h1 class="site-header__title">Bread Board Capital</h1>
+        <p class="site-header__tagline">„Friss hírek, ropogósra pirítva.”</p>
+      </div>
+      <a href="index.html" class="vissza-gomb">← Vissza a főoldalra</a>
+    </div>
+  </header>
+
+  <main class="page cipo-oldal">
+
+    <div id="betoltesUzenet" class="betoltes-uzenet">Betöltés…</div>
+    <div id="hibaUzenet" class="hiba-uzenet" hidden></div>
+
+    <div id="cipoTartalom" hidden>
+      <div class="cipo-fejlec">
+        <span id="cipoSzerzoKarika" class="cipo-fejlec__karika"></span>
+        <div>
+          <div id="cipoSzerzoNev" class="cipo-fejlec__szerzo"></div>
+          <p id="cipoLeiras" class="cipo-fejlec__leiras"></p>
+        </div>
+      </div>
+
+      <div class="cipo-karusel-nagy-wrap">
+        <button class="cipok-nyil cipok-nyil--bal" id="kepNyilBal" aria-label="Előző kép">‹</button>
+        <div class="cipo-kep-keret">
+          <img id="cipoAktualisKep" class="cipo-kep-keret__kep" src="" alt="">
+        </div>
+        <button class="cipok-nyil cipok-nyil--jobb" id="kepNyilJobb" aria-label="Következő kép">›</button>
+      </div>
+
+      <div class="cipo-kep-szamlalo" id="cipoKepSzamlalo"></div>
+      <p class="cipo-kep-szoveg" id="cipoKepSzoveg"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Bread Board Capital — Márkakönyv V1.0 alapján. Ez az oldal nem minősül befektetési tanácsadásnak.
+    </p>
+    <a href="admin.html" class="admin-link">Admin</a>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="cipo.js"></script>
+</body>
+</html>

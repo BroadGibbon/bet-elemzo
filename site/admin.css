@@ -84,3 +84,75 @@
   font-size: 0.9rem;
   font-style: italic;
 }
+
+.admin-alcim--kicsi {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.admin-panel__textarea {
+  resize: vertical;
+  font-family: var(--font-torzs);
+}
+
+.admin-kep-sorok {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-kep-sor {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.admin-kep-sor__fajl, .admin-kep-sor__szoveg {
+  padding: 0.4rem 0.55rem;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  border: 1px solid var(--fustolt-bezs);
+  background: var(--vajkrem);
+  color: var(--espresso);
+}
+
+.admin-kep-sor__torles {
+  background: none;
+  border: 1px solid var(--sult-piros);
+  color: var(--sult-piros);
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.admin-kep-sor__torles:hover { background: var(--sult-piros); color: #fff; }
+
+.admin-masodlagos-gomb {
+  align-self: flex-start;
+  background: none;
+  border: 1px dashed var(--karamell);
+  color: var(--karamell);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  margin-top: 0.3rem;
+}
+
+.admin-masodlagos-gomb:hover { background: rgba(201, 138, 75, 0.12); }
+
+.admin-cipo-elonezet {
+  width: 48px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 560px) {
+  .admin-kep-sor { grid-template-columns: 1fr; }
+}

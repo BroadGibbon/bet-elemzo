@@ -1,25 +1,19 @@
 /**
- * Bread Board Capital - cikkek kezelese API vegpont
+ * Bread Board Capital - Hazi cipok kezelese API vegpont
  *
- * Ez a fuggveny a data/cikkek.json fajlt modositja KOZVETLENUL a GitHub
- * repoban, a GitHub "Contents API"-jan keresztul - nem kell hozza kulon
- * adatbazis. Ugyanugy jelszo-vedett, mint a frissites.js.
- *
- * Kornyezeti valtozok (Vercel Environment Variables, ugyanazok mint a
- * frissites.js-hez):
- *   - GH_ACTIONS_TOKEN : GitHub Personal Access Token
- *       FONTOS: ehhez a tokenhez most mar "Contents: Read and write"
- *       jogosultsag IS kell, nem csak "Actions: Read and write"!
- *   - REFRESH_PASSWORD : ugyanaz a jelszo, mint az adatfrissiteshez
- *   - GITHUB_OWNER      : a GitHub felhasznaloneved
- *   - GITHUB_REPO_NAME  : a repo neve
+ * Ugyanaz a mintazat, mint a cikkek.js: a data/hazi_cipok.json fajlt
+ * modositja a GitHub Contents API-n keresztul, jelszo-vedetten.
+ * A kepeket (borito + karusel-kepek) mar KULON, a kep-feltoltes.js
+ * vegponton keresztul kell feltolteni, MIELOTT ide kuldjuk a mentest -
+ * ez a fuggveny csak a mar feltoltott kepek URL-jeit es a szoveges
+ * adatokat menti el, egyetlen JSON-bejegyzeskent.
  */
 
-const CIKKEK_UTVONAL = "data/cikkek.json";
+const CIPOK_UTVONAL = "data/hazi_cipok.json";
 
 async function fajlLekerese(owner, repo, token) {
   const valasz = await fetch(
-    `https://api.github.com/repos/${owner}/${repo}/contents/${CIKKEK_UTVONAL}?ref=main`,
+    `https://api.github.com/repos/${owner}/${repo}/contents/${CIPOK_UTVONAL}?ref=main`,
     {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -30,7 +24,7 @@ async function fajlLekerese(owner, repo, token) {
   );
   if (!valasz.ok) {
     const szoveg = await valasz.text().catch(() => "");
-    throw new Error(`Nem sikerült beolvasni a cikkek.json fájlt (HTTP ${valasz.status}): ${szoveg}`);
+    throw new Error(`Nem sikerült beolvasni a hazi_cipok.json fájlt (HTTP ${valasz.status}): ${szoveg}`);
   }
   const nyers = await valasz.json();
   const tartalom = Buffer.from(nyers.content, "base64").toString("utf-8");
@@ -40,7 +34,7 @@ async function fajlLekerese(owner, repo, token) {
 async function fajlIrasa(owner, repo, token, ujTartalomObjektum, sha, uzenet) {
   const ujTartalomSzoveg = JSON.stringify(ujTartalomObjektum, null, 2);
   const valasz = await fetch(
-    `https://api.github.com/repos/${owner}/${repo}/contents/${CIKKEK_UTVONAL}`,
+    `https://api.github.com/repos/${owner}/${repo}/contents/${CIPOK_UTVONAL}`,
     {
       method: "PUT",
       headers: {
@@ -59,7 +53,7 @@ async function fajlIrasa(owner, repo, token, ujTartalomObjektum, sha, uzenet) {
   );
   if (!valasz.ok) {
     const szoveg = await valasz.text().catch(() => "");
-    throw new Error(`Nem sikerült menteni a cikkek.json fájlt (HTTP ${valasz.status}): ${szoveg}`);
+    throw new Error(`Nem sikerült menteni a hazi_cipok.json fájlt (HTTP ${valasz.status}): ${szoveg}`);
   }
 }
 
@@ -80,41 +74,37 @@ export default async function handler(req, res) {
   const owner = process.env.GITHUB_OWNER;
   const repo = process.env.GITHUB_REPO_NAME;
   if (!token || !owner || !repo) {
-    res.status(500).json({
-      hiba: "Hiányzó szerver-beállítás (GH_ACTIONS_TOKEN / GITHUB_OWNER / GITHUB_REPO_NAME).",
-    });
+    res.status(500).json({ hiba: "Hiányzó szerver-beállítás." });
     return;
   }
 
   try {
     const { adat, sha } = await fajlLekerese(owner, repo, token);
-    if (!Array.isArray(adat.cikkek)) adat.cikkek = [];
+    if (!Array.isArray(adat.cipok)) adat.cipok = [];
 
     if (req.method === "POST") {
-      const { cim, szerzo, link, kep } = body;
-      if (!cim || !szerzo || !link) {
-        res.status(400).json({ hiba: "Hiányzik a cím, szerző vagy link mező." });
-        return;
-      }
-      let ellenorzottLink;
-      try {
-        ellenorzottLink = new URL(link).toString();
-      } catch {
-        res.status(400).json({ hiba: "A link nem tűnik érvényes URL-nek." });
+      const { szerzo, leiras, borito_kep, kepek } = body;
+      if (!szerzo || !leiras || !borito_kep || !Array.isArray(kepek) || kepek.length === 0) {
+        res.status(400).json({
+          hiba: "Hiányzik a szerző, a leírás, a borítókép, vagy nincs egyetlen kép sem a listában.",
+        });
         return;
       }
 
-      const ujCikk = {
+      const ujCipo = {
         id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
-        cim: String(cim).trim(),
         szerzo: String(szerzo).trim(),
-        link: ellenorzottLink,
-        kep: kep || null,
+        leiras: String(leiras).trim(),
+        borito_kep,
+        kepek: kepek.map((k) => ({
+          url: k.url,
+          szoveg: String(k.szoveg || "").trim(),
+        })),
         hozzaadva: new Date().toISOString(),
       };
-      adat.cikkek.unshift(ujCikk);
-      await fajlIrasa(owner, repo, token, adat, sha, `Új cikk hozzáadva: ${ujCikk.cim}`);
-      res.status(200).json({ ok: true, cikk: ujCikk });
+      adat.cipok.unshift(ujCipo);
+      await fajlIrasa(owner, repo, token, adat, sha, `Új házi cipó hozzáadva (${ujCipo.szerzo})`);
+      res.status(200).json({ ok: true, cipo: ujCipo });
       return;
     }
 
@@ -124,13 +114,13 @@ export default async function handler(req, res) {
         res.status(400).json({ hiba: "Hiányzik az id mező." });
         return;
       }
-      const elozoHossz = adat.cikkek.length;
-      adat.cikkek = adat.cikkek.filter((c) => c.id !== id);
-      if (adat.cikkek.length === elozoHossz) {
-        res.status(404).json({ hiba: "Nem található ilyen azonosítójú cikk." });
+      const elozoHossz = adat.cipok.length;
+      adat.cipok = adat.cipok.filter((c) => c.id !== id);
+      if (adat.cipok.length === elozoHossz) {
+        res.status(404).json({ hiba: "Nem található ilyen azonosítójú cipó." });
         return;
       }
-      await fajlIrasa(owner, repo, token, adat, sha, `Cikk törölve: ${id}`);
+      await fajlIrasa(owner, repo, token, adat, sha, `Házi cipó törölve: ${id}`);
       res.status(200).json({ ok: true });
       return;
     }

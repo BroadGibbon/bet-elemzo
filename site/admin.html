@@ -66,8 +66,48 @@
           Link
           <input type="url" id="ujCikkLink" class="admin-panel__input" placeholder="https://...">
         </label>
+        <label class="admin-panel__label">
+          Borítókép (opcionális, de ajánlott)
+          <input type="file" id="ujCikkKep" accept="image/*" class="admin-panel__input">
+        </label>
         <button id="cikkHozzaadGomb" class="admin-panel__gomb">Cikk hozzáadása</button>
+        <p id="cikkHaladas" class="admin-panel__uzenet"></p>
         <p id="cikkUzenet" class="admin-panel__uzenet"></p>
+      </div>
+    </section>
+
+    <section class="csempe csempe--nagy">
+      <h3 class="csempe__cim">Házi cipók kezelése</h3>
+
+      <h4 class="admin-alcim">Meglévő cipók</h4>
+      <div id="cipoLista" class="admin-cikk-lista">Betöltés…</div>
+
+      <h4 class="admin-alcim">Új cipó hozzáadása</h4>
+      <div class="admin-form">
+        <label class="admin-panel__label">
+          Szerző
+          <select id="ujCipoSzerzo" class="admin-panel__select">
+            <option value="Lajer Máté">Lajer Máté</option>
+            <option value="Katona Mátyás">Katona Mátyás</option>
+          </select>
+        </label>
+        <label class="admin-panel__label">
+          Rövid leírás (a témáról)
+          <textarea id="ujCipoLeiras" class="admin-panel__input admin-panel__textarea" rows="2"
+            placeholder="Pl. Miért esett ma az OTP árfolyama?"></textarea>
+        </label>
+        <label class="admin-panel__label">
+          Borítókép
+          <input type="file" id="ujCipoBoritoKep" accept="image/*" class="admin-panel__input">
+        </label>
+
+        <h5 class="admin-alcim admin-alcim--kicsi">Képek (javasolt 8-12 db, minimum 3)</h5>
+        <div id="ujCipoKepSorok" class="admin-kep-sorok"></div>
+        <button type="button" id="ujCipoKepHozzaad" class="admin-masodlagos-gomb">+ Kép hozzáadása</button>
+
+        <button id="cipoMentesGomb" class="admin-panel__gomb">Cipó mentése</button>
+        <p id="cipoHaladas" class="admin-panel__uzenet"></p>
+        <p id="cipoUzenet" class="admin-panel__uzenet"></p>
       </div>
     </section>
 

@@ -349,19 +349,19 @@ function hianyzoAdatokMutatasa(hianyzok) {
 // ------------------------------------------------------------------
 const SZERZO_KEPEK = {
   "Lajer Máté": "assets/szerzo-lajer-mate.png",
-  // "Katona Mátyás": meg nincs fenykepe - monogramos korrel jelenik meg
+  "Katona Mátyás": "assets/szerzo-katona-matyas.png",
 };
 
 function szerzoMonogram(nev) {
   return nev.split(" ").filter(Boolean).map(sz => sz[0]).join("").toUpperCase();
 }
 
-function cikkKarikaHtml(szerzo) {
+function szerzoKarikaBelseje(szerzo) {
   const kep = SZERZO_KEPEK[szerzo];
   if (kep) {
-    return `<span class="cikk-karika"><img src="${kep}" alt="${szerzo}" class="cikk-karika__kep"></span>`;
+    return `<img src="${kep}" alt="${szerzo}" class="cikk-karika__kep">`;
   }
-  return `<span class="cikk-karika"><span class="cikk-karika__monogram">${szerzoMonogram(szerzo)}</span></span>`;
+  return `<span class="cikk-karika__monogram">${szerzoMonogram(szerzo)}</span>`;
 }
 
 async function cikkekMegjelenitese() {
@@ -378,7 +378,11 @@ async function cikkekMegjelenitese() {
 
     cel.innerHTML = cikkek.map(c => `
       <a class="cikk-kartya" href="${c.link}" target="_blank" rel="noopener noreferrer">
-        ${cikkKarikaHtml(c.szerzo)}
+        ${c.kep
+          ? `<img src="${c.kep}" alt="" class="cikk-kartya__kep" loading="lazy">`
+          : `<div class="cikk-kartya__kep cikk-kartya__kep--nincs"></div>`}
+        <div class="cikk-kartya__arnyek"></div>
+        <span class="cikk-kartya__karika">${szerzoKarikaBelseje(c.szerzo)}</span>
         <span class="cikk-kartya__szoveg">
           <span class="cikk-kartya__szerzo">${c.szerzo}</span>
           <span class="cikk-kartya__cim">${c.cim}</span>
@@ -389,6 +393,48 @@ async function cikkekMegjelenitese() {
     console.error(hiba);
     cel.innerHTML = `<p class="cikkek-ures">A cikkek listája jelenleg nem tölthető be.</p>`;
   }
+}
+
+
+// ------------------------------------------------------------------
+// Hazi cipok karusel: kis "cipok" (kepes karusel-bejegyzesek) csempesora,
+// jobbra-balra gorgetheto sav formajaban.
+// ------------------------------------------------------------------
+async function cipokMegjelenitese() {
+  const cel = document.getElementById("cipokLista");
+  if (!cel) return;
+  try {
+    const adat = await adatFajlLetoltveVagyNull("data/hazi_cipok.json");
+    const cipok = adat?.cipok || [];
+
+    if (!cipok.length) {
+      cel.innerHTML = `<p class="cipok-ures">Hamarosan itt lesznek olvashatók a házi cipók.</p>`;
+      return;
+    }
+
+    cel.innerHTML = cipok.map(c => `
+      <a class="cipo-kartya" href="cipo.html?id=${encodeURIComponent(c.id)}">
+        <img src="${c.borito_kep}" alt="" class="cipo-kartya__kep" loading="lazy">
+        <div class="cipo-kartya__arnyek"></div>
+        <span class="cipo-kartya__szerzo-karika">${szerzoKarikaBelseje(c.szerzo)}</span>
+        <span class="cipo-kartya__leiras">${c.leiras}</span>
+      </a>
+    `).join("");
+  } catch (hiba) {
+    console.error(hiba);
+    cel.innerHTML = `<p class="cipok-ures">A házi cipók jelenleg nem tölthetők be.</p>`;
+  }
+}
+
+function cipokNyilakBekotese() {
+  const lista = document.getElementById("cipokLista");
+  const balGomb = document.getElementById("cipokNyilBal");
+  const jobbGomb = document.getElementById("cipokNyilJobb");
+  if (!lista || !balGomb || !jobbGomb) return;
+
+  const lepesTavolsag = 440; // kb. ket csempenyi
+  balGomb.addEventListener("click", () => lista.scrollBy({ left: -lepesTavolsag, behavior: "smooth" }));
+  jobbGomb.addEventListener("click", () => lista.scrollBy({ left: lepesTavolsag, behavior: "smooth" }));
 }
 
 
@@ -434,6 +480,8 @@ async function tartalekKapitalizaciokPotlasa(reszvenyek) {
 async function inditas() {
   const freshnessNote = document.getElementById("freshnessNote");
   cikkekMegjelenitese(); // fuggetlen a reszveny-adattol, parhuzamosan futhat
+  cipokMegjelenitese();
+  cipokNyilakBekotese();
   try {
     const adat = await adatLetoltese();
     const reszvenyek = adat.reszvenyek || [];
