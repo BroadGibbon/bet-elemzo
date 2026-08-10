@@ -178,9 +178,10 @@ function reszletPanelMutatasa(reszveny, celX, celY) {
     </div>
     <div class="tooltip__row"><span>Utolsó ár</span><span>${(reszveny.lasttradedprice ?? 0).toLocaleString("hu-HU")} ${reszveny.currencyid || ""}</span></div>
     <div class="tooltip__row"><span>Napi sáv</span><span>${(reszveny.lowprice ?? "n/a")} – ${(reszveny.highprice ?? "n/a")}</span></div>
-    <div class="tooltip__row"><span>Piaci kapitalizáció</span><span>${forintFormazas(reszveny.marketcap)}</span></div>
+    <div class="tooltip__row"><span>Piaci kapitalizáció${reszveny._kapitalizacioForrasa ? " *" : ""}</span><span>${forintFormazas(reszveny.marketcap)}</span></div>
     <div class="tooltip__row"><span>Napi forgalom</span><span>${forintFormazas(reszveny.valuetoday ? reszveny.valuetoday / 1_000_000 : null)}</span></div>
     <div class="tooltip__row"><span>52 hetes sáv</span><span>${(reszveny.low52weekprice ?? "n/a")} – ${(reszveny.high52weekprice ?? "n/a")}</span></div>
+    ${reszveny._kapitalizacioForrasa ? '<div class="tooltip__lablec">* a cégadatlapról, mert az élő adatfolyam nem ad rá értéket</div>' : ""}
   `;
 
   tooltip.hidden = false;
@@ -349,11 +350,45 @@ async function adatLetoltese() {
   return adatFajlLetoltese("data/reszvenyek.json");
 }
 
+// ------------------------------------------------------------------
+// Tartalek piaci kapitalizacio: nemelyik (jellemzoen alacsony forgalmu)
+// papirnal az elo arfolyam-adatfolyam nem ad kapitalizaciot, DE a BET
+// cegadatlapja igen (mar letoltottuk a data/alapadatok mappaba). Ezeknel
+// ezt hasznaljuk tartalekkent, hogy a treemap-en is megjelenjenek.
+// ------------------------------------------------------------------
+function fajlnevKodolasTreemap(kod) {
+  return kod.replace(/\//g, "_").replace(/ /g, "_");
+}
+
+function kapitalizacioSzovegParszolasa(szoveg) {
+  if (!szoveg) return null;
+  const tisztitott = String(szoveg).replace(/\s|\u00a0/g, "").replace(",", ".");
+  const szam = parseFloat(tisztitott);
+  return isNaN(szam) ? null : szam; // millio Ft-ban, ugyanugy mint a marketcap mezo
+}
+
+async function tartalekKapitalizaciokPotlasa(reszvenyek) {
+  const hianyosak = reszvenyek.filter(r => !r.marketcap || r.marketcap <= 0);
+  if (!hianyosak.length) return;
+
+  await Promise.all(hianyosak.map(async (r) => {
+    const alapadat = await adatFajlLetoltveVagyNull(`data/alapadatok/${fajlnevKodolasTreemap(r.seccode)}.json`);
+    const potolt = kapitalizacioSzovegParszolasa(alapadat?.kapitalizacio_m_ft);
+    if (potolt && potolt > 0) {
+      r.marketcap = potolt;
+      r._kapitalizacioForrasa = "cegadatlap"; // jelezzuk, hogy ez nem az elo adatfolyamrol jott
+    }
+  }));
+}
+
+
 async function inditas() {
   const freshnessNote = document.getElementById("freshnessNote");
   try {
     const adat = await adatLetoltese();
     const reszvenyek = adat.reszvenyek || [];
+
+    await tartalekKapitalizaciokPotlasa(reszvenyek);
 
     const megjelenítheto = reszvenyek.filter(r => r.marketcap && r.marketcap > 0);
     const hianyzo = reszvenyek.filter(r => !r.marketcap || r.marketcap <= 0);

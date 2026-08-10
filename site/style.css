@@ -329,6 +329,13 @@ body {
 .tooltip__pct--pos { color: var(--friss-zold); font-weight: 600; }
 .tooltip__pct--neg { color: var(--sult-piros); font-weight: 600; }
 
+.tooltip__lablec {
+  margin-top: 0.4rem;
+  font-size: 0.7rem;
+  color: var(--fustolt-bezs);
+  font-style: italic;
+}
+
 /* ---------- Jelmagyarazat ---------- */
 
 .legend {
