@@ -12,6 +12,14 @@ on:
 permissions:
   contents: write
 
+# FONTOS: ha tobb BET-workflow egyszerre probalna a repoba irni (pl. a
+# weboldal "Minden egyszerre" gombjaval inditva), git push utkozes lenne
+# a kovetkezmenye. Ez a "concurrency" beallitas - MINDEN BET workflow-ban
+# ugyanezzel a nevvel - sorba allitja oket, nem hagyja parhuzamosan futni.
+concurrency:
+  group: bet-adat-iras
+  cancel-in-progress: false
+
 jobs:
   letoltes:
     runs-on: ubuntu-latest
@@ -35,5 +43,19 @@ jobs:
           git config user.name "BET robot"
           git config user.email "actions@github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "Adatfrissites: $(date -u '+%Y-%m-%d %H:%M') UTC"
-          git push
+          if git diff --staged --quiet; then
+            echo "Nincs valtozas, nincs mit menteni."
+            exit 0
+          fi
+          git commit -m "Adatfrissites: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          for probalkozas in 1 2 3 4 5; do
+            if git push; then
+              echo "Sikeres push."
+              exit 0
+            fi
+            echo "Push sikertelen ($probalkozas. probalkozas), ujraprobalom pull --rebase utan..."
+            git pull --rebase origin main
+            sleep $((probalkozas * 5))
+          done
+          echo "Vegleg sikertelen a push 5 probalkozas utan."
+          exit 1
