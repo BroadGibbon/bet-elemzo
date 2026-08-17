@@ -5,21 +5,26 @@
   "kereskedes_penzneme": "HUF",
   "nevertek": "5 HUF",
   "bevezetett_mennyiseg": "37 185 000",
-  "kapitalizacio_m_ft": "353",
+  "kapitalizacio_m_ft": "359",
   "tulajdonosok": [
     {
+      "nev": "FuturAqua Nyrt. MRP Szervezet",
+      "tulajdoni_hanyad": "19.09%",
+      "darabszam": "7100000"
+    },
+    {
       "nev": "RNT Holding Zrt.",
-      "tulajdoni_hanyad": "13.79%",
+      "tulajdoni_hanyad": "11.16%",
       "darabszam": "4150000"
     },
     {
       "nev": "KIS-BENEDEK Róbert Ferenc",
-      "tulajdoni_hanyad": "8.19%",
+      "tulajdoni_hanyad": "6.63%",
       "darabszam": "2463806"
     }
   ],
-  "kozkezhanyad": "78.02%",
-  "kozkezhanyad_frissitve": "2026. febr. 20.",
+  "kozkezhanyad": "63.12%",
+  "kozkezhanyad_frissitve": "2026. aug. 06.",
   "igazgatosag": null,
   "vallalatvezetes": "HAJNAL Zsolt András, KIS-BENEDEK Róbert Ferenc",
   "felugyelobizottsag": null,
