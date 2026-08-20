@@ -1,5 +1,5 @@
 {
-  "letoltve": "2026-08-19T16:44:40.821098+00:00",
+  "letoltve": "2026-08-20T16:49:08.001348+00:00",
   "forras": "bet.hu (15 perccel keslelt adat)",
   "darab": 51,
   "reszvenyek": [
@@ -32,12 +32,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787152229000,
       "maturitydate": null,
@@ -95,12 +95,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787151085000,
       "maturitydate": null,
@@ -158,12 +158,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787147960000,
       "maturitydate": null,
@@ -221,12 +221,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787148758000,
       "maturitydate": null,
@@ -284,12 +284,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787151912000,
       "maturitydate": null,
@@ -347,12 +347,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787151919000,
       "maturitydate": null,
@@ -410,12 +410,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787150523000,
       "maturitydate": null,
@@ -473,12 +473,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787004000000,
       "maturitydate": null,
@@ -536,12 +536,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1700607600000,
       "maturitydate": null,
@@ -599,12 +599,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787142373000,
       "maturitydate": null,
@@ -662,12 +662,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787137416000,
       "maturitydate": null,
@@ -725,12 +725,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1786485600000,
       "maturitydate": null,
@@ -788,12 +788,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787151928000,
       "maturitydate": null,
@@ -851,12 +851,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787148985000,
       "maturitydate": null,
@@ -914,12 +914,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787151493000,
       "maturitydate": null,
@@ -977,12 +977,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787004000000,
       "maturitydate": null,
@@ -1040,12 +1040,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1636671600000,
       "maturitydate": null,
@@ -1103,12 +1103,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1786399200000,
       "maturitydate": null,
@@ -1166,12 +1166,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787148600000,
       "maturitydate": null,
@@ -1229,12 +1229,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1275429600000,
       "maturitydate": null,
@@ -1292,12 +1292,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1537826400000,
       "maturitydate": null,
@@ -1355,12 +1355,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1786658400000,
       "maturitydate": null,
@@ -1418,12 +1418,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1784671200000,
       "maturitydate": null,
@@ -1481,12 +1481,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1786917600000,
       "maturitydate": null,
@@ -1544,12 +1544,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787148484000,
       "maturitydate": null,
@@ -1607,12 +1607,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787136730000,
       "maturitydate": null,
@@ -1670,12 +1670,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787151915000,
       "maturitydate": null,
@@ -1733,12 +1733,12 @@
       "instrid": "EURV",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787144685000,
       "maturitydate": null,
@@ -1796,12 +1796,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787148779000,
       "maturitydate": null,
@@ -1859,12 +1859,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787151920000,
       "maturitydate": null,
@@ -1922,12 +1922,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787144947000,
       "maturitydate": null,
@@ -1985,12 +1985,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787125306000,
       "maturitydate": null,
@@ -2048,12 +2048,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787151903000,
       "maturitydate": null,
@@ -2111,12 +2111,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787152313000,
       "maturitydate": null,
@@ -2174,12 +2174,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787129482000,
       "maturitydate": null,
@@ -2237,12 +2237,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787150384000,
       "maturitydate": null,
@@ -2300,12 +2300,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787152092000,
       "maturitydate": null,
@@ -2363,12 +2363,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787140144000,
       "maturitydate": null,
@@ -2426,12 +2426,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787151927000,
       "maturitydate": null,
@@ -2489,12 +2489,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787148998000,
       "maturitydate": null,
@@ -2552,12 +2552,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1785448800000,
       "maturitydate": null,
@@ -2615,12 +2615,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787151901000,
       "maturitydate": null,
@@ -2678,12 +2678,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787152244000,
       "maturitydate": null,
@@ -2741,12 +2741,12 @@
       "instrid": "EURV",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787130326000,
       "maturitydate": null,
@@ -2804,12 +2804,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1787151066000,
       "maturitydate": null,
@@ -2867,12 +2867,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1785103200000,
       "maturitydate": null,
@@ -2930,12 +2930,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1786917600000,
       "maturitydate": null,
@@ -2993,12 +2993,12 @@
       "instrid": "EURV",
       "listingtypeid": "S",
       "instrgrpids": [
-        "EQTY_STAND",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYB",
+        "W_RESZVENYB",
         "RESZVENYSZ",
-        "W_RESZVENYB"
+        "RESZVENYB",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_STAND"
       ],
       "lasttradedatetime": 1784671200000,
       "maturitydate": null,
@@ -3056,12 +3056,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1786485600000,
       "maturitydate": null,
@@ -3119,12 +3119,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787151993000,
       "maturitydate": null,
@@ -3182,12 +3182,12 @@
       "instrid": "DERÉ",
       "listingtypeid": "P",
       "instrgrpids": [
-        "EQTY_PRIME",
-        "EQUITYTOTA",
-        "RESZVENY",
-        "RESZVENYA",
+        "W_RESZVENYA",
         "RESZVENYSZ",
-        "W_RESZVENYA"
+        "RESZVENYA",
+        "RESZVENY",
+        "EQUITYTOTA",
+        "EQTY_PRIME"
       ],
       "lasttradedatetime": 1787149532000,
       "maturitydate": null,
