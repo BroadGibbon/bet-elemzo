@@ -3,8 +3,8 @@
     "roe_median": 0.10911593037186769,
     "roa_median": 0.03909958885069489,
     "tokeattetel_median": 1.1238581613762733,
-    "pe_median": 10.807462100724543,
-    "pbv_median": 1.6077433557112253,
+    "pe_median": 11.235906448869212,
+    "pbv_median": 1.6750837303646398,
     "cegek_szama": 51
   },
   "szektorok": {
@@ -12,8 +12,8 @@
       "roe_median": 0.11543589184210207,
       "roa_median": 0.02523436208096199,
       "tokeattetel_median": 0.8889403054141601,
-      "pe_median": 6.62989888946549,
-      "pbv_median": 1.0152279880982682,
+      "pe_median": 6.798455640892579,
+      "pbv_median": 0.942868325879601,
       "cegek_szama": 7,
       "tagok": [
         "BET",
@@ -29,8 +29,8 @@
       "roe_median": 0.1343939487070221,
       "roa_median": 0.017942606586752403,
       "tokeattetel_median": 6.979989682703824,
-      "pe_median": 7.395846538655888,
-      "pbv_median": 1.145704915851272,
+      "pe_median": 7.276558691258212,
+      "pbv_median": 1.1272258043052836,
       "cegek_szama": 2,
       "tagok": [
         "CIGPANNONIA",
@@ -53,8 +53,8 @@
       "roe_median": 0.07631064758949874,
       "roa_median": 0.04801247546536657,
       "tokeattetel_median": 1.0468364969804471,
-      "pe_median": 27.369654364381958,
-      "pbv_median": 2.2412084232047023,
+      "pe_median": 28.49443468072642,
+      "pbv_median": 2.1648035905954512,
       "cegek_szama": 4,
       "tagok": [
         "ALTEO",
@@ -67,8 +67,8 @@
       "roe_median": 0.25965552160565153,
       "roa_median": 0.14459779501669326,
       "tokeattetel_median": 0.7656647180545137,
-      "pe_median": 12.849267445168987,
-      "pbv_median": 3.572257258072795,
+      "pe_median": 13.045892489091338,
+      "pbv_median": 3.6048521608095574,
       "cegek_szama": 2,
       "tagok": [
         "GOODWILLPHRM",
@@ -79,8 +79,8 @@
       "roe_median": 0.09381425984438466,
       "roa_median": 0.043473466266433565,
       "tokeattetel_median": 0.7170920834356102,
-      "pe_median": 3.4187458734122624,
-      "pbv_median": 0.6252968133682844,
+      "pe_median": 3.4492305233708116,
+      "pbv_median": 0.6422938468346711,
       "cegek_szama": 8,
       "tagok": [
         "AMIXA",
@@ -97,8 +97,8 @@
       "roe_median": 0.059412248226524446,
       "roa_median": 0.04120143027474886,
       "tokeattetel_median": 0.733353154694248,
-      "pe_median": 11.96776306382921,
-      "pbv_median": 0.9196361391893312,
+      "pe_median": 12.248701152570284,
+      "pbv_median": 0.7199114402926681,
       "cegek_szama": 8,
       "tagok": [
         "AKKO",
@@ -115,8 +115,8 @@
       "roe_median": -0.19842605888594364,
       "roa_median": -0.07568101709419124,
       "tokeattetel_median": 1.426991953284938,
-      "pe_median": 2.6282298144999303,
-      "pbv_median": 1.6727092238434977,
+      "pe_median": 2.444906462161655,
+      "pbv_median": 1.8050809142358735,
       "cegek_szama": 5,
       "tagok": [
         "ANY",
@@ -130,8 +130,8 @@
       "roe_median": 0.08860206379095964,
       "roa_median": 0.033660753418632255,
       "tokeattetel_median": 2.192332559435312,
-      "pe_median": 18.18194917113056,
-      "pbv_median": 1.672640762920642,
+      "pe_median": 17.757328599677003,
+      "pbv_median": 1.8050764176325365,
       "cegek_szama": 4,
       "tagok": [
         "AUTOWALLIS",
@@ -155,8 +155,8 @@
       "roe_median": 0.21303241928230873,
       "roa_median": 0.07259118729671274,
       "tokeattetel_median": 1.1238581613762733,
-      "pe_median": 16.093577666051004,
-      "pbv_median": 2.626417079281142,
+      "pe_median": 17.336448020458906,
+      "pbv_median": 2.5749187051775904,
       "cegek_szama": 5,
       "tagok": [
         "4IG",
@@ -170,8 +170,8 @@
       "roe_median": 0.166579183261274,
       "roa_median": 0.09937509629032285,
       "tokeattetel_median": 1.2459887801074363,
-      "pe_median": -30.597661296768607,
-      "pbv_median": 4.895993767432125,
+      "pe_median": -30.408922699725508,
+      "pbv_median": 4.961603390176793,
       "cegek_szama": 2,
       "tagok": [
         "CIVITA",
@@ -182,8 +182,8 @@
       "roe_median": -0.06126410795841674,
       "roa_median": -0.00859948638710258,
       "tokeattetel_median": 6.124158955620884,
-      "pe_median": -35.294082901232244,
-      "pbv_median": 2.1622605051544026,
+      "pe_median": -34.90623583638354,
+      "pbv_median": 2.1384994007021563,
       "cegek_szama": 1,
       "tagok": [
         "UBM"
