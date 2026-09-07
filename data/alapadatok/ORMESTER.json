@@ -5,7 +5,7 @@
   "kereskedes_penzneme": "HUF",
   "nevertek": "100 HUF",
   "bevezetett_mennyiseg": "2 598 300",
-  "kapitalizacio_m_ft": "1 065",
+  "kapitalizacio_m_ft": "1 039",
   "tulajdonosok": [
     {
       "nev": "KINCS István",
@@ -13,7 +13,7 @@
       "darabszam": "664221"
     },
     {
-      "nev": "Kincs Liliána",
+      "nev": "Kincs Lilianna",
       "tulajdoni_hanyad": "14.74%",
       "darabszam": "383000"
     },
@@ -29,8 +29,8 @@
     },
     {
       "nev": "BODORKÓS László",
-      "tulajdoni_hanyad": "12.51%",
-      "darabszam": "325048"
+      "tulajdoni_hanyad": "11.39%",
+      "darabszam": "296150"
     },
     {
       "nev": "Saját részvény",
@@ -38,10 +38,10 @@
       "darabszam": "145580"
     }
   ],
-  "kozkezhanyad": "13.19%",
-  "kozkezhanyad_frissitve": "2026. febr. 27.",
-  "igazgatosag": "KINCS Gergely (Elnök), KINCS Lilianna, KINCS Gergely",
+  "kozkezhanyad": "14.31%",
+  "kozkezhanyad_frissitve": "2026. aug. 31.",
+  "igazgatosag": "KINCS Gergely (Elnök), KINCS Lilianna, JAKAB Péter Ferenc",
   "vallalatvezetes": "KINCS István (általános igazgató, cégalapító)",
-  "felugyelobizottsag": "MOLNÁRNÉ BOROS Anikó (elnök), BUDAHÁZI Attila, BOGDÁNY Zsolt",
-  "cegvezetes_frissitve": "2025. ápr. 22."
+  "felugyelobizottsag": "MOLNÁRNÉ BOROS Anikó (elnök), BUDAHÁZI Attila, BOGDÁN Zsolt",
+  "cegvezetes_frissitve": "2026. aug. 31."
 }

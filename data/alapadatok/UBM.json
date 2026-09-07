@@ -5,7 +5,7 @@
   "kereskedes_penzneme": "HUF",
   "nevertek": "5 HUF",
   "bevezetett_mennyiseg": "23 703 700",
-  "kapitalizacio_m_ft": "21 333",
+  "kapitalizacio_m_ft": "23 230",
   "tulajdonosok": [
     {
       "nev": "MFB Vállalati Beruházási és Tranzakciós Magántőkealap",
@@ -14,13 +14,13 @@
     },
     {
       "nev": "Botos Andor Ágoston",
-      "tulajdoni_hanyad": "13.47%",
-      "darabszam": "3191158"
+      "tulajdoni_hanyad": "13.27%",
+      "darabszam": "3146146"
     },
     {
       "nev": "Varga Ákos",
-      "tulajdoni_hanyad": "12.63%",
-      "darabszam": "2993646"
+      "tulajdoni_hanyad": "12.44%",
+      "darabszam": "2949656"
     },
     {
       "nev": "Varga Imre",
@@ -29,29 +29,29 @@
     },
     {
       "nev": "Varga Gábor",
-      "tulajdoni_hanyad": "8.77%",
-      "darabszam": "2078826"
+      "tulajdoni_hanyad": "8.64%",
+      "darabszam": "2048268"
     },
     {
       "nev": "Bustyaházai László",
-      "tulajdoni_hanyad": "8.76%",
-      "darabszam": "2077266"
+      "tulajdoni_hanyad": "8.63%",
+      "darabszam": "2046708"
     },
     {
       "nev": "Horváth Péter",
-      "tulajdoni_hanyad": "8.71%",
-      "darabszam": "2065401"
+      "tulajdoni_hanyad": "8.58%",
+      "darabszam": "2034874"
     },
     {
       "nev": "Saját részvény",
-      "tulajdoni_hanyad": "7.58%",
-      "darabszam": "1796871"
+      "tulajdoni_hanyad": "7.38%",
+      "darabszam": "1749287"
     }
   ],
-  "kozkezhanyad": "13.1%",
-  "kozkezhanyad_frissitve": "2026. febr. 28.",
-  "igazgatosag": "VARGA Ákos (elnök),  BOTOS Andor Ágoston, BUSTYAHÁZAI László, FEKETE Mihály, HORVÁTH Péter, JANOSITZ Balázs Ferenc, SZALONTAI Szabolcs, TÓTH József, VARGA Gábor",
-  "vallalatvezetes": "HORVÁTH Péter (vezérigazgató), BAGOSI Dávid, BUSTYAHÁZAI László, HORVÁTH László, JANOSITZ Balázs Ferenc, NÉMETH Bernadett, SZALONTAI Szabolcs, SZAUTER-SAX Judit, TARBAJ Péter",
+  "kozkezhanyad": "14.08%",
+  "kozkezhanyad_frissitve": "2026. aug. 31.",
+  "igazgatosag": "VARGA Ákos (elnök), BUSTYAHÁZAI László, HORVÁTH Péter, JANOSITZ Balázs Ferenc, SZALONTAI Szabolcs, TÓTH József, VARGA Gábor",
+  "vallalatvezetes": "HORVÁTH Péter (vezérigazgató), BAGOSI Dávid (számviteli vezető), BUSTYAHÁZAI László (takarmány üzletág vezetője), HORVÁTH László (fehérje üzletág vezetője), JANOSITZ Balázs Ferenc (gazdasági igazgató), NÉMETH Bernadett (kockázatkezelési igazgató), SZALONTAI Szabolcs (gabona üzletág vezetője), SZAUTER-SAX Judit (pénzügyi vezető), TARBAJ Péter (IT igazgató)",
   "felugyelobizottsag": "TÓTH József Mihály (elnök), FAZEKAS Attila, FEKETE Ildikó",
-  "cegvezetes_frissitve": "2026. febr. 28."
+  "cegvezetes_frissitve": "2026. aug. 31."
 }

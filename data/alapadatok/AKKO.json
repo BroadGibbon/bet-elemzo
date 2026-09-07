@@ -5,7 +5,7 @@
   "kereskedes_penzneme": "HUF",
   "nevertek": "25 HUF",
   "bevezetett_mennyiseg": "40 026 239",
-  "kapitalizacio_m_ft": "10 127",
+  "kapitalizacio_m_ft": "9 846",
   "tulajdonosok": [
     {
       "nev": "MEVINVEST Vagyonkezelő Kft.",
@@ -13,9 +13,9 @@
       "darabszam": "17711807"
     },
     {
-      "nev": "B + N Referencia Zrt.",
-      "tulajdoni_hanyad": "6.56%",
-      "darabszam": "2627137"
+      "nev": "LIWO FM Zrt. (korábban B + N Referencia Zrt.)",
+      "tulajdoni_hanyad": "6.54%",
+      "darabszam": "2619385"
     },
     {
       "nev": "DAYTON-Invest Kft.",
@@ -23,8 +23,8 @@
       "darabszam": "2325335"
     }
   ],
-  "kozkezhanyad": "43.38%",
-  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "kozkezhanyad": "43.4%",
+  "kozkezhanyad_frissitve": "2026. aug. 31.",
   "igazgatosag": null,
   "vallalatvezetes": "GERŐ János (vezérigazgató)",
   "felugyelobizottsag": null,

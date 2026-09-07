@@ -8,23 +8,23 @@
   "kapitalizacio_m_ft": "4 520",
   "tulajdonosok": [
     {
-      "nev": "dr. Hadházy Péter Tibor",
-      "tulajdoni_hanyad": "33.97%",
-      "darabszam": "679464"
+      "nev": "dr. Hadházy Péter Tibor (saját közvetlen tulajdon 2,00% és Pensum lnvest Kft-n keresztüli közvetett tulajdon 32,01%)",
+      "tulajdoni_hanyad": "34.01%",
+      "darabszam": "680134"
     },
     {
-      "nev": "dr. Hadházy Tamás Attila",
-      "tulajdoni_hanyad": "33.72%",
-      "darabszam": "674555"
+      "nev": "dr. Hadházy Tamás Attila (saját közvetlen tulajdon 1,98% és Pensum Consultic Kft-n keresztüli közvetett tulajdon 31,77%)",
+      "tulajdoni_hanyad": "33.75%",
+      "darabszam": "675125"
     },
     {
-      "nev": "Tóth Péter",
-      "tulajdoni_hanyad": "13.93%",
-      "darabszam": "278508"
+      "nev": "TÓTH Péter",
+      "tulajdoni_hanyad": "13.94%",
+      "darabszam": "278821"
     }
   ],
-  "kozkezhanyad": "18.38%",
-  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "kozkezhanyad": "18.3%",
+  "kozkezhanyad_frissitve": "2026. aug. 31.",
   "igazgatosag": "Dr.HADHÁZY Péter, Dr. HADHÁZY Tamás, TÓTH Péter",
   "vallalatvezetes": null,
   "felugyelobizottsag": "FODOR László (elnök), Fazekas Ágnes, Dr. Tarnóczi Tibor, Dr. Vinkler Laura",

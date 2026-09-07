@@ -5,7 +5,7 @@
   "kereskedes_penzneme": "EUR",
   "nevertek": "0,02 EUR",
   "bevezetett_mennyiseg": "10 631 674",
-  "kapitalizacio_m_ft": "59 493",
+  "kapitalizacio_m_ft": "59 146",
   "tulajdonosok": [
     {
       "nev": "Bojár Gábor",
@@ -19,13 +19,8 @@
     },
     {
       "nev": "Hold Alapkezelő Zrt. (közkézhányad adat)",
-      "tulajdoni_hanyad": "9.88%",
-      "darabszam": "1050226"
-    },
-    {
-      "nev": "MBH Alapkezelő Zrt. (közkézhányad adat)",
-      "tulajdoni_hanyad": "5.21%",
-      "darabszam": "552670"
+      "tulajdoni_hanyad": "9.65%",
+      "darabszam": "1025807"
     },
     {
       "nev": "Saját részvény",
@@ -34,7 +29,7 @@
     }
   ],
   "kozkezhanyad": "64.88%",
-  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "kozkezhanyad_frissitve": "2026. aug. 31.",
   "igazgatosag": null,
   "vallalatvezetes": "BOGNÁR Tünde (vezérigazgató); FARKAS Ildikó (gazdasági igazgató)",
   "felugyelobizottsag": null,

@@ -5,12 +5,12 @@
   "kereskedes_penzneme": "HUF",
   "nevertek": "98 HUF",
   "bevezetett_mennyiseg": "14 794 650",
-  "kapitalizacio_m_ft": "97 941",
+  "kapitalizacio_m_ft": "96 757",
   "tulajdonosok": [
     {
       "nev": "EG Capital LLC",
-      "tulajdoni_hanyad": "11.75%",
-      "darabszam": "1738623"
+      "tulajdoni_hanyad": "11.82%",
+      "darabszam": "1748623"
     },
     {
       "nev": "Digital Forest LLC",
@@ -23,10 +23,10 @@
       "darabszam": "745576"
     }
   ],
-  "kozkezhanyad": "81.36%",
-  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "kozkezhanyad": "81.29%",
+  "kozkezhanyad_frissitve": "2026. aug. 31.",
   "igazgatosag": "Dr. ERDŐS Ákos (elnök), ZSÁMBOKI Gábor (elnök-helyettes), Rober Elton BROOKER III., Dr. KEPECS Gábor, ERDŐS Tamás",
   "vallalatvezetes": "ZSÁMBOKI Gábor (vezérigazgató), dr. IGNÁCZ István (biztonsági vezérigazgató-helyettes), KARAKÓ Tamás (gazdasági vezérigazgató-helyettes), MEGYERI Balázs (kutatás-fejlesztési vezérigazgató-helyettes), PÉTER Gábor (informatikai vezérigazgató-helyettes), SAJÓ Nikoletta (operatív vezérigazgató-helyettes)",
   "felugyelobizottsag": "Prof. Dr. Stumpf István (elnök), Dr. GÖMÖRI Istvánné (elnök-helyettes), Dr. REPA Imre, HEGEDŰS Katalin, HANZSEK László, KUN Gábor",
-  "cegvezetes_frissitve": "2026. márc. 04."
+  "cegvezetes_frissitve": "2026. aug. 31."
 }

@@ -1,19 +1,19 @@
 {
   "piac_egesz": {
-    "roe_median": 0.10911593037186769,
-    "roa_median": 0.03909958885069489,
-    "tokeattetel_median": 1.1238581613762733,
-    "pe_median": 11.235906448869212,
-    "pbv_median": 1.6750837303646398,
-    "cegek_szama": 51
+    "roe_median": 0.1114330506119456,
+    "roa_median": 0.040294505009597914,
+    "tokeattetel_median": 1.2229464199552087,
+    "pe_median": 10.933656783460695,
+    "pbv_median": 1.6699031027411846,
+    "cegek_szama": 52
   },
   "szektorok": {
     "Bank és pénzügyi szolgáltatás": {
       "roe_median": 0.11543589184210207,
       "roa_median": 0.02523436208096199,
-      "tokeattetel_median": 0.8889403054141601,
-      "pe_median": 6.798455640892579,
-      "pbv_median": 0.942868325879601,
+      "tokeattetel_median": 7.07505222539185,
+      "pe_median": 6.686084473274519,
+      "pbv_median": 0.9669882132858234,
       "cegek_szama": 7,
       "tagok": [
         "BET",
@@ -29,8 +29,8 @@
       "roe_median": 0.1343939487070221,
       "roa_median": 0.017942606586752403,
       "tokeattetel_median": 6.979989682703824,
-      "pe_median": 7.276558691258212,
-      "pbv_median": 1.1272258043052836,
+      "pe_median": 7.348131399696817,
+      "pbv_median": 1.1383132712328765,
       "cegek_szama": 2,
       "tagok": [
         "CIGPANNONIA",
@@ -38,13 +38,14 @@
       ]
     },
     "Egyéb szolgáltatás": {
-      "roe_median": 0.08524909454093196,
-      "roa_median": 0.020043045604314205,
-      "tokeattetel_median": 2.812583145911991,
-      "pe_median": 59.15797150371486,
-      "pbv_median": 5.439184203549633,
-      "cegek_szama": 2,
+      "roe_median": 0.13807370365016117,
+      "roa_median": 0.025723662947637713,
+      "tokeattetel_median": 4.36757552496391,
+      "pe_median": 50.40104747587411,
+      "pbv_median": 9.065152166736766,
+      "cegek_szama": 3,
       "tagok": [
+        "DHGROUP",
         "ORMESTER",
         "PENSUM"
       ]
@@ -53,8 +54,8 @@
       "roe_median": 0.07631064758949874,
       "roa_median": 0.04801247546536657,
       "tokeattetel_median": 1.0468364969804471,
-      "pe_median": 28.49443468072642,
-      "pbv_median": 2.1648035905954512,
+      "pe_median": 27.463386057410663,
+      "pbv_median": 2.0374622029133658,
       "cegek_szama": 4,
       "tagok": [
         "ALTEO",
@@ -67,8 +68,8 @@
       "roe_median": 0.25965552160565153,
       "roa_median": 0.14459779501669326,
       "tokeattetel_median": 0.7656647180545137,
-      "pe_median": 13.045892489091338,
-      "pbv_median": 3.6048521608095574,
+      "pe_median": 12.825190909178495,
+      "pbv_median": 3.5682660454927833,
       "cegek_szama": 2,
       "tagok": [
         "GOODWILLPHRM",
@@ -79,8 +80,8 @@
       "roe_median": 0.09381425984438466,
       "roa_median": 0.043473466266433565,
       "tokeattetel_median": 0.7170920834356102,
-      "pe_median": 3.4492305233708116,
-      "pbv_median": 0.6422938468346711,
+      "pe_median": 3.384874040124985,
+      "pbv_median": 0.6241020463861244,
       "cegek_szama": 8,
       "tagok": [
         "AMIXA",
@@ -115,8 +116,8 @@
       "roe_median": -0.19842605888594364,
       "roa_median": -0.07568101709419124,
       "tokeattetel_median": 1.426991953284938,
-      "pe_median": 2.444906462161655,
-      "pbv_median": 1.8050809142358735,
+      "pe_median": 2.375454141521411,
+      "pbv_median": 1.7613592981027602,
       "cegek_szama": 5,
       "tagok": [
         "ANY",
@@ -130,8 +131,8 @@
       "roe_median": 0.08860206379095964,
       "roa_median": 0.033660753418632255,
       "tokeattetel_median": 2.192332559435312,
-      "pe_median": 17.757328599677003,
-      "pbv_median": 1.8050764176325365,
+      "pe_median": 18.88311347567378,
+      "pbv_median": 1.7820502035797752,
       "cegek_szama": 4,
       "tagok": [
         "AUTOWALLIS",
@@ -155,8 +156,8 @@
       "roe_median": 0.21303241928230873,
       "roa_median": 0.07259118729671274,
       "tokeattetel_median": 1.1238581613762733,
-      "pe_median": 17.336448020458906,
-      "pbv_median": 2.5749187051775904,
+      "pe_median": 17.421430608794488,
+      "pbv_median": 2.5620441116517023,
       "cegek_szama": 5,
       "tagok": [
         "4IG",
@@ -170,8 +171,8 @@
       "roe_median": 0.166579183261274,
       "roa_median": 0.09937509629032285,
       "tokeattetel_median": 1.2459887801074363,
-      "pe_median": -30.408922699725508,
-      "pbv_median": 4.961603390176793,
+      "pe_median": -28.390644521567218,
+      "pbv_median": 5.012141761642391,
       "cegek_szama": 2,
       "tagok": [
         "CIVITA",
@@ -182,8 +183,8 @@
       "roe_median": -0.06126410795841674,
       "roa_median": -0.00859948638710258,
       "tokeattetel_median": 6.124158955620884,
-      "pe_median": -34.90623583638354,
-      "pbv_median": 2.1384994007021563,
+      "pe_median": -38.00901235517319,
+      "pbv_median": 2.328588236320126,
       "cegek_szama": 1,
       "tagok": [
         "UBM"

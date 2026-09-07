@@ -5,7 +5,7 @@
   "kereskedes_penzneme": "HUF",
   "nevertek": "100 HUF",
   "bevezetett_mennyiseg": "280 000 010",
-  "kapitalizacio_m_ft": "12 880 000",
+  "kapitalizacio_m_ft": "12 583 200",
   "tulajdonosok": [
     {
       "nev": "MOL Magyar Olaj- és Gázipari Nyrt.",
@@ -14,17 +14,17 @@
     },
     {
       "nev": "Saját részvény",
-      "tulajdoni_hanyad": "5.16%",
-      "darabszam": "14434004"
+      "tulajdoni_hanyad": "5.77%",
+      "darabszam": "16162500"
     },
     {
       "nev": "Groupama Csoport (5,05% Groupama Gan Vie SA, 0,05% Groupama Biztosító Zrt.)",
       "tulajdoni_hanyad": "5.10%",
-      "darabszam": "14268600"
+      "darabszam": "14273359"
     }
   ],
-  "kozkezhanyad": "81.17%",
-  "kozkezhanyad_frissitve": "2026. febr. 27.",
+  "kozkezhanyad": "80.56%",
+  "kozkezhanyad_frissitve": "2026. aug. 31.",
   "igazgatosag": "Dr. CSÁNYI Sándor (az Igazgatóság elnöke), CSÁNYI Péter (vezérigazgató), ERDEI Tamás György (az Igazgatóság alelnöke), WOLF László (vezérigazgató-helyettes), BALOGH Gabriella, NAGY György, Dr. VÁGI Márton Gellért, Dr. VÖRÖS József Zoltán",
   "vallalatvezetes": "Dr. CSÁNYI Sándor (az Igazgatóság elnöke), CSÁNYI Péter (vezérigazgató), BECSEI András (vezérigazgató-helyettes, Retail Divízió), BENCSIK László (vezérigazgató-helyettes, Stratégiai és Pénzügyi Divízió), KISS-HAYPÁL György (vezérigazgató-helyettes, Kockázatkezelési Divízió), SEBŐK András (vezérigazgató-helyettes, Digitális Divízió), WOLF László (vezérigazgató-helyettes, Kereskedelmi Banki Divízió)",
   "felugyelobizottsag": "TOLNAY Tibor (elnök), Dr. HORVÁTH József Gábor (alelnök), Dr. GUDRA Tamás, Catherine Paule GRANGER-PONCHON, BELLA Klára, MICHNAI András",
