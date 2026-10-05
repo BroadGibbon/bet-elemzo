@@ -1,0 +1,27 @@
+{
+  "seccode": "VERTIKAL",
+  "isin": "HU0000206453",
+  "bevezetes_datuma": "2026. szept. 30.",
+  "kereskedes_penzneme": "HUF",
+  "nevertek": "0,1 HUF",
+  "bevezetett_mennyiseg": "1 216 430 730",
+  "kapitalizacio_m_ft": "10 267",
+  "tulajdonosok": [
+    {
+      "nev": "Abelon Kft.",
+      "tulajdoni_hanyad": "68.52%",
+      "darabszam": "833475000"
+    },
+    {
+      "nev": "Hodler Capital Korlátolt Felelősségű Társaság",
+      "tulajdoni_hanyad": "10.00%",
+      "darabszam": "121643080"
+    }
+  ],
+  "kozkezhanyad": "21.48%",
+  "kozkezhanyad_frissitve": "2026. aug. 31.",
+  "igazgatosag": "dr. Kuti Dániel (elnök), Madarász András, Kiss-Griz Alpár",
+  "vallalatvezetes": "Madarász András (vezérigazgató); Ferencz Péter (vezérigazgató-helyettes), Szalai Zsuzsanna (gazdasági igazgató)",
+  "felugyelobizottsag": "Nyikos László (elnök), Petrovicsné Csurkovics Ildikó, Ronyecz Péter István",
+  "cegvezetes_frissitve": "2026. febr. 04."
+}
