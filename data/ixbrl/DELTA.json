@@ -2,23 +2,31 @@
   "seccode": "DELTA",
   "hivatalos_nev": "Delta Group Nyrt.",
   "lei": "529900KWRWKAS4Z5GS25",
-  "csomagok_szama": 1,
-  "fogalmak_szama": 4,
+  "csomagok_szama": 2,
+  "fogalmak_szama": 6,
   "adatok": {
-    "CurrentTaxAssetsCurrent": {
-      "2024-06-30": 953000.0
+    "DeferredTaxAssets": {
+      "2026-06-30": 0.0
+    },
+    "NoncontrollingInterests": {
+      "2025-06-30": 0.0
     },
     "ComprehensiveIncomeAttributableToNoncontrollingInterests": {
       "2024-07-01..2025-06-30": 0.0,
       "2023-07-01..2024-06-30": 0.0
     },
     "BasicEarningsLossPerShare": {
+      "2025-07-01..2026-06-30": -2.33,
       "2024-07-01..2025-06-30": 2.6,
       "2023-07-01..2024-06-30": 4.41
     },
     "DilutedEarningsLossPerShare": {
+      "2025-07-01..2026-06-30": -2.35,
       "2024-07-01..2025-06-30": 2.6,
       "2023-07-01..2024-06-30": 4.41
+    },
+    "CurrentTaxAssetsCurrent": {
+      "2024-06-30": 953000.0
     }
   }
 }
