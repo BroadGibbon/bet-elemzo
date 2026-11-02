@@ -5,28 +5,28 @@
   "kereskedes_penzneme": "HUF",
   "nevertek": "0,78 HUF",
   "bevezetett_mennyiseg": "383 000 000",
-  "kapitalizacio_m_ft": "16 392",
+  "kapitalizacio_m_ft": "15 243",
   "tulajdonosok": [
     {
       "nev": "Deltagroup Holding Zrt.",
-      "tulajdoni_hanyad": "25.90%",
+      "tulajdoni_hanyad": "25.89%",
       "darabszam": "99195873"
     },
     {
-      "nev": "BERKI Ferenc",
-      "tulajdoni_hanyad": "16.15%",
-      "darabszam": "61855000"
+      "nev": "Delta Technologies Munkavállalói Résztulajdonosi Program Szervezet",
+      "tulajdoni_hanyad": "11.60%",
+      "darabszam": "44449377"
     },
     {
-      "nev": "Delta Technologies Munkavállalói Résztulajdonosi Program Szervezet",
-      "tulajdoni_hanyad": "11.41%",
-      "darabszam": "44449377"
+      "nev": "BERKI Ferenc",
+      "tulajdoni_hanyad": "11.12%",
+      "darabszam": "42588300"
     }
   ],
-  "kozkezhanyad": "46.54%",
-  "kozkezhanyad_frissitve": "2026. aug. 31.",
+  "kozkezhanyad": "51.39%",
+  "kozkezhanyad_frissitve": "2026. okt. 30.",
   "igazgatosag": "CSONTOS Zoltán (elnök), BÁRTFAI Zsolt, BODZÁSI Gergely, PÉRCSI Levente Gábor, BAKOS Róbert",
   "vallalatvezetes": null,
   "felugyelobizottsag": "KÖVESDI Péter (elnök), HORVÁTH Zsolt, KERESZTYÉNNÉ Deák Katalin, dr. KREZINGER Viktor, KÁLLAY András, SZALAI Sándor, CZEGLE János",
-  "cegvezetes_frissitve": "2026. szept. 02."
+  "cegvezetes_frissitve": "2026. okt. 30."
 }
