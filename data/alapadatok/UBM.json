@@ -5,7 +5,7 @@
   "kereskedes_penzneme": "HUF",
   "nevertek": "5 HUF",
   "bevezetett_mennyiseg": "23 703 700",
-  "kapitalizacio_m_ft": "20 859",
+  "kapitalizacio_m_ft": "20 148",
   "tulajdonosok": [
     {
       "nev": "MFB Vállalati Beruházási és Tranzakciós Magántőkealap",
@@ -50,8 +50,8 @@
   ],
   "kozkezhanyad": "14.08%",
   "kozkezhanyad_frissitve": "2026. aug. 31.",
-  "igazgatosag": "VARGA Ákos (elnök), BUSTYAHÁZAI László, HORVÁTH Péter, JANOSITZ Balázs Ferenc, SZALONTAI Szabolcs, TÓTH József, VARGA Gábor",
-  "vallalatvezetes": "HORVÁTH Péter (vezérigazgató), BAGOSI Dávid (számviteli vezető), BUSTYAHÁZAI László (takarmány üzletág vezetője), HORVÁTH László (fehérje üzletág vezetője), JANOSITZ Balázs Ferenc (gazdasági igazgató), NÉMETH Bernadett (kockázatkezelési igazgató), SZALONTAI Szabolcs (gabona üzletág vezetője), SZAUTER-SAX Judit (pénzügyi vezető), TARBAJ Péter (IT igazgató)",
+  "igazgatosag": "VARGA Ákos (elnök), BUSTYAHÁZAI László, HORVÁTH Péter, SZALONTAI Szabolcs, TÓTH József, VARGA Gábor",
+  "vallalatvezetes": "HORVÁTH Péter (vezérigazgató), BAGOSI Dávid (gazdasági igazgató), BUSTYAHÁZAI László (takarmány üzletág vezetője), HORVÁTH László (fehérjekereskedelmi igazgató), NÉMETH Bernadett (kockázatkezelési igazgató), SZALONTAI Szabolcs (gabonakereskedelmi igazgató), SAX Judit (pénzügyi vezető), TARBAJ Péter (IT igazgató), VARGA Gábor (élőállat üzletág vezetője)",
   "felugyelobizottsag": "TÓTH József Mihály (elnök), FAZEKAS Attila, FEKETE Ildikó",
-  "cegvezetes_frissitve": "2026. aug. 31."
+  "cegvezetes_frissitve": "2026. nov. 02."
 }
